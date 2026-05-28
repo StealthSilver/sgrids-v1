@@ -36,7 +36,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = () => {
           />
         </Link>
 
-        <nav className="order-2 mt-1 flex flex-1 items-center justify-center gap-4 overflow-x-auto pb-1 lg:gap-7">
+        <nav className="order-2 mt-3 flex flex-1 items-center justify-center gap-4 overflow-x-auto pb-1 lg:gap-7">
           {navItems.map((item) => (
             <Link key={item.label} href={item.href} className={navLinkClasses}>
               {item.label}
