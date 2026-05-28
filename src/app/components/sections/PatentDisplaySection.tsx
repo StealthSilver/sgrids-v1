@@ -23,7 +23,7 @@ const ChipIcon = (): React.JSX.Element => (
 
 const PatentDisplaySection: React.FC<PatentDisplaySectionProps> = () => {
   return (
-    <section id="patent-display" className="px-4 pb-8 pt-12 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pb-12 lg:pt-20">
+    <section id="patent-display" className="px-4 pb-20 pt-20 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pb-20 lg:pt-20">
       <div
         className="mx-auto flex w-full flex-col justify-center rounded-[0.95rem] border border-[#F2D4CE] px-4 py-[1.1rem] shadow-[0px_10px_19.9px_0px_#00000033] sm:px-5 sm:py-[1.35rem] lg:grid lg:min-h-[12.4rem] lg:grid-cols-[auto_1fr_auto] lg:items-center lg:px-[1.3rem] lg:py-[1.35rem]"
         style={{ background: 'linear-gradient(90deg, #F26C0D 0%, #C56D7C 41.47%, #8A70F8 100%)' }}
