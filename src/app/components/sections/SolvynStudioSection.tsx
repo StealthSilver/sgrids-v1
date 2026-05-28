@@ -71,7 +71,7 @@ const SolvynStudioSection: React.FC<SolvynStudioSectionProps> = () => {
               key={card.title}
               className="group flex h-[250px] flex-col overflow-hidden rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] p-3 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038]"
             >
-              <div className="flex h-[170px] items-center justify-start origin-top-left transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:scale-[0.72]">
+              <div className="flex h-[156px] items-center justify-start origin-top-left transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:scale-[0.72]">
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -80,7 +80,7 @@ const SolvynStudioSection: React.FC<SolvynStudioSectionProps> = () => {
                   className="h-full w-full max-w-[185px] object-contain object-left"
                 />
               </div>
-              <div className="relative mt-auto min-h-[68px]">
+              <div className="relative mt-1 min-h-[68px]">
                 <h3 className="[font-family:var(--font-ibm-plex-sans)] text-[18px] font-semibold leading-[1.2] text-[#131313] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-4">
                   {card.title}
                 </h3>
