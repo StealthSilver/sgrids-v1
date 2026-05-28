@@ -12,18 +12,20 @@ import TeamSection from './components/sections/TeamSection'
 
 export default function Home(): React.JSX.Element {
   return (
-    <main className="min-h-screen bg-[#FFFFFF]">
+    <main className="min-h-screen w-full bg-[#FFFFFF]">
       <NavbarSection />
-      <HeroSection />
-      <PatentDisplaySection />
-      <AboutSection />
-      <SolvynSection />
-      <SolvynStudioSection />
-      <AssetCoverageSection />
-      <TeamSection />
-      <ReasonSection />
-      <HomeCTASection />
-      <FooterSection />
+      <div className="mx-auto w-full max-w-7xl">
+        <HeroSection />
+        <PatentDisplaySection />
+        <AboutSection />
+        <SolvynSection />
+        <SolvynStudioSection />
+        <AssetCoverageSection />
+        <TeamSection />
+        <ReasonSection />
+        <HomeCTASection />
+        <FooterSection />
+      </div>
     </main>
   )
 }
