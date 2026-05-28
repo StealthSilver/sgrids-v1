@@ -6,6 +6,14 @@ import Link from 'next/link'
 export interface HeroSectionProps {}
 
 const HeroSection: React.FC<HeroSectionProps> = () => {
+  const capabilities = [
+    { name: 'Solvyn X', highlight: 'Connects', line1: 'Assets and', line2: 'telemetry', icon: '/Icons/globe_green.svg', color: '#518E48' },
+    { name: 'SCADA', highlight: 'Sees', line1: 'Grid and', line2: 'Plant data', icon: '/Icons/globe_blue.svg', color: '#0B2B98' },
+    { name: 'Digital Twin', highlight: 'Predicts', line1: 'Performance', line2: 'and faults', icon: '/Icons/globe_yellow.svg', color: '#FEC801' },
+    { name: 'AURA', highlight: 'Decides', line1: 'AI driven', line2: 'optimization', icon: '/Icons/globe_purple.svg', color: '#8A70F8' },
+    { name: 'EMS', highlight: 'Executes', line1: 'Automated', line2: 'Control', icon: '/Icons/globe_red.svg', color: '#FF6A00' },
+  ]
+
   const deploymentCards = [
     {
       title: 'India',
@@ -91,6 +99,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
               Book a Demo
             </Link>
           </div>
+
         </div>
 
         <div className="relative mx-auto mt-4 w-full max-w-5xl overflow-visible lg:mt-12 lg:w-full lg:max-w-[74rem]">
@@ -139,19 +148,57 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
 
             <div className="mx-[-1rem] mt-[1.25rem] border-t border-black/45 px-[0.5rem] pt-[1rem]">
               <div className="flex items-center gap-[0.5rem]">
-                <div className="flex h-[2.125rem] flex-1 items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF4D] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#111111]">
+                <div className="flex h-[2.125rem] flex-1 items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF03] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#111111]">
                   95+ GW
                 </div>
-                <div className="flex h-[2.125rem] flex-1 items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF4D] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#111111]">
+                <div className="flex h-[2.125rem] flex-1 items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF03] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#111111]">
                   500+ Projects
                 </div>
               </div>
               <button
                 type="button"
-                className="mt-[0.625rem] flex h-[2.125rem] w-full items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF4D] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#121212]"
+                className="mt-[0.625rem] flex h-[2.125rem] w-full items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF03] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#121212]"
               >
                 Know More
               </button>
+            </div>
+          </aside>
+
+          <aside className="absolute bottom-[-16%] left-[-12%] z-30 w-[92%] max-w-[46rem] overflow-hidden rounded-[1.5rem] border border-solid border-white/65 bg-[#FFFFFF8C] px-[1rem] pb-[0.25rem] pt-[0.375rem] shadow-[-1px_5px_9px_0px_#F5822926] backdrop-blur-[0.8125rem] lg:bottom-[-12%] lg:left-[-72%]">
+            <div className="grid grid-cols-2 gap-y-6 py-[0.75rem] sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-5">
+              {capabilities.map((capability) => (
+                <div key={capability.name} className="flex flex-col items-center gap-[0.25rem] text-center">
+                  <div className="mb-[0.625rem] flex h-[3.25rem] w-[3.25rem] items-center justify-center rounded-full border border-black/10 bg-white shadow-[0px_1px_9px_0px_#00000040]">
+                    <Image src={capability.icon} alt={`${capability.name} globe icon`} width={30} height={30} className="h-[1.875rem] w-[1.875rem]" />
+                  </div>
+                  <h5 className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium leading-[1] tracking-[-0.01rem] text-[#111111]">
+                    {capability.name}
+                  </h5>
+                  <p
+                    className="mt-[0.3125rem] [font-family:var(--font-ibm-plex-sans)] text-[1rem] font-semibold leading-[1] tracking-[-0.01rem]"
+                    style={{ color: capability.color }}
+                  >
+                    {capability.highlight}
+                  </p>
+                  <p className="mt-[0.1875rem] [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-semibold leading-[1.35] tracking-[0rem] text-black">
+                    {capability.line1}
+                    <br />
+                    {capability.line2}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="relative mt-[0.5rem] h-[2.25rem] pb-[1rem]">
+              <Image
+                src="/Icons/horizontal_line.svg"
+                alt="Gradient divider"
+                width={873}
+                height={3}
+                className="absolute left-0 top-1/2 h-[0.1875rem] w-full -translate-y-1/2"
+              />
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-[1rem] border border-[#E9D8CE] bg-[#F6F3F1] px-[1.75rem] py-[0.6rem] shadow-[0px_4px_4px_0px_#FF6A0026] backdrop-blur-[30px] [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-medium leading-[1] tracking-[0rem] text-[#111111] sm:text-[0.6875rem]">
+                Cybersecure OT/IT Securing Every Layer
+              </div>
             </div>
           </aside>
         </div>
