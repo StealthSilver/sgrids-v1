@@ -1,0 +1,13 @@
+# Todos
+
+## SEO
+
+- Add `app/robots.ts` to generate `/robots.txt` and control crawler access.
+- Add `app/sitemap.ts` to generate `/sitemap.xml` with indexable URLs, priority, and change frequency.
+- Add `app/opengraph-image.png` or `app/opengraph-image.tsx` for Open Graph image generation.
+- Add `public/favicon.ico` for base cross-browser favicon support.
+- Add `public/icon.svg` for scalable modern-browser favicon support.
+- Add `public/favicon-96x96.png` for Android/Chrome PNG favicon support.
+- Add `public/apple-touch-icon.png` (180x180) for iPhone home screen bookmarks.
+- Add `public/og-image.png` (1200x630) for social sharing previews.
+- Add `public/site.webmanifest` for installable app metadata and Android support.
