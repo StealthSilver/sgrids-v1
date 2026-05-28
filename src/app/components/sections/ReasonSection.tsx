@@ -37,17 +37,17 @@ const ReasonSection: React.FC<ReasonSectionProps> = () => {
           We build what the grid needs, with deep domain know-how, proven innovation, and a track record that speaks for itself.
         </p>
 
-        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
           {reasonCards.map((card) => (
             <article
               key={card.title}
-              className="group flex h-[250px] flex-col overflow-hidden rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] p-3 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038]"
+              className="group flex h-[300px] flex-col overflow-hidden rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] p-[10px] shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038]"
             >
-              <div className="flex h-[180px] items-center justify-start origin-top-left transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:scale-[0.76]">
-                <Image src={card.image} alt={card.title} width={280} height={180} className="h-full w-full max-w-[250px] object-contain object-left" />
+              <div className="flex h-[215px] items-center justify-start origin-top-left transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:scale-[0.76]">
+                <Image src={card.image} alt={card.title} width={300} height={215} className="h-full w-full max-w-[270px] object-contain object-left" />
               </div>
 
-              <div className="relative mt-1 min-h-[48px]">
+              <div className="relative mt-0.5 min-h-[54px]">
                 <h3 className="[font-family:var(--font-ibm-plex-sans)] text-[18px] font-semibold leading-[1.2] text-[#131313] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-6">
                   {card.title}
                 </h3>
