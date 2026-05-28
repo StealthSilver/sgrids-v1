@@ -71,9 +71,12 @@ const TeamSection: React.FC<TeamSectionProps> = () => {
                   </p>
                 </div>
 
-                <div className="absolute inset-0 translate-y-full bg-black/60 transition-transform duration-300 ease-out group-hover:translate-y-0">
-                  <div className="flex h-full items-end p-5">
-                    <ul className="space-y-3 [font-family:var(--font-ibm-plex-sans)] text-[0.82rem] font-normal leading-[1] text-white">
+                <div
+                  className="absolute inset-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0"
+                  style={{ background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.35) 100%)' }}
+                >
+                  <div className="flex h-full items-start p-5">
+                    <ul className="space-y-5 [font-family:var(--font-ibm-plex-sans)] text-[0.82rem] font-normal leading-[1.25] text-white">
                       <li className="flex items-start gap-2">
                         <span className="mt-[0.18rem] h-[6px] w-[6px] shrink-0 rounded-full bg-white" />
                         <span>20+ years in renewable innovation and grid automation.</span>
