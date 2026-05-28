@@ -15,16 +15,16 @@ const navItems = [
 ]
 
 const navLinkClasses =
-  'inline-flex items-center justify-center whitespace-nowrap border-b-2 border-transparent bg-transparent pb-[2px] [font-family:var(--font-ibm-plex-sans)] text-[13px] font-medium leading-[1.1] tracking-[0.35px] text-[#808080] capitalize transition-colors duration-200 hover:border-[#FF7F00] hover:text-[#FF7F00] sm:text-[14px] sm:tracking-[0.45px] lg:text-[16px] lg:tracking-[0.6px]'
+  'inline-flex items-center justify-center whitespace-nowrap border-b-2 border-transparent bg-transparent pb-0.5 [font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] font-medium leading-[1.1] tracking-[0.02em] text-[#808080] capitalize transition-colors duration-200 hover:border-[#FF7F00] hover:text-[#FF7F00] lg:text-xs lg:tracking-[0.03em]'
 
 // --- Main Section Component ---
 const NavbarSection: React.FC<NavbarSectionProps> = () => {
   return (
     <section
       id="navbar"
-      className="border-b border-slate-200 py-3 sm:py-3"
+      className="py-1.5"
     >
-      <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 sm:px-6 md:h-[72px] md:flex-nowrap md:gap-5 lg:gap-8 lg:px-8 xl:px-10">
+      <div className="mx-auto flex h-14 w-full max-w-7xl items-center gap-3 px-1.5 sm:px-2 lg:gap-5 lg:px-2.5 xl:px-3">
         <Link href="/" aria-label="Smart Grid Analytics Home" className="shrink-0">
           <Image
             src="/Logos/sgrids_main.svg"
@@ -32,11 +32,11 @@ const NavbarSection: React.FC<NavbarSectionProps> = () => {
             width={184}
             height={42}
             priority
-            className="h-6 w-auto md:h-[30px] lg:h-[34px]"
+            className="h-4 w-auto md:h-6 lg:h-7"
           />
         </Link>
 
-        <nav className="order-3 flex basis-full items-center justify-start gap-4 overflow-x-auto pb-1 md:order-2 md:basis-auto md:flex-1 md:justify-center md:gap-5 lg:gap-7">
+        <nav className="order-2 mt-0.5 flex flex-1 items-center justify-center gap-4 overflow-x-auto pb-1 lg:gap-7">
           {navItems.map((item) => (
             <Link key={item.label} href={item.href} className={navLinkClasses}>
               {item.label}
@@ -46,7 +46,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = () => {
 
         <Link
           href="#request-demo"
-          className="order-2 ml-auto inline-flex h-8 shrink-0 items-center justify-center rounded-full px-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white md:order-3 md:ml-0 md:h-9 md:px-5 md:text-[11px] lg:w-[166.47px] lg:px-6"
+          className="order-3 ml-auto inline-flex h-7 shrink-0 items-center justify-center rounded-full px-1.5 text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-white [font-family:var(--font-space-grotesk)] md:px-2 lg:w-30 lg:px-2.5 lg:text-[0.625rem]"
           style={{
             background: 'linear-gradient(103.51deg, #A14000 0%, #FF7F00 100%)',
           }}

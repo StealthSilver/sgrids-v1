@@ -1,7 +1,7 @@
 // Root layout — app shell, fonts, and imported site metadata config
 
 import type { Metadata, Viewport } from 'next'
-import { IBM_Plex_Sans } from 'next/font/google'
+import { IBM_Plex_Sans, Space_Grotesk } from 'next/font/google'
 import { siteMetadata, siteViewport } from '@/data/site.data'
 import './globals.css'
 
@@ -11,6 +11,13 @@ const ibmPlexSans = IBM_Plex_Sans({
   variable: '--font-ibm-plex-sans',
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-space-grotesk',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
 })
 
@@ -27,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ibmPlexSans.variable} h-full antialiased`}
+      className={`${ibmPlexSans.variable} ${spaceGrotesk.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground">
