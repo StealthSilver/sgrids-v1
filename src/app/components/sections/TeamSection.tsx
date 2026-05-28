@@ -62,7 +62,7 @@ const TeamSection: React.FC<TeamSectionProps> = () => {
 
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0A0A0ACC]" />
 
-                <div className="absolute bottom-4 left-4 right-4">
+                <div className="absolute bottom-4 left-4 right-4 transition-all duration-300 ease-out group-hover:translate-y-6 group-hover:opacity-0">
                   <p className="[font-family:var(--font-ibm-plex-sans)] text-[1.4rem] font-medium leading-[1] tracking-[-0.02rem] text-white">
                     {card.roleText}
                   </p>
