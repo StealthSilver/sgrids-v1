@@ -22,7 +22,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = () => {
   return (
     <section
       id="navbar"
-      className="py-1.5"
+      className="py-3"
     >
       <div className="mx-auto flex h-14 w-full max-w-7xl items-center gap-3 px-1.5 sm:px-2 lg:gap-5 lg:px-2.5 xl:px-3">
         <Link href="/" aria-label="Smart Grid Analytics Home" className="shrink-0">
@@ -36,7 +36,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = () => {
           />
         </Link>
 
-        <nav className="order-2 mt-0.5 flex flex-1 items-center justify-center gap-4 overflow-x-auto pb-1 lg:gap-7">
+        <nav className="order-2 mt-1 flex flex-1 items-center justify-center gap-4 overflow-x-auto pb-1 lg:gap-7">
           {navItems.map((item) => (
             <Link key={item.label} href={item.href} className={navLinkClasses}>
               {item.label}
