@@ -52,7 +52,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
         const nextIndex = (currentIndex + 1) % timelineSteps.length
         return timelineSteps[nextIndex].id
       })
-    }, 4000)
+    }, 3200)
 
     return () => window.clearInterval(interval)
   }, [])
@@ -61,7 +61,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
     setIsImageVisible(false)
     const timeout = window.setTimeout(() => {
       setIsImageVisible(true)
-    }, 160)
+    }, 10)
 
     return () => window.clearTimeout(timeout)
   }, [activeStep])
