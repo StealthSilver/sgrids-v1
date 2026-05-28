@@ -188,7 +188,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
                 </div>
               ))}
             </div>
-            <div className="relative mt-[0.5rem] h-[2.25rem] pb-[1rem]">
+            <div className="relative mt-[0.25rem] h-[2.75rem] pb-[1.5rem]">
               <Image
                 src="/Icons/horizontal_line.svg"
                 alt="Gradient divider"
