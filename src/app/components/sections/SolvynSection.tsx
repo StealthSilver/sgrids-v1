@@ -100,7 +100,7 @@ const SolvynSection: React.FC<SolvynSectionProps> = () => {
                   <button
                     key={tag}
                     type="button"
-                    className="h-[30px] rounded-[8px] border border-[#FF7F0030] bg-[#FF7F0012] px-2 text-center [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00]"
+                    className="h-[30px] rounded-[8px] border border-[#FF7F0030] bg-[#FF7F0012] px-2 text-center [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00] transition-colors duration-200 hover:border-[#FF7F00] hover:bg-[#FF7F00] hover:text-white"
                   >
                     {tag}
                   </button>
