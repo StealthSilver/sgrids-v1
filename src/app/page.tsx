@@ -24,8 +24,8 @@ export default function Home(): React.JSX.Element {
         <TeamSection />
         <ReasonSection />
         <HomeCTASection />
-        <FooterSection />
       </div>
+      <FooterSection />
     </main>
   )
 }
