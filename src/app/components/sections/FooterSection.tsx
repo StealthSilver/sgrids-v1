@@ -96,8 +96,8 @@ const FooterSection: React.FC<FooterSectionProps> = () => {
   return (
     <footer id="footer" className="border-t border-[#EFE6DF] pt-12 lg:pt-16">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-          <div className="max-w-[320px] sm:col-span-2 lg:col-span-1">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,320px)_1fr_320px] lg:items-start lg:gap-x-8 xl:gap-x-12">
+          <div className="w-full max-w-[320px]">
             <Link href="/" aria-label={`${siteConfig.name} Home`} className="inline-flex">
               <Image
                 src="/Logos/sgrids_main.svg"
@@ -117,49 +117,51 @@ const FooterSection: React.FC<FooterSectionProps> = () => {
             </p>
           </div>
 
-          <div className="lg:pl-10 xl:pl-14">
-            <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00]">
-              Platform
-            </p>
-            <ul className="mt-4 space-y-3">
-              {platformLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className={footerLinkClasses}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-16 xl:gap-20">
+            <div>
+              <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00]">
+                Platform
+              </p>
+              <ul className="mt-4 space-y-3">
+                {platformLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} className={footerLinkClasses}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00]">
+                Company
+              </p>
+              <ul className="mt-4 space-y-3">
+                {companyLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} className={footerLinkClasses}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          <div className="lg:pl-10 xl:pl-14">
-            <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00]">
-              Company
-            </p>
-            <ul className="mt-4 space-y-3">
-              {companyLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className={footerLinkClasses}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
+          <div className="w-full max-w-[320px]">
             <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00]">
               Contact
             </p>
 
-            <div className="mt-4 max-w-[320px] space-y-3 [font-family:var(--font-ibm-plex-sans)] text-[0.875rem] leading-[1.45] text-[#808080]">
+            <div className="mt-4 max-w-[320px] space-y-5 [font-family:var(--font-ibm-plex-sans)] text-[0.875rem] leading-[1.45] text-[#808080]">
               <p className="text-[#1C1B1B]">info@sgrids.com</p>
               <p>
                 Msm Plaza, 2nd floor, service rd, opp. Kallumantapa, Banaswadi, Bangalore, Karnataka – 560043.
               </p>
             </div>
 
-            <div className="mt-5 flex items-center gap-3">
+            <div className="mt-6 flex items-center gap-3">
               {socialLinks.map((social) => (
                 <Link
                   key={social.label}
@@ -177,8 +179,8 @@ const FooterSection: React.FC<FooterSectionProps> = () => {
         </div>
       </div>
 
-      <div className="mt-10 w-full border-t border-[#EFE6DF] pb-6 lg:pb-8">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+      <div className="mt-10 w-full border-t border-[#EFE6DF] pb-6 lg:pb-2">
+        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-3 px-4 py-3 sm:px-6 lg:grid-cols-[1fr_320px] lg:items-center lg:gap-x-8 lg:px-8 xl:gap-x-12">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] leading-[1.35] text-[#808080]">
             © {currentYear} {siteConfig.name}. All rights reserved.
           </p>
