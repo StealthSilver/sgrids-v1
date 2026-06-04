@@ -7,11 +7,10 @@ import Link from 'next/link'
 export interface NavbarSectionProps {}
 
 const navItems = [
-  { label: 'Home', href: '#home' },
   { label: 'Solvyn', href: '#solvyn' },
-  { label: 'Application', href: '#application' },
   { label: 'Proof', href: '#proof' },
   { label: 'Company', href: '#company' },
+  { label: 'Contact', href: '#footer' },
 ]
 
 const navLinkClasses =
@@ -46,10 +45,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = () => {
 
         <Link
           href="#request-demo"
-          className="order-3 ml-auto inline-flex h-7 shrink-0 items-center justify-center rounded-full px-1.5 text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-white [font-family:var(--font-space-grotesk)] md:px-2 lg:w-30 lg:px-2.5 lg:text-[0.625rem]"
-          style={{
-            background: 'linear-gradient(103.51deg, #A14000 0%, #FF7F00 100%)',
-          }}
+          className="order-3 ml-auto inline-flex h-7 shrink-0 items-center justify-center rounded-full bg-[#FF7F00] px-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-semibold uppercase leading-[1] tracking-[0.02rem] text-white transition-colors duration-200 hover:bg-[#E67300] md:px-2 lg:w-30 lg:px-2.5 lg:text-[0.625rem]"
         >
           Request Demo
         </Link>

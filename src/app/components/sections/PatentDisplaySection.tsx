@@ -6,20 +6,15 @@ export interface PatentDisplaySectionProps {}
 interface CapabilityTag {
   line1: string
   line2: string
+  icon: string
 }
 
 const capabilityTags: CapabilityTag[] = [
-  { line1: 'Digital', line2: 'Twin' },
-  { line1: 'EMS', line2: 'Dispatch' },
-  { line1: 'AURA', line2: 'Intelligence' },
-  { line1: 'Grid', line2: 'Control' },
+  { line1: 'Digital', line2: 'Twin', icon: '/Icons/Patent_Card_Icons/digital_twin.svg' },
+  { line1: 'EMS', line2: 'Dispatch', icon: '/Icons/Patent_Card_Icons/dispatch.svg' },
+  { line1: 'AURA', line2: 'Intelligence', icon: '/Icons/Patent_Card_Icons/artificial-intelligence%20(1)%201.svg' },
+  { line1: 'Grid', line2: 'Control', icon: '/Icons/Patent_Card_Icons/grid_control.svg' },
 ]
-
-const ChipIcon = (): React.JSX.Element => (
-  <span className="inline-flex h-[1.9rem] w-[1.9rem] shrink-0 items-center justify-center">
-    <Image src="/Icons/digital_twin.svg" alt="" width={32} height={32} aria-hidden="true" className="h-[1.8rem] w-[1.8rem] object-contain" />
-  </span>
-)
 
 const PatentDisplaySection: React.FC<PatentDisplaySectionProps> = () => {
   return (
@@ -52,7 +47,9 @@ const PatentDisplaySection: React.FC<PatentDisplaySectionProps> = () => {
                 key={`${tag.line1}-${tag.line2}`}
                 className="inline-flex h-[4rem] items-center justify-center gap-[0.72rem] rounded-[0.65rem] border border-[#FFFFFF42] bg-[#FFFFFF24] px-[1rem]"
               >
-                <ChipIcon />
+                <span className="inline-flex h-[1.9rem] w-[1.9rem] shrink-0 items-center justify-center">
+                  <Image src={tag.icon} alt="" width={32} height={32} aria-hidden="true" className="h-[1.8rem] w-[1.8rem] object-contain" />
+                </span>
                 <span className="flex h-[1.85rem] flex-col justify-center text-left [font-family:var(--font-ibm-plex-sans)] text-[0.95rem] font-semibold leading-[0.95] tracking-[0] text-[#F4EAFE] sm:text-[1rem]">
                   <span>{tag.line1}</span>
                   <span>{tag.line2}</span>

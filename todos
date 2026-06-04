@@ -11,3 +11,61 @@
 - Add `public/apple-touch-icon.png` (180x180) for iPhone home screen bookmarks.
 - Add `public/og-image.png` (1200x630) for social sharing previews.
 - Add `public/site.webmanifest` for installable app metadata and Android support.
+
+## Images & performance (~12.6 MB total homepage payload today)
+
+### Critical (highest impact)
+
+- Replace raster-in-SVG files with compressed WebP/AVIF and update `Image` `src` paths: `cta.svg` (~1.7 MB), `about_1.svg`, `about_2.svg`, `about_3.svg` (~3.4 MB combined). Target &lt;150 KB each at display size.
+- Compress `hero_model.png` (2.6 MB, 1402×1122) — re-export as optimized WebP/PNG; target &lt;200–400 KB source. Keep `priority`/`preload` on hero only.
+- Add responsive `sizes` on hero and full-width images (e.g. `sizes="(max-width: 1024px) 100vw, 1100px"`); only `TeamSection` has `sizes` today.
+
+### Medium priority
+
+- Run studio, reason, asset, and solvyn SVGs through SVGO / Figma “optimized SVG” export — many are 200–400 KB each; aim for &lt;30–50 KB where vector-only.
+- Compress `team_1.png` (271 KB at 324×558) — WebP at ~2× display size, target &lt;50 KB.
+- About carousel: preload only first slide (`about_1`); load `about_2` / `about_3` on first interaction or before slide change — avoid auto-fetching all ~3.4 MB on page load.
+
+### Optional / polish
+
+- Lazy-load below-fold sections via dynamic import (`SolvynStudioSection`, `ReasonSection`, etc.) to defer image requests until needed.
+- Verify after deploy: PageSpeed Insights, Lighthouse (LCP, “Properly size images”, “Efficiently encode images”), Network tab on Fast 3G.
+- Overall target: homepage images &lt;1.5–2 MB total (from ~12.6 MB on disk today).
+
+## Typography & design tokens
+
+### Foundation
+
+- Add type scale to `globals.css` `@theme` (rem-only, ~8 steps): xs (12px), sm (14px), base (16px), md (18px), lg (20px), xl (24px), 2xl (32px), 3xl (44px), plus optional `display` for patent stats.
+- Add color tokens: `--color-brand` (#FF7F00), `--color-text`, `--color-text-muted`, `--color-border`, `--color-surface` — replace scattered hex (`#1C1B1B`, `#131313`, `#111111`, `text-black`, `#7F7F7F`, `#808080`, `#F58D27`, etc.).
+- Set IBM Plex Sans once on `body` in `layout.tsx`; remove ~70 per-element `[font-family:var(--font-ibm-plex-sans)]` repetitions across sections.
+- Standardize line-height and letter-spacing per role (eyebrow, title, body, caption) — stop mixing `leading-[1.14]`, `leading-[1.35]`, `leading-relaxed`, etc. ad hoc.
+
+### Reusable components
+
+- Create typography components: `SectionEyebrow`, `SectionTitle`, `SectionLead`, `CardTitle`, `BodyText`, `Caption` (one definition per role).
+- Create layout primitives: `SectionShell` (unified `px-4 py-10 lg:py-20`), `ContentCard` (shared radius, shadow, padding).
+- Create button primitives: primary pill (gradient), secondary pill (gray), `Tag` chip — unify Hero/Studio/Solvyn variants (`rounded-full` vs `rounded-[10px]` vs `rounded-[8px]`).
+
+### Section alignment (hierarchy fixes)
+
+- Unify section `h2` across all sections — About currently uses smaller `text-lg` → `xl` → `1.95rem` vs standard `1.5rem` → `1.9rem` → `2.35rem`.
+- Home CTA `h2` uses different scale (`2rem` → `3rem`) and `semibold` instead of `bold` — align with `SectionTitle` or explicit display variant.
+- Solvyn Studio: second headline-sized `p` (“Build powerful dashboards…”) competes with `h2` — demote to `SectionLead` or `h3`.
+- Hero body: align with site body token (`text-base` + muted), not isolated `text-sm` + `#7F7F7F` only.
+- Card titles: Team overlay uses `1.4rem` + `medium` while others use `18px` + `semibold` — match `CardTitle`.
+- Body copy: consolidate `15px`, `13–14px`, `1rem`/`1.06rem`, `text-sm`/`text-base` into one `BodyText` size (~16px).
+- Stop mixing `px`, `rem`, and Tailwind scale (`text-sm`, `text-lg`, `text-2xl`) for the same roles — use tokens only.
+
+## UX, navigation & semantics
+
+- Fix navbar anchor `href`s to match real section `id`s: `#home` → `hero`, `#application` / `#proof` / `#company` → actual sections (`asset-coverage`, `patent-display` or `team`, `about`, etc.); only `#solvyn` works today.
+- Fix heading order for accessibility: consistent `h1` (hero) → `h2` (sections) → `h3` (cards); avoid `h5` in hero overlays without intermediate levels where possible.
+- Patent banner: treat as intentional `display` size or align with type scale — document as exception.
+
+## Visual consistency (cards, spacing, shadows)
+
+- Unify section vertical padding — Home CTA uses `py-12 lg:py-16` while others use `py-10 lg:py-20`; Patent has asymmetric `sm:pb-10 sm:pt-14` vs `pb-20 pt-20`.
+- Unify card heights and padding across Solvyn, Asset, Reason, Studio (250px / 300px / 320px / 380px and mixed `p-[10px]` vs `p-3` today).
+- Unify border radius scale (8px tags, 10px, 12px, 14px, `0.95rem`, `1.5rem` → pick 2–3 tokens).
+- Extract shared card shadow/hover styles into one class or component (duplicate `shadow-[0px_7.72px_...]` strings).

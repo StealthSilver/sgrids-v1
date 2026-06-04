@@ -7,11 +7,11 @@ export interface HeroSectionProps {}
 
 const HeroSection: React.FC<HeroSectionProps> = () => {
   const capabilities = [
-    { name: 'Solvyn X', highlight: 'Connects', line1: 'Assets and', line2: 'telemetry', icon: '/Icons/globe_green.svg', color: '#518E48' },
-    { name: 'SCADA', highlight: 'Sees', line1: 'Grid and', line2: 'Plant data', icon: '/Icons/globe_blue.svg', color: '#0B2B98' },
-    { name: 'Digital Twin', highlight: 'Predicts', line1: 'Performance', line2: 'and faults', icon: '/Icons/globe_yellow.svg', color: '#FEC801' },
-    { name: 'AURA', highlight: 'Decides', line1: 'AI driven', line2: 'optimization', icon: '/Icons/globe_purple.svg', color: '#8A70F8' },
-    { name: 'EMS', highlight: 'Executes', line1: 'Automated', line2: 'Control', icon: '/Icons/globe_red.svg', color: '#FF6A00' },
+    { name: 'Solvyn X', highlight: 'Connects', line1: 'Assets and', line2: 'telemetry', icon: '/Icons/Hero_Icons/Solvyn.svg', color: '#518E48' },
+    { name: 'SCADA', highlight: 'Sees', line1: 'Grid and', line2: 'Plant data', icon: '/Icons/Hero_Icons/scada.svg', color: '#0B2B98' },
+    { name: 'Digital Twin', highlight: 'Predicts', line1: 'Performance', line2: 'and faults', icon: '/Icons/Hero_Icons/digital-twin%201.svg', color: '#FEC801' },
+    { name: 'AURA', highlight: 'Decides', line1: 'AI driven', line2: 'optimization', icon: '/Icons/Hero_Icons/artificial-intelligence.svg', color: '#8A70F8' },
+    { name: 'EMS', highlight: 'Executes', line1: 'Automated', line2: 'Control', icon: '/Icons/Hero_Icons/ems.svg', color: '#FF6A00' },
   ]
 
   const deploymentCards = [
@@ -57,7 +57,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
   ]
 
   return (
-    <section id="hero" className="px-4 pb-8 pt-1 sm:px-6 sm:pb-10 sm:pt-2 lg:px-8 lg:pb-12 lg:pt-3">
+    <section id="home" className="px-4 pb-8 pt-1 sm:px-6 sm:pb-10 sm:pt-2 lg:px-8 lg:pb-12 lg:pt-3">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:gap-8">
         <div className="flex flex-col items-start">
           <div className="-mt-8 mb-4 inline-flex h-7 w-[11.5rem] items-center justify-center rounded-full bg-[#FF7F0026] px-3 py-1 lg:-mt-48">
@@ -82,21 +82,12 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             {' '}hybrid energy systems.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
+          <div className="mt-8">
             <Link
               href="#solvyn"
-              className="inline-flex items-center justify-center rounded-full px-6 py-2 text-sm font-bold leading-6 tracking-[0rem] text-white transition-opacity duration-200 hover:opacity-90 [font-family:var(--font-ibm-plex-sans)]"
-              style={{
-                background: 'linear-gradient(103.51deg, #A14000 0%, #FF7F00 100%)',
-              }}
+              className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
             >
               Explore Solvyn
-            </Link>
-            <Link
-              href="#request-demo"
-              className="inline-flex items-center justify-center rounded-full bg-[#EAE7E7] px-8 py-2 text-sm font-medium leading-6 tracking-[0rem] text-slate-800 transition-opacity duration-200 hover:opacity-90 [font-family:var(--font-ibm-plex-sans)]"
-            >
-              Book a Demo
             </Link>
           </div>
 
@@ -113,13 +104,10 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
           />
 
           <aside className="absolute right-0 top-[4%] z-20 w-[87%] max-w-[20.75rem] rounded-[1.5rem] border border-solid border-white/65 bg-[#FFFFFF8C] px-[1.5rem] pb-[0.875rem] pt-[2.125rem] shadow-[10.46px_4.18px_21.02px_0px_#0000001A] backdrop-blur-[0.8125rem] sm:w-[19.75rem] lg:right-[-1%] lg:top-[5%]">
-            <div className="mb-[0.625rem] flex -translate-y-[0.5rem] items-center justify-between gap-[0.5rem]">
+            <div className="mb-[0.625rem] -translate-y-[0.5rem]">
               <h4 className="[font-family:var(--font-ibm-plex-sans)] text-[1.125rem] font-semibold leading-[1.1] tracking-[-0.01rem] text-[#111111]">
                 Deployed across
               </h4>
-              <span className="inline-flex h-6 items-center justify-center rounded-full bg-[#FF7F0026] px-2.5 py-1 [font-family:var(--font-ibm-plex-sans)] text-[0.5rem] font-bold leading-[1] tracking-[0.015rem] text-[#FF7F00] sm:text-[0.5625rem]">
-                21+ Grid Code
-              </span>
             </div>
             <div className="mx-[-1.5rem] border-t border-black/45" />
 
@@ -146,21 +134,21 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
               ))}
             </div>
 
-            <div className="mx-[-1rem] mt-[1.25rem] border-t border-black/45 px-[0.5rem] pt-[1rem]">
-              <div className="flex items-center gap-[0.5rem]">
-                <div className="flex h-[2.125rem] flex-1 items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF03] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#111111]">
-                  95+ GW
+            <div className="mt-[1.25rem] border-t border-black/45 pt-[1rem]">
+              <div className="grid grid-cols-3 justify-items-center gap-x-6">
+                <div className="flex w-fit flex-col items-start text-left [font-family:var(--font-ibm-plex-sans)]">
+                  <span className="text-[1.125rem] font-semibold leading-[1] tracking-[-0.01rem] text-[#111111]">95+</span>
+                  <span className="mt-[0.1875rem] text-[0.6875rem] font-semibold leading-[1.35] tracking-[0rem] text-black">GW</span>
                 </div>
-                <div className="flex h-[2.125rem] flex-1 items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF03] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#111111]">
-                  500+ Projects
+                <div className="flex w-fit flex-col items-start text-left [font-family:var(--font-ibm-plex-sans)]">
+                  <span className="text-[1.125rem] font-semibold leading-[1] tracking-[-0.01rem] text-[#111111]">500+</span>
+                  <span className="mt-[0.1875rem] text-[0.6875rem] font-semibold leading-[1.35] tracking-[0rem] text-black">Projects</span>
+                </div>
+                <div className="flex w-fit flex-col items-start text-left [font-family:var(--font-ibm-plex-sans)]">
+                  <span className="text-[1.125rem] font-semibold leading-[1] tracking-[-0.01rem] text-[#111111]">21+</span>
+                  <span className="mt-[0.1875rem] text-[0.6875rem] font-semibold leading-[1.35] tracking-[0rem] text-black">Grid code</span>
                 </div>
               </div>
-              <button
-                type="button"
-                className="mt-[0.625rem] flex h-[2.125rem] w-full items-center justify-center rounded-full border border-white/35 bg-[#FFFFFF03] backdrop-blur-[32px] [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1] tracking-[0rem] text-[#121212]"
-              >
-                Know More
-              </button>
             </div>
           </aside>
 
@@ -169,7 +157,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
               {capabilities.map((capability) => (
                 <div key={capability.name} className="flex flex-col items-center gap-[0.25rem] text-center">
                   <div className="mb-[0.625rem] flex h-[3.25rem] w-[3.25rem] items-center justify-center rounded-full border border-black/10 bg-white shadow-[0px_1px_9px_0px_#00000040]">
-                    <Image src={capability.icon} alt={`${capability.name} globe icon`} width={30} height={30} className="h-[1.875rem] w-[1.875rem]" />
+                    <Image src={capability.icon} alt={`${capability.name} icon`} width={30} height={30} className="h-[1.875rem] w-[1.875rem]" />
                   </div>
                   <h5 className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium leading-[1] tracking-[-0.01rem] text-[#111111]">
                     {capability.name}
@@ -196,7 +184,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
                 height={3}
                 className="absolute left-0 top-1/2 h-[0.1875rem] w-full -translate-y-1/2"
               />
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-[1rem] border border-[#E9D8CE] bg-[#F6F3F1] px-[1.75rem] py-[0.6rem] shadow-[0px_4px_4px_0px_#FF6A0026] backdrop-blur-[30px] [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-medium leading-[1] tracking-[0rem] text-[#111111] sm:text-[0.6875rem]">
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-[1rem] border border-[#E9D8CE] bg-[#F6F3F1] px-[1.75rem] py-[0.6rem] shadow-[0px_4px_4px_0px_#FF6A0026] backdrop-blur-[30px] [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-semibold leading-[1] tracking-[0rem] text-[#111111] sm:text-[0.6875rem]">
                 Cybersecure OT/IT Securing Every Layer
               </div>
             </div>
