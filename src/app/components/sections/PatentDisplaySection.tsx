@@ -59,18 +59,18 @@ const PatentDisplaySection: React.FC<PatentDisplaySectionProps> = () => {
           </div>
         </div>
 
-        <div className="mt-4 flex shrink-0 flex-col items-center justify-center gap-[0.5rem] border-t border-white/25 pt-3.5 text-center lg:mt-0 lg:border-t-0 lg:pt-0">
+        <div className="mt-4 flex shrink-0 flex-col items-center justify-center gap-3 border-t border-white/25 pt-4 text-center lg:mt-0 lg:border-t-0 lg:pt-0 lg:pl-4">
           <Image
             src="/Icons/protection.svg"
             alt=""
-            width={42}
-            height={42}
+            width={48}
+            height={48}
             aria-hidden="true"
-            className="h-[5.4rem] w-[5.4rem] sm:h-[6rem] sm:w-[6rem] lg:h-[6.8rem] lg:w-[6.8rem]"
+            className="h-[4rem] w-[4rem] sm:h-[4.5rem] sm:w-[4.5rem]"
           />
           <button
             type="button"
-            className="[font-family:var(--font-ibm-plex-sans)] text-[1.2rem] font-semibold leading-[1] tracking-[-0.01rem] text-[#FFF8FF] sm:text-[1.3rem] lg:text-[1.4rem]"
+            className="inline-flex items-center justify-center rounded-full border-[1.5px] border-[#FF7F00] bg-transparent px-4 py-1.5 transition-opacity duration-200 hover:opacity-90 [font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-semibold leading-[1] tracking-[-0.01rem] text-[#FFEFE9] sm:px-5 sm:py-2 sm:text-[0.9375rem]"
           >
             View IP & patents
           </button>
