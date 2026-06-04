@@ -14,10 +14,10 @@ const triggerInactiveClasses = 'text-[#808080] hover:border-[#FF7F00] hover:text
 const triggerActiveClasses = 'border-[#FF7F00] text-[#FF7F00]'
 
 const dropdownLinkClasses =
-  'group/link block rounded-md px-2 py-1 transition-colors duration-150 hover:bg-[#FFF8F2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF7F00]'
+  'group/link block rounded-md px-2.5 py-1.5 transition-colors duration-150 hover:bg-[#FFF8F2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF7F00]'
 
 const dropdownPanelClasses =
-  "absolute left-1/2 top-[calc(100%+0.25rem)] z-50 w-max min-w-[12.5rem] max-w-[17.5rem] -translate-x-1/2 rounded-lg border border-[#EFE6DF] bg-white px-2 py-1.5 shadow-[0_12px_40px_-12px_rgba(19,19,19,0.14)] transition-[opacity,transform] duration-200 ease-out before:absolute before:inset-x-0 before:-top-2 before:h-2 before:content-[''] motion-reduce:transition-none"
+  "absolute left-1/2 top-[calc(100%+0.25rem)] z-50 w-max min-w-[12.5rem] max-w-[17.5rem] -translate-x-1/2 rounded-lg border border-[#EFE6DF] bg-white px-2.5 py-2 shadow-[0_12px_40px_-12px_rgba(19,19,19,0.14)] transition-[opacity,transform] duration-200 ease-out before:absolute before:inset-x-0 before:-top-2 before:h-2 before:content-[''] motion-reduce:transition-none"
 
 function ChevronIcon({ open }: { open: boolean }) {
   return (
@@ -44,18 +44,13 @@ function DropdownPanel({ menu, onLinkClick }: { menu: NavMenu; onLinkClick: () =
           <p className="mb-1 px-2 [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-semibold uppercase leading-none tracking-[0.08em] text-[#FF7F00]">
             {group.label}
           </p>
-          <ul className="flex flex-col gap-1">
+          <ul className="flex flex-col gap-1.5">
             {group.items.map((item) => (
               <li key={item.label}>
                 <Link href={item.href} className={dropdownLinkClasses} onClick={onLinkClick}>
                   <span className="block [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-medium leading-tight text-[#131313] transition-colors duration-150 group-hover/link:text-[#FF7F00]">
                     {item.label}
                   </span>
-                  {item.description ? (
-                    <span className="mt-0.5 block [font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] font-normal leading-tight text-[#808080]">
-                      {item.description}
-                    </span>
-                  ) : null}
                 </Link>
               </li>
             ))}
@@ -64,18 +59,13 @@ function DropdownPanel({ menu, onLinkClick }: { menu: NavMenu; onLinkClick: () =
       ))}
 
       {flatItems ? (
-        <ul className="flex flex-col gap-1">
+        <ul className="flex flex-col gap-1.5">
           {flatItems.map((item) => (
             <li key={item.label}>
               <Link href={item.href} className={dropdownLinkClasses} onClick={onLinkClick}>
                 <span className="block [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-medium leading-tight text-[#131313] transition-colors duration-150 group-hover/link:text-[#FF7F00]">
                   {item.label}
                 </span>
-                {item.description ? (
-                  <span className="mt-0.5 block [font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] font-normal leading-tight text-[#808080]">
-                    {item.description}
-                  </span>
-                ) : null}
               </Link>
             </li>
           ))}
