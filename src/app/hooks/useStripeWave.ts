@@ -29,22 +29,28 @@ interface RibbonSurface {
   fanPower: number
 }
 
-const SAMPLE_COUNT = 96
-const TARGET_FPS = 36
+const SAMPLE_COUNT = 100
+const TARGET_FPS = 30
 
+/** Varied orange shades — saturated hues, not brown. */
 const ORANGE_STOPS = [
-  { r: 255, g: 140, b: 60 },
+  { r: 255, g: 88, b: 0 },
+  { r: 255, g: 102, b: 0 },
+  { r: 255, g: 118, b: 6 },
   { r: 255, g: 127, b: 0 },
-  { r: 255, g: 175, b: 95 },
-  { r: 242, g: 108, b: 13 },
+  { r: 255, g: 136, b: 14 },
+  { r: 255, g: 148, b: 28 },
+  { r: 255, g: 158, b: 38 },
+  { r: 255, g: 168, b: 48 },
+  { r: 255, g: 178, b: 62 },
+  { r: 255, g: 188, b: 76 },
+  { r: 255, g: 198, b: 92 },
+  { r: 255, g: 208, b: 108 },
+  { r: 255, g: 218, b: 124 },
+  { r: 255, g: 228, b: 142 },
 ] as const
 
-const PURPLE_STOPS = [
-  { r: 138, g: 112, b: 248 },
-  { r: 99, g: 91, b: 255 },
-  { r: 168, g: 130, b: 255 },
-  { r: 120, g: 82, b: 220 },
-] as const
+const WAVE_COUNT = 150
 
 function mixStops(
   stops: readonly { r: number; g: number; b: number }[],
@@ -62,48 +68,32 @@ function mixStops(
   return `rgb(${r}, ${g}, ${b})`
 }
 
+function ribbonShade(index: number): string {
+  const base = index / (WAVE_COUNT - 1)
+  const variation = ((index * 11) % 17) / 17
+  const shadeT = Math.min(1, base * 0.72 + variation * 0.28)
+  return mixStops(ORANGE_STOPS, shadeT)
+}
+
 function buildRibbonSurfaces(): RibbonSurface[] {
-  const purpleCount = 20
-  const orangeCount = 20
-  const ribbons: RibbonSurface[] = []
+  return Array.from({ length: WAVE_COUNT }, (_, index) => {
+    const t = index / (WAVE_COUNT - 1)
 
-  for (let index = 0; index < purpleCount; index++) {
-    const t = index / (purpleCount - 1)
-    ribbons.push({
-      color: mixStops(PURPLE_STOPS, t),
-      yBase: 0.12 + t * 0.42,
-      amplitude: 0.09 + (index % 4) * 0.022,
-      frequency: 0.72 + (index % 5) * 0.09,
-      phase: t * Math.PI * 4.8 + index * 0.42,
-      flow: 0.12 + (index % 4) * 0.018,
-      skew: 0.52 + (index % 6) * 0.06,
-      strandCount: 108,
-      strandSpacing: 0.034,
-      ribbonWidth: 1.05 + (index % 3) * 0.08,
-      opacity: 0.34 + (index % 3) * 0.05,
-      fanPower: 1.35 + (index % 4) * 0.12,
-    })
-  }
-
-  for (let index = 0; index < orangeCount; index++) {
-    const t = index / (orangeCount - 1)
-    ribbons.push({
-      color: mixStops(ORANGE_STOPS, t),
-      yBase: 0.38 + t * 0.52,
-      amplitude: 0.1 + (index % 5) * 0.024,
-      frequency: 0.78 + (index % 6) * 0.1,
-      phase: t * Math.PI * 5.4 + index * 0.55 + 1.2,
-      flow: 0.14 + (index % 5) * 0.02,
-      skew: 0.38 + (index % 5) * 0.07,
-      strandCount: 108,
-      strandSpacing: 0.034,
-      ribbonWidth: 1.08 + (index % 4) * 0.09,
-      opacity: 0.36 + (index % 3) * 0.04,
-      fanPower: 1.25 + (index % 3) * 0.1,
-    })
-  }
-
-  return ribbons
+    return {
+      color: ribbonShade(index),
+      yBase: 0.08 + t * 0.86,
+      amplitude: 0.08 + (index % 5) * 0.018,
+      frequency: 0.68 + (index % 7) * 0.08,
+      phase: t * Math.PI * 6.2 + index * 0.31,
+      flow: 0.1 + (index % 5) * 0.015,
+      skew: 0.38 + (index % 6) * 0.06,
+      strandCount: 136,
+      strandSpacing: 0.022,
+      ribbonWidth: 0.95 + (index % 4) * 0.07,
+      opacity: 0.24 + (index % 5) * 0.028,
+      fanPower: 1.26 + (index % 5) * 0.09,
+    }
+  })
 }
 
 const RIBBON_SURFACES = buildRibbonSurfaces()
@@ -190,8 +180,8 @@ function drawRibbonSurface(
 
     ctx.beginPath()
     ctx.strokeStyle = ribbon.color
-    ctx.globalAlpha = Math.max(0.14, strandOpacity)
-    ctx.lineWidth = 0.28
+    ctx.globalAlpha = Math.max(0.1, strandOpacity)
+    ctx.lineWidth = 0.22
 
     for (let i = 0; i < geometry.length; i++) {
       const p = geometry[i]
