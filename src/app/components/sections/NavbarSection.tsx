@@ -45,7 +45,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = () => {
 
         <Link
           href="#request-demo"
-          className="order-3 ml-auto inline-flex h-7 shrink-0 items-center justify-center rounded-full bg-[#FF7F00] px-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-semibold leading-[1] tracking-[0.02rem] text-white transition-colors duration-200 hover:bg-[#E67300] md:px-2 lg:w-30 lg:px-2.5 lg:text-[0.625rem]"
+          className="order-3 ml-auto inline-flex shrink-0 items-center justify-center rounded-full bg-[#FF7F00] px-3.5 py-1.5 text-[0.8125rem] font-semibold leading-4 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)] md:px-4 lg:px-5"
         >
           Request demo
         </Link>

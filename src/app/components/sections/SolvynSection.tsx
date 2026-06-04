@@ -54,28 +54,27 @@ const SolvynSection: React.FC<SolvynSectionProps> = () => {
   return (
     <section id="solvyn" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto w-full max-w-7xl">
-        <div className="flex items-start justify-between">
-          <div>
-            <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
-              THE SOLVYN ARCHITECTURE
-            </p>
-            <h2 className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[1.5rem] font-bold leading-[1.2] tracking-[-0.03rem] text-[#1C1B1B] sm:text-[1.9rem] lg:text-[2.35rem] lg:leading-[1.16] lg:tracking-[-0.05rem]">
+        <div>
+          <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
+            THE SOLVYN ARCHITECTURE
+          </p>
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+            <h2 className="min-w-0 [font-family:var(--font-ibm-plex-sans)] text-[1.5rem] font-bold leading-[1.2] tracking-[-0.03rem] text-[#1C1B1B] sm:text-[1.9rem] lg:text-[2.35rem] lg:leading-[1.16] lg:tracking-[-0.05rem]">
               From Field Data To Actionable Intelligence
             </h2>
+            <Link
+              href="#"
+              className="group inline-flex h-[34px] shrink-0 items-center justify-center gap-2 rounded-full border border-[#FF7F0030] bg-[#FF7F0012] px-5 [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00] transition-all duration-200 hover:border-[#FF7F00] hover:bg-[#FF7F00] hover:text-white"
+            >
+              <span>Explore Solvyn</span>
+              <span aria-hidden="true" className="inline-flex items-center justify-center transition-transform duration-200 group-hover:translate-x-1">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 7H11.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                  <path d="M7.5 3L11.5 7L7.5 11" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            </Link>
           </div>
-
-          <Link
-            href="#"
-            className="group mt-2 inline-flex h-[40px] min-w-[168px] items-center justify-center gap-2 rounded-[10px] border border-[#FF7F0030] bg-[#FF7F0012] px-6 [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00] shadow-[0px_8px_10px_0px_#FE7E064D] transition-all duration-200 hover:-translate-y-[1px] hover:border-[#FF7F00] hover:bg-[#FF7F00] hover:text-white hover:shadow-[0px_10px_14px_0px_#FE7E0660]"
-          >
-            <span>Explore Solvyn</span>
-            <span aria-hidden="true" className="inline-flex items-center justify-center transition-transform duration-200 group-hover:translate-x-1">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.5 7H11.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                <path d="M7.5 3L11.5 7L7.5 11" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-          </Link>
         </div>
 
         <div className="mt-6 grid grid-cols-5 gap-3">

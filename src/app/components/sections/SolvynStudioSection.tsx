@@ -36,11 +36,7 @@ const SolvynStudioSection: React.FC<SolvynStudioSectionProps> = () => {
             </span>
           </h2>
 
-          <div className="mt-4 inline-flex h-[30px] items-center justify-center rounded-[8px] border border-[#FF7F0030] bg-[#FF7F0012] px-2 text-center [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00]">
-            {'</>'} No-code · Low-code Dashboard Builder
-          </div>
-
-          <p className="mt-6 [font-family:var(--font-ibm-plex-sans)] text-[1.5rem] font-semibold leading-[1.2] tracking-[-0.03rem] text-[#1C1B1B] sm:text-[1.9rem] lg:text-[2.05rem]">
+          <p className="mt-6 [font-family:var(--font-ibm-plex-sans)] text-[1.25rem] font-semibold leading-[1.2] tracking-[-0.03rem] text-[#1C1B1B] sm:text-[1.5rem] lg:text-[1.65rem]">
             Build powerful dashboards without writing a single line of <span className="text-[#FF7F00]">code.</span>
           </p>
 
@@ -51,16 +47,9 @@ const SolvynStudioSection: React.FC<SolvynStudioSectionProps> = () => {
           <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
             <Link
               href="#"
-              className="inline-flex items-center justify-center rounded-full px-6 py-2 text-sm font-bold leading-6 tracking-[0rem] text-white transition-opacity duration-200 hover:opacity-90 [font-family:var(--font-ibm-plex-sans)]"
-              style={{ background: 'linear-gradient(103.51deg, #A14000 0%, #FF7F00 100%)' }}
+              className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
             >
               Explore Solvyn Studio
-            </Link>
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-full bg-[#EAE7E7] px-8 py-2 text-sm font-medium leading-6 tracking-[0rem] text-slate-800 transition-opacity duration-200 hover:opacity-90 [font-family:var(--font-ibm-plex-sans)]"
-            >
-              Get in Touch
             </Link>
           </div>
         </div>
