@@ -2,6 +2,7 @@
 
 import type { Metadata, Viewport } from 'next'
 import { IBM_Plex_Sans, Space_Grotesk } from 'next/font/google'
+import NavbarSection from '@/app/components/sections/NavbarSection'
 import { siteMetadata, siteViewport } from '@/data/site.data'
 import './globals.css'
 
@@ -38,6 +39,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground">
+        <NavbarSection />
         {children}
       </body>
     </html>
