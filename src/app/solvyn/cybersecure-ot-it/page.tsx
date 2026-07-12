@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import SitePage from '@/app/components/pages/SitePage'
+import CybersecureHeroSection from '@/app/components/sections/CybersecureHeroSection'
+import CybersecureMattersSection from '@/app/components/sections/CybersecureMattersSection'
+import FooterSection from '@/app/components/sections/FooterSection'
 import { solvynPages } from '@/app/data/pages.data'
 
 export const metadata: Metadata = {
@@ -8,5 +10,11 @@ export const metadata: Metadata = {
 }
 
 export default function CybersecureOtItPage(): React.JSX.Element {
-  return <SitePage {...solvynPages['cybersecure-ot-it']} />
+  return (
+    <div className="flex min-h-[calc(100vh-3rem)] flex-col bg-[#FFFFFF]">
+      <CybersecureHeroSection />
+      <CybersecureMattersSection />
+      <FooterSection />
+    </div>
+  )
 }

@@ -11,11 +11,17 @@ export const solvynPages = {
     description:
       'From field data capture to AI-powered optimization — a unified platform for SCADA, EMS, digital twin, and secure OT/IT operations.',
   },
-  scada: {
-    eyebrow: 'Solvyn X',
-    title: 'SCADA',
+  'solvyn-x': {
+    eyebrow: 'Solvyn X — Unified Industrial Automation & Data Integration (Layer 01)',
+    title: 'Connect Every Asset. Orchestrate Every Interface.',
     description:
-      'Unify grid and plant data into one operational picture. Real-time telemetry and visibility across every asset and protocol.',
+      'The integration fabric that unifies every field device, OEM system, grid interface, cloud platform, and enterprise application into one secure, protocol-aware operational backbone.',
+  },
+  scada: {
+    eyebrow: 'SCADA FOR ENERGY',
+    title: 'Beyond Visibility. Into Operational Intelligence.',
+    description:
+      'Real-time data acquisition and secure control execution for energy systems built on a three-layer Digital Nervous System that perceives, thinks, and guides operators toward confident action.',
   },
   'digital-twin': {
     eyebrow: 'Solvyn X',
@@ -36,10 +42,10 @@ export const solvynPages = {
       'Grid-ready dispatch and automated control. Convert grid requirements into precise plant and asset setpoints.',
   },
   'cybersecure-ot-it': {
-    eyebrow: 'Solvyn X',
-    title: 'Cybersecure OT/IT',
+    eyebrow: 'GRID INTELLIGENCE 5.0',
+    title: 'The trust layer of the Solvyn Stack',
     description:
-      'Secure one-way sync keeps OT isolated from cloud while enabling centralized intelligence at scale.',
+      'Purpose-built OT/IT security for energy control environments — protecting control systems, data flows, and engineering workflows across plant, edge, and cloud environments. Intelligent and connected. Secure and auditable.',
   },
 } as const satisfies Record<string, SitePageContent>
 

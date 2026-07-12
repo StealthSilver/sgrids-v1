@@ -21,17 +21,13 @@ export const navMenus: NavMenu[] = [
     id: 'solvyn',
     label: 'Solvyn',
     href: '/solvyn',
-    groups: [
-      {
-        label: 'Solvyn X',
-        items: [
-          { label: 'SCADA', href: '/solvyn/scada' },
-          { label: 'Digital Twin', href: '/solvyn/digital-twin' },
-          { label: 'AURA', href: '/solvyn/aura' },
-          { label: 'EMS', href: '/solvyn/ems' },
-          { label: 'Cybersecure OT/IT', href: '/solvyn/cybersecure-ot-it' },
-        ],
-      },
+    items: [
+      { label: 'Solvyn X', href: '/solvyn/solvyn-x' },
+      { label: 'SCADA', href: '/solvyn/scada' },
+      { label: 'Digital Twin', href: '/solvyn/digital-twin' },
+      { label: 'AURA', href: '/solvyn/aura' },
+      { label: 'EMS', href: '/solvyn/ems' },
+      { label: 'Cybersecure OT/IT', href: '/solvyn/cybersecure-ot-it' },
     ],
   },
   {
