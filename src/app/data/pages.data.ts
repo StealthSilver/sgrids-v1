@@ -36,10 +36,10 @@ export const solvynPages = {
       'AI-driven optimization that turns forecasts into actionable schedules for hybrid, storage, and grid-interactive plants.',
   },
   ems: {
-    eyebrow: 'Solvyn X',
-    title: 'EMS',
+    eyebrow: 'GRID INTELLIGENCE 5.0',
+    title: 'The control intelligence layer for modern energy systems.',
     description:
-      'Grid-ready dispatch and automated control. Convert grid requirements into precise plant and asset setpoints.',
+      'Centralized intelligence for renewable and hybrid energy systems — aggregating real-time data, running intelligent algorithms, and executing optimal control actions to ensure safe, stable, and efficient plant operations.',
   },
   'cybersecure-ot-it': {
     eyebrow: 'GRID INTELLIGENCE 5.0',
