@@ -34,12 +34,12 @@ const steps = [
   },
 ] as const
 
-const tradeOffs = [
+const tradeOffs: { label: string; value: string; emphasize?: boolean }[] = [
   { label: 'Charging Cost', value: '₹1.20 → ₹1.60/kWh' },
   { label: 'Additional Cost', value: '₹18,400' },
   { label: 'Penalty Avoided', value: '₹1,24,000' },
   { label: 'Net Financial Benefit', value: '₹1,05,600', emphasize: true },
-] as const
+]
 
 const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
   return (
