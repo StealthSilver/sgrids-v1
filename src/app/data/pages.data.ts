@@ -68,9 +68,10 @@ export const proofPages = {
       'Our white papers explore the technical, regulatory, and commercial challenges at the frontier of renewable energy written by the engineers and architects building Solvyn.',
   },
   news: {
-    eyebrow: 'Proof',
-    title: 'News',
-    description: 'Product updates, deployment milestones, and perspectives from the Smart Grid Analytics team.',
+    eyebrow: 'NEWS & EVENTS',
+    title: 'Where SGA shows up. What the world is saying.',
+    description:
+      'From conference floors to press rooms, award stages to global summits — every event, every feature, every moment that tells the Solvyn story.',
   },
 } as const satisfies Record<string, SitePageContent>
 
@@ -94,9 +95,9 @@ export const companyPages = {
       '14+ patents filed and in progress across the Solvyn platform, covering digital twin, dispatch, intelligence, and control.',
   },
   careers: {
-    eyebrow: 'Company',
-    title: 'Careers',
+    eyebrow: 'Careers at Smart Grid Analytics',
+    title: 'Join our team. Build the infrastructure that powers the energy transition.',
     description:
-      'Join engineers with deep grid experience. Help build critical software for the energy transition.',
+      "Real control systems. Real grid intelligence. Real impact. We're a team of engineers and operators building software that actually controls how renewable energy works.",
   },
 } as const satisfies Record<string, SitePageContent>

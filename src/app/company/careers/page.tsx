@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import SitePage from '@/app/components/pages/SitePage'
+import CareersHeroSection from '@/app/components/sections/CareersHeroSection'
+import FooterSection from '@/app/components/sections/FooterSection'
 import { companyPages } from '@/app/data/pages.data'
 
 export const metadata: Metadata = {
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default function CareersPage(): React.JSX.Element {
-  return <SitePage {...companyPages.careers} />
+  return (
+    <div className="flex min-h-[calc(100vh-3rem)] flex-col bg-[#FFFFFF]">
+      <CareersHeroSection />
+      <FooterSection />
+    </div>
+  )
 }
