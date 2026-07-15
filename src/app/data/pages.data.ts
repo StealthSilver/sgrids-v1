@@ -24,16 +24,16 @@ export const solvynPages = {
       'Real-time data acquisition and secure control execution for energy systems built on a three-layer Digital Nervous System that perceives, thinks, and guides operators toward confident action.',
   },
   'digital-twin': {
-    eyebrow: 'Solvyn X',
-    title: 'Digital Twin',
+    eyebrow: 'GRID INTELLIGENCE 5.0',
+    title: 'A live model of your plant Always running Always learning',
     description:
-      'Patented models from module to plant level. Predict performance, detect faults early, and optimize dispatch with confidence.',
+      'Two patented digital twin models Solar and BESS continuously updated against live telemetry, weather, and operational data. The foundation layer for smarter dispatch, market bidding, and predictive intelligence.',
   },
   aura: {
-    eyebrow: 'Solvyn X',
-    title: 'AURA',
+    eyebrow: 'AURA — Decision Intelligence Platform · Layer 04',
+    title: 'The intelligence behind every smart energy decision.',
     description:
-      'AI-driven optimization that turns forecasts into actionable schedules for hybrid, storage, and grid-interactive plants.',
+      'A decision intelligence platform for renewable, hybrid, and BESS operations combining digital twins, AI forecasting, BESS scheduling, DSM intelligence, and market optimization into a single decision engine.',
   },
   ems: {
     eyebrow: 'GRID INTELLIGENCE 5.0',
@@ -56,16 +56,16 @@ export const proofPages = {
     description: 'Case studies, technical papers, and news from deployments across India, the UAE, and global hybrid portfolios.',
   },
   'case-studies': {
-    eyebrow: 'Proof',
-    title: 'Case Studies',
+    eyebrow: 'CASE STUDIES',
+    title: 'Real deployments. Real results. Real grid impact.',
     description:
-      'See how operators and developers use Solvyn across solar, wind, BESS, and hybrid assets — 95+ GW under management.',
+      "From India's first hybrid EMS to grid-scale BESS deployments in the USA every Solvyn deployment is a proof point for what intelligent energy control can deliver.",
   },
   'white-paper': {
-    eyebrow: 'Proof',
-    title: 'White Paper',
+    eyebrow: 'WHITE PAPERS',
+    title: 'Research and technical thinking from the SGA team.',
     description:
-      'Deep dives on digital twin models, EMS dispatch logic, AURA intelligence, and grid-interactive control systems.',
+      'Our white papers explore the technical, regulatory, and commercial challenges at the frontier of renewable energy written by the engineers and architects building Solvyn.',
   },
   news: {
     eyebrow: 'Proof',

@@ -1,5 +1,12 @@
 import type { Metadata } from 'next'
-import SitePage from '@/app/components/pages/SitePage'
+import DigitalTwinCTASection from '@/app/components/sections/DigitalTwinCTASection'
+import DigitalTwinDeliversSection from '@/app/components/sections/DigitalTwinDeliversSection'
+import DigitalTwinEcosystemSection from '@/app/components/sections/DigitalTwinEcosystemSection'
+import DigitalTwinHeroSection from '@/app/components/sections/DigitalTwinHeroSection'
+import DigitalTwinHowItWorksSection from '@/app/components/sections/DigitalTwinHowItWorksSection'
+import DigitalTwinModelsSection from '@/app/components/sections/DigitalTwinModelsSection'
+import DigitalTwinSolarSection from '@/app/components/sections/DigitalTwinSolarSection'
+import FooterSection from '@/app/components/sections/FooterSection'
 import { solvynPages } from '@/app/data/pages.data'
 
 export const metadata: Metadata = {
@@ -8,5 +15,16 @@ export const metadata: Metadata = {
 }
 
 export default function DigitalTwinPage(): React.JSX.Element {
-  return <SitePage {...solvynPages['digital-twin']} />
+  return (
+    <div className="flex min-h-[calc(100vh-3rem)] flex-col bg-[#FFFFFF]">
+      <DigitalTwinHeroSection />
+      <DigitalTwinModelsSection />
+      <DigitalTwinSolarSection />
+      <DigitalTwinHowItWorksSection />
+      <DigitalTwinEcosystemSection />
+      <DigitalTwinDeliversSection />
+      <DigitalTwinCTASection />
+      <FooterSection />
+    </div>
+  )
 }

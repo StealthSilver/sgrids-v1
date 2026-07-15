@@ -1,5 +1,13 @@
 import type { Metadata } from 'next'
-import SitePage from '@/app/components/pages/SitePage'
+import AuraBannerSection from '@/app/components/sections/AuraBannerSection'
+import AuraCTASection from '@/app/components/sections/AuraCTASection'
+import AuraEcosystemSection from '@/app/components/sections/AuraEcosystemSection'
+import AuraExplainableSection from '@/app/components/sections/AuraExplainableSection'
+import AuraHeroSection from '@/app/components/sections/AuraHeroSection'
+import AuraHighlightsSection from '@/app/components/sections/AuraHighlightsSection'
+import AuraHowItWorksSection from '@/app/components/sections/AuraHowItWorksSection'
+import AuraPillarsSection from '@/app/components/sections/AuraPillarsSection'
+import FooterSection from '@/app/components/sections/FooterSection'
 import { solvynPages } from '@/app/data/pages.data'
 
 export const metadata: Metadata = {
@@ -8,5 +16,17 @@ export const metadata: Metadata = {
 }
 
 export default function AuraPage(): React.JSX.Element {
-  return <SitePage {...solvynPages.aura} />
+  return (
+    <div className="flex min-h-[calc(100vh-3rem)] flex-col bg-[#FFFFFF]">
+      <AuraHeroSection />
+      <AuraHighlightsSection />
+      <AuraEcosystemSection />
+      <AuraHowItWorksSection />
+      <AuraPillarsSection />
+      <AuraExplainableSection />
+      <AuraBannerSection />
+      <AuraCTASection />
+      <FooterSection />
+    </div>
+  )
 }
