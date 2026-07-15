@@ -89,10 +89,10 @@ export const companyPages = {
       'We bridge the gap between knowing and doing in renewable energy — EMS and AURA working together to observe, decide, act, and learn.',
   },
   'ip-patents': {
-    eyebrow: 'Company',
-    title: 'IP & Patents',
+    eyebrow: 'IP & Patents',
+    title: 'Our innovation is protected because it is genuinely new.',
     description:
-      '14+ patents filed and in progress across the Solvyn platform, covering digital twin, dispatch, intelligence, and control.',
+      'The Solvyn platform is built on a foundation of proprietary methods, patented models, and first-principles engineering. Our growing IP portfolio protects the innovations that make Solvyn fundamentally different — not just incrementally better.',
   },
   careers: {
     eyebrow: 'Careers at Smart Grid Analytics',
