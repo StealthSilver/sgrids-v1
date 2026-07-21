@@ -1,25 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export interface NewsAwardsSectionProps {}
-
-function LightningIcon() {
-  return (
-    <svg
-      width="28"
-      height="28"
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden="true"
-      className="h-7 w-7 text-[#FF7F00] sm:h-8 sm:w-8"
-    >
-      <path
-        d="M13.5 2.25 5.75 13.5h5.25L9.75 21.75l8.5-12H13.5L13.5 2.25Z"
-        fill="currentColor"
-      />
-    </svg>
-  )
-}
 
 const awards = [
   {
@@ -81,9 +64,14 @@ const NewsAwardsSection: React.FC<NewsAwardsSectionProps> = () => {
               key={award.title}
               className="flex gap-4 rounded-[14px] border border-[#E8C4A0] bg-[#FAFAFA] p-4 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:gap-5 sm:p-5"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[12px] bg-gradient-to-b from-[#FFFFFF] to-[#F0F0F0] shadow-[0px_4px_10px_0px_#00000014] sm:h-16 sm:w-16">
-                <LightningIcon />
-              </div>
+              <Image
+                src="/Images/newsstrike.png"
+                alt=""
+                aria-hidden="true"
+                width={160}
+                height={160}
+                className="h-16 w-16 shrink-0 object-contain sm:h-20 sm:w-20"
+              />
 
               <div className="min-w-0 flex-1">
                 <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] font-medium uppercase leading-[1] tracking-[0.04rem] text-[#7F7F7F] sm:text-[0.75rem]">

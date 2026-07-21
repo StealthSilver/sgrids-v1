@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import DigitalTwinCTASection from '@/app/components/sections/DigitalTwinCTASection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import DigitalTwinDeliversSection from '@/app/components/sections/DigitalTwinDeliversSection'
 import DigitalTwinEcosystemSection from '@/app/components/sections/DigitalTwinEcosystemSection'
 import DigitalTwinHeroSection from '@/app/components/sections/DigitalTwinHeroSection'
@@ -23,7 +23,7 @@ export default function DigitalTwinPage(): React.JSX.Element {
       <DigitalTwinHowItWorksSection />
       <DigitalTwinEcosystemSection />
       <DigitalTwinDeliversSection />
-      <DigitalTwinCTASection />
+      <BookDemoCTASection id="digital-twin-cta" />
       <FooterSection />
     </div>
   )

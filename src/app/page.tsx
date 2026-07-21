@@ -2,7 +2,7 @@ import AboutSection from './components/sections/AboutSection'
 import AssetCoverageSection from './components/sections/AssetCoverageSection'
 import FooterSection from './components/sections/FooterSection'
 import HeroSection from './components/sections/HeroSection'
-import HomeCTASection from './components/sections/HomeCTASection'
+import BookDemoCTASection from './components/sections/BookDemoCTASection'
 import PatentDisplaySection from './components/sections/PatentDisplaySection'
 import ReasonSection from './components/sections/ReasonSection'
 import SolvynSection from './components/sections/SolvynSection'
@@ -21,7 +21,7 @@ export default function Home(): React.JSX.Element {
         <AssetCoverageSection />
         <TeamSection />
         <ReasonSection />
-        <HomeCTASection />
+        <BookDemoCTASection id="home-cta" />
       </div>
       <FooterSection />
     </main>

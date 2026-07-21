@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import FooterSection from '@/app/components/sections/FooterSection'
 import SolvynXCapabilitiesSection from '@/app/components/sections/SolvynXCapabilitiesSection'
-import SolvynXCTASection from '@/app/components/sections/SolvynXCTASection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import SolvynXHeroSection from '@/app/components/sections/SolvynXHeroSection'
 import SolvynXHowItWorksSection from '@/app/components/sections/SolvynXHowItWorksSection'
 import SolvynXProtocolSection from '@/app/components/sections/SolvynXProtocolSection'
@@ -25,7 +25,7 @@ export default function SolvynXPage(): React.JSX.Element {
       <SolvynXTagMappingSection />
       <SolvynXTestbedSection />
       <SolvynXUseCasesSection />
-      <SolvynXCTASection />
+      <BookDemoCTASection id="solvyn-x-cta" />
       <FooterSection />
     </div>
   )

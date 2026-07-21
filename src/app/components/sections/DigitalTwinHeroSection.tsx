@@ -43,7 +43,7 @@ const DigitalTwinHeroSection: React.FC<DigitalTwinHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/dt_img.png"
+              src="/Images/digital-twin-hero.png"
               alt="Digital Twin — live solar and BESS plant models connected by real-time data orbits"
               width={1200}
               height={900}

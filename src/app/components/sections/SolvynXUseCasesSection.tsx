@@ -7,22 +7,22 @@ const useCases = [
   {
     title: 'Renewable Energy Plants',
     description: 'Solar, wind, hydro and storage assets.',
-    image: '/Images/lock.png',
+    image: '/Images/icon-3d-security-lock.png',
   },
   {
     title: 'Industrial Automation Systems',
     description: 'PLCs, DCS, and control system integration.',
-    image: '/Images/light.png',
+    image: '/Images/icon-3d-lightbulb.png',
   },
   {
     title: 'Multi-Site Enterprise Integration',
     description: 'Standardize data across assets and locations.',
-    image: '/Images/light.png',
+    image: '/Images/icon-3d-lightbulb.png',
   },
   {
     title: 'SCADA, EMS & IoT Ecosystems',
     description: 'Seamless connectivity across platforms and protocols.',
-    image: '/Images/card.png',
+    image: '/Images/icon-3d-compliance-card.png',
   },
 ] as const
 

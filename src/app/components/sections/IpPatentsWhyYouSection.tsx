@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export interface IpPatentsWhyYouSectionProps {}
 
@@ -41,29 +42,14 @@ const outcomes = [
 
 function ShieldLockIcon() {
   return (
-    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" className="h-8 w-8 sm:h-9 sm:w-9">
-      <path
-        d="M16 3.5 6.5 7.25v7.1c0 6.35 4.05 11.55 9.5 13.15 5.45-1.6 9.5-6.8 9.5-13.15v-7.1L16 3.5Z"
-        stroke="currentColor"
-        strokeWidth="1.75"
-        strokeLinejoin="round"
-      />
-      <rect
-        x="12.25"
-        y="13.25"
-        width="7.5"
-        height="6.5"
-        rx="1.5"
-        stroke="currentColor"
-        strokeWidth="1.6"
-      />
-      <path
-        d="M14.1 13.25v-1.6a1.9 1.9 0 0 1 3.8 0v1.6"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-      />
-    </svg>
+    <Image
+      src="/Images/careers_shield.png"
+      alt=""
+      aria-hidden="true"
+      width={96}
+      height={96}
+      className="h-16 w-16 object-contain sm:h-20 sm:w-20"
+    />
   )
 }
 
@@ -88,7 +74,7 @@ function ChevronIcon() {
 
 const IpPatentsWhyYouSection: React.FC<IpPatentsWhyYouSectionProps> = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           Why It Matters To You

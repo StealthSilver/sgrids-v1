@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import FooterSection from '@/app/components/sections/FooterSection'
 import WhitePaperCTASection from '@/app/components/sections/WhitePaperCTASection'
-import WhitePaperDemoCTASection from '@/app/components/sections/WhitePaperDemoCTASection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import WhitePaperGridSection from '@/app/components/sections/WhitePaperGridSection'
 import WhitePaperHeroSection from '@/app/components/sections/WhitePaperHeroSection'
 import WhitePaperLatestSection from '@/app/components/sections/WhitePaperLatestSection'
@@ -19,7 +19,7 @@ export default function WhitePaperPage(): React.JSX.Element {
       <WhitePaperLatestSection />
       <WhitePaperGridSection />
       <WhitePaperCTASection />
-      <WhitePaperDemoCTASection />
+      <BookDemoCTASection id="white-paper-demo-cta" />
       <FooterSection />
     </div>
   )

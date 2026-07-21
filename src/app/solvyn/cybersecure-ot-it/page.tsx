@@ -4,6 +4,7 @@ import CybersecureHeroSection from '@/app/components/sections/CybersecureHeroSec
 import CybersecureLayersSection from '@/app/components/sections/CybersecureLayersSection'
 import CybersecureMattersSection from '@/app/components/sections/CybersecureMattersSection'
 import CybersecureZeroTrustSection from '@/app/components/sections/CybersecureZeroTrustSection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import FooterSection from '@/app/components/sections/FooterSection'
 import { solvynPages } from '@/app/data/pages.data'
 
@@ -20,6 +21,7 @@ export default function CybersecureOtItPage(): React.JSX.Element {
       <CybersecureZeroTrustSection />
       <CybersecureLayersSection />
       <CybersecureDeliversSection />
+      <BookDemoCTASection id="cybersecure-cta" />
       <FooterSection />
     </div>
   )

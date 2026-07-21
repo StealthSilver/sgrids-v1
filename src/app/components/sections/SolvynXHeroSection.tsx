@@ -46,7 +46,7 @@ const SolvynXHeroSection: React.FC<SolvynXHeroSectionProps> = () => {
             <div className="mt-6 flex w-full max-w-[22rem] items-stretch rounded-[14px] border border-[#FF7F00] bg-[#FFFFFF] px-4 py-3.5 shadow-[0px_4px_12px_0px_#FF6A001A] sm:max-w-[24rem] sm:px-5 sm:py-4">
               <div className="flex shrink-0 items-center pr-4 sm:pr-5">
                 <Image
-                  src="/Images/mission.png"
+                  src="/Images/hero-mission-emblem.png"
                   alt=""
                   width={56}
                   height={56}
@@ -72,7 +72,7 @@ const SolvynXHeroSection: React.FC<SolvynXHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/solvyn-x.png"
+              src="/Images/solvyn-x-hero.png"
               alt="Solvyn X — unified industrial automation and data integration"
               width={1200}
               height={900}
@@ -93,7 +93,7 @@ const SolvynXHeroSection: React.FC<SolvynXHeroSectionProps> = () => {
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-[#FF7F0026] sm:h-11 sm:w-11">
                   <Image
-                    src="/Images/scada.svg"
+                    src="/Images/hero-scada-badge.svg"
                     alt=""
                     width={18}
                     height={28}

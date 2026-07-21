@@ -8,35 +8,35 @@ const reasons = [
     title: 'Built From First Principles',
     description:
       'Every patent reflects a method we invented not an existing approach we implemented.',
-    image: '/Images/ip1.png',
+    image: '/Images/ip-patents-first-principles.png',
     alt: 'Drafting compass icon representing first-principles engineering',
   },
   {
     title: 'Protected As It Scales',
     description:
       'Our IP estate grows alongside the platform covering new innovations as they reach maturity.',
-    image: '/Images/ip2.png',
+    image: '/Images/ip-patents-protected-at-scale.png',
     alt: 'Shield with checkmark icon representing protected intellectual property',
   },
   {
     title: 'Filed Internationally',
     description:
       'Patent applications cover key markets including India, UAE, Australia, USA, and Europe.',
-    image: '/Images/ip4.png',
+    image: '/Images/ip-patents-filed-internationally.png',
     alt: 'Globe icon representing international patent filings',
   },
   {
     title: 'Validated Externally',
     description:
       'Third-party validated through OPAL-RT, Typhoon HIL, DNV-GL, and ISO 27001.',
-    image: '/Images/ip3.png',
+    image: '/Images/ip-patents-validated-externally.png',
     alt: 'Award badge icon representing external validation',
   },
 ] as const
 
 const IpPatentsMattersSection: React.FC<IpPatentsMattersSectionProps> = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           Why Our IP Matters

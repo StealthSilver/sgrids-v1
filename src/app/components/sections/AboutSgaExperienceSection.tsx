@@ -14,22 +14,22 @@ const certifications = [
 const firsts = [
   {
     title: 'Solar Power Plant Controller',
-    image: '/Images/renewable-energy 1.png',
+    image: '/Images/about-sga-first-green-hydrogen.png',
     alt: 'Solar panel and sun icon',
   },
   {
     title: 'Hybrid Power Plant Controller',
-    image: '/Images/Icons.png',
+    image: '/Images/about-sga-first-solar-controller.png',
     alt: 'Hybrid wind and solar icon',
   },
   {
     title: 'Green Hydrogen Project',
-    image: '/Images/Group.png',
+    image: '/Images/about-sga-first-hybrid-controller.png',
     alt: 'Green hydrogen facility icon',
   },
   {
     title: 'Large Scale BESS EMS',
-    image: '/Images/battery-pack 1.png',
+    image: '/Images/about-sga-first-bess-ems.png',
     alt: 'Battery energy storage pack icon',
   },
 ] as const
@@ -55,7 +55,7 @@ function CertificationSealIcon() {
 
 const AboutSgaExperienceSection: React.FC<AboutSgaExperienceSectionProps> = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 xl:gap-16">
         <div className="min-w-0">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -78,7 +78,7 @@ const AboutSgaExperienceSection: React.FC<AboutSgaExperienceSectionProps> = () =
               {certifications.map((cert) => (
                 <span
                   key={cert}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-[#E8C4A0] bg-[#FFFFFF] px-3 py-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium leading-[1] text-[#1C1B1B] sm:text-[0.8125rem]"
+                  className="inline-flex items-center gap-1.5 rounded-[10px] border border-[#E8C4A0] bg-[#FFFFFF] px-3 py-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium leading-[1] text-[#1C1B1B] sm:text-[0.8125rem]"
                 >
                   <CertificationSealIcon />
                   {cert}
@@ -104,7 +104,7 @@ const AboutSgaExperienceSection: React.FC<AboutSgaExperienceSectionProps> = () =
                   alt={item.alt}
                   width={104}
                   height={104}
-                  className="h-10 w-10 object-contain sm:h-11 sm:w-11"
+                  className="h-12 w-12 object-contain sm:h-14 sm:w-14"
                 />
                 <p className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-medium leading-[1.2] text-[#FF7F00] sm:text-[0.8125rem]">
                   1st in India

@@ -7,31 +7,31 @@ const steps = [
   {
     titleLine1: 'Ingest',
     titleLine2: 'Devices & Systems',
-    image: '/Images/solvyn-w1.png',
+    image: '/Images/solvyn-x-works-ingest.png',
     description: 'PLC/RTU, Sensors,\nMeters, Inverters,\nBMS, PPCs',
   },
   {
     titleLine1: 'Process',
     titleLine2: 'Solvyn X',
-    image: '/Images/solvyn-w2.png',
+    image: '/Images/solvyn-x-works-process.png',
     description: 'Connect, Convert,\nSynchronize',
   },
   {
     titleLine1: 'Cloud & Data',
     titleLine2: 'Databases & Cloud',
-    image: '/Images/solvyn-w3.png',
+    image: '/Images/solvyn-x-works-cloud-data.png',
     description: 'AWS, Azure, GCP,\nOn-Prem',
   },
   {
     titleLine1: 'Control',
     titleLine2: 'EMS + SCADA',
-    image: '/Images/solvyn-w4.png',
+    image: '/Images/solvyn-x-works-control.png',
     description: 'Dispatch, Visibility,\nAlarms, Schedules',
   },
   {
     titleLine1: 'Enterprise',
     titleLine2: 'Business Systems',
-    image: '/Images/solvyn-w5.png',
+    image: '/Images/solvyn-x-works-enterprise.png',
     description: 'CMMS, ERP\nAnalytics, Finance',
   },
 ] as const

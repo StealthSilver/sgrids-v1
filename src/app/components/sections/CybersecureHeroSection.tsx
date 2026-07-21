@@ -11,7 +11,7 @@ const capabilities = [
     highlight: 'Connects',
     line1: 'Assets and',
     line2: 'telemetry',
-    icon: '/Icons/Hero_Icons/Solvyn.svg',
+    icon: '/Icons/Hero_Icons/hero-solvyn-x.svg',
     color: '#518E48',
   },
   {
@@ -19,7 +19,7 @@ const capabilities = [
     highlight: 'Sees',
     line1: 'Grid and',
     line2: 'Plant data',
-    icon: '/Icons/Hero_Icons/scada.svg',
+    icon: '/Icons/Hero_Icons/hero-scada.svg',
     color: '#0B2B98',
   },
   {
@@ -27,7 +27,7 @@ const capabilities = [
     highlight: 'Predicts',
     line1: 'Performance',
     line2: 'and faults',
-    icon: '/Icons/Hero_Icons/digital-twin%201.svg',
+    icon: '/Icons/Hero_Icons/hero-digital-twin.svg',
     color: '#FEC801',
   },
   {
@@ -35,7 +35,7 @@ const capabilities = [
     highlight: 'Decides',
     line1: 'AI driven',
     line2: 'optimization',
-    icon: '/Icons/Hero_Icons/artificial-intelligence.svg',
+    icon: '/Icons/Hero_Icons/hero-aura-ai.svg',
     color: '#8A70F8',
   },
   {
@@ -43,7 +43,7 @@ const capabilities = [
     highlight: 'Executes',
     line1: 'Automated',
     line2: 'Control',
-    icon: '/Icons/Hero_Icons/ems.svg',
+    icon: '/Icons/Hero_Icons/hero-ems.svg',
     color: '#FF6A00',
   },
 ] as const
@@ -86,7 +86,7 @@ const CybersecureHeroSection: React.FC<CybersecureHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/security.png"
+              src="/Images/cybersecure-hero-shield.png"
               alt="Cybersecure OT/IT — trust layer protecting plant, edge, and cloud"
               width={1200}
               height={900}
@@ -128,11 +128,12 @@ const CybersecureHeroSection: React.FC<CybersecureHeroSectionProps> = () => {
           </div>
           <div className="relative mt-[0.25rem] h-[2.75rem] pb-[1.5rem]">
             <Image
-              src="/Icons/horizontal_line.svg"
+              src="/Icons/hero-gradient-divider.svg"
               alt="Gradient divider"
               width={873}
               height={3}
-              className="absolute left-0 top-1/2 h-[0.1875rem] w-full -translate-y-1/2"
+              className="absolute left-0 top-1/2 w-full -translate-y-1/2"
+              style={{ width: '100%', height: 'auto' }}
             />
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-[1rem] border border-[#E9D8CE] bg-[#F6F3F1] px-[1.75rem] py-[0.6rem] shadow-[0px_4px_4px_0px_#FF6A0026] backdrop-blur-[30px] [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-semibold leading-[1] tracking-[0rem] text-[#111111] sm:text-[0.6875rem]">
               Cybersecure OT/IT Securing Every Layer

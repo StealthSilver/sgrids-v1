@@ -71,7 +71,7 @@ const SolvynXTestbedSection: React.FC<SolvynXTestbedSectionProps> = () => {
                     {step}
                   </p>
                   <Image
-                    src="/Icons/eye.svg"
+                    src="/Icons/view-eye.svg"
                     alt=""
                     width={22}
                     height={14}

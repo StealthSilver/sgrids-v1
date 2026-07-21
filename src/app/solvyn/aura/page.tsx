@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import AuraBannerSection from '@/app/components/sections/AuraBannerSection'
-import AuraCTASection from '@/app/components/sections/AuraCTASection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import AuraEcosystemSection from '@/app/components/sections/AuraEcosystemSection'
 import AuraExplainableSection from '@/app/components/sections/AuraExplainableSection'
 import AuraHeroSection from '@/app/components/sections/AuraHeroSection'
@@ -25,7 +25,7 @@ export default function AuraPage(): React.JSX.Element {
       <AuraPillarsSection />
       <AuraExplainableSection />
       <AuraBannerSection />
-      <AuraCTASection />
+      <BookDemoCTASection id="aura-cta" />
       <FooterSection />
     </div>
   )

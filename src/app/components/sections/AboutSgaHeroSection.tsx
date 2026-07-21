@@ -10,79 +10,43 @@ const stats = [
     value: '95+',
     unit: 'GW',
     label: 'capacity under management',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-5 w-5">
-        <path
-          d="M13 2 4.5 13.5H11L10 22l9.5-12.5H13L13 2Z"
-          stroke="currentColor"
-          strokeWidth="1.75"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: '/Images/about-1-icon.png',
   },
   {
     value: '500+',
     unit: 'GW',
     label: 'Projects delivered globally',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-5 w-5">
-        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.75" />
-        <path d="M3 12h18M12 3c2.5 2.8 3.8 5.8 3.8 9s-1.3 6.2-3.8 9c-2.5-2.8-3.8-5.8-3.8-9S9.5 5.8 12 3Z" stroke="currentColor" strokeWidth="1.75" />
-      </svg>
-    ),
+    icon: '/Images/about-2-icon.png',
   },
   {
     value: '5.5+',
     unit: 'GWh',
     label: 'BESS storage capacity',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-5 w-5">
-        <rect x="3.5" y="7" width="15" height="10" rx="2" stroke="currentColor" strokeWidth="1.75" />
-        <path d="M18.5 10.5h2v3h-2M8 12h2.5M12.5 12H15" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
-      </svg>
-    ),
+    icon: '/Images/about-3-icon.png',
   },
   {
     value: '21+',
     unit: null,
     label: 'Country grid codes',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-5 w-5">
-        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.75" />
-        <circle cx="12" cy="12" r="2" fill="currentColor" />
-        <path d="M12 3.5v2.5M12 18v2.5M3.5 12h2.5M18 12h2.5M6.2 6.2l1.8 1.8M16 16l1.8 1.8M17.8 6.2 16 8M8 16l-1.8 1.8" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
-      </svg>
-    ),
+    icon: '/Images/about-4-icon.png',
   },
   {
     value: '99.5%+',
     unit: null,
     label: 'Platform availability',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-5 w-5">
-        <path d="M4 18V6M4 18h16" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
-        <path d="M7 14v4M11 10v8M15 12v6M19 8v10" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
-      </svg>
-    ),
+    icon: '/Images/about-5-icon.png',
   },
   {
     value: '14+',
     unit: null,
     label: 'Patents filed',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-5 w-5">
-        <path d="M7 3.5h7l3.5 3.5V20.5H7V3.5Z" stroke="currentColor" strokeWidth="1.75" strokeLinejoin="round" />
-        <path d="M14 3.5V7h3.5M9.5 12h5M9.5 15.5h5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M12 8.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
+    icon: '/Images/about-6-icon.png',
   },
 ] as const
 
 const AboutSgaHeroSection: React.FC<AboutSgaHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pb-16 lg:pt-10">
+    <section className="px-4 pb-8 pt-6 sm:px-6 sm:pb-8 sm:pt-8 lg:px-8 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-start gap-8 lg:grid-cols-[1fr_0.95fr] lg:gap-10 xl:gap-12">
           <div className="flex flex-col items-start">
@@ -114,7 +78,7 @@ const AboutSgaHeroSection: React.FC<AboutSgaHeroSectionProps> = () => {
             <div className="mt-6 flex w-full max-w-[22rem] items-stretch rounded-[14px] border border-[#FF7F00] bg-[#FFFFFF] px-4 py-3.5 shadow-[0px_4px_12px_0px_#FF6A001A] sm:max-w-[24rem] sm:px-5 sm:py-4">
               <div className="flex shrink-0 items-center pr-4 sm:pr-5">
                 <Image
-                  src="/Images/mission.png"
+                  src="/Images/hero-mission-emblem.png"
                   alt=""
                   width={56}
                   height={56}
@@ -139,10 +103,16 @@ const AboutSgaHeroSection: React.FC<AboutSgaHeroSectionProps> = () => {
           </div>
 
           <div className="relative mx-auto w-full max-w-[28rem] self-stretch lg:max-w-none">
-            <div
-              className="h-full min-h-[16rem] w-full rounded-[1.25rem] bg-[#E8E8E8] sm:min-h-[20rem] sm:rounded-[1.5rem] lg:min-h-full"
-              aria-hidden="true"
-            />
+            <div className="relative h-full min-h-[16rem] w-full overflow-hidden rounded-[1.25rem] sm:min-h-[20rem] sm:rounded-[1.5rem] lg:min-h-full">
+              <Image
+                src="/Images/about_section-Hero.png"
+                alt="Smart Grid Analytics founding team"
+                fill
+                sizes="(max-width: 1024px) 100vw, 48vw"
+                className="object-cover object-top"
+                priority
+              />
+            </div>
           </div>
         </div>
 
@@ -155,8 +125,14 @@ const AboutSgaHeroSection: React.FC<AboutSgaHeroSectionProps> = () => {
                   index > 0 ? 'xl:border-l xl:border-[#E0D8D0]' : ''
                 }`}
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-[#FF7F0026] text-[#FF7F00] sm:h-11 sm:w-11">
-                  {stat.icon}
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[0.625rem] bg-[#FF7F0026] sm:h-12 sm:w-12">
+                  <Image
+                    src={stat.icon}
+                    alt=""
+                    width={96}
+                    height={96}
+                    className="h-7 w-7 object-contain sm:h-8 sm:w-8"
+                  />
                 </div>
                 <div className="min-w-0">
                   <h3 className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-semibold leading-[1.15] tracking-[-0.01rem] text-[#1C1B1B] sm:text-[0.9375rem]">

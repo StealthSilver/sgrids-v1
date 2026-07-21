@@ -8,7 +8,7 @@ import { navContact, navMenus, navRequestDemo, type NavMenu } from '@/app/data/n
 const CLOSE_DELAY_MS = 140
 
 const triggerBaseClasses =
-  'inline-flex items-center gap-0.5 border-b-2 border-transparent bg-transparent pb-px [font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] font-medium leading-none tracking-[0.02em] capitalize transition-[color,border-color] duration-200 lg:text-xs lg:tracking-[0.03em]'
+  'inline-flex items-center gap-0.5 border-b-2 border-transparent bg-transparent pb-px [font-family:var(--font-ibm-plex-sans)] text-xs font-medium leading-none tracking-[0.02em] capitalize transition-[color,border-color] duration-200 lg:text-[0.8125rem] lg:tracking-[0.03em]'
 
 const triggerInactiveClasses = 'text-[#808080] hover:border-[#FF7F00] hover:text-[#FF7F00]'
 const triggerActiveClasses = 'border-[#FF7F00] text-[#FF7F00]'
@@ -109,7 +109,7 @@ const NavbarHeader: React.FC = () => {
       id="navbar"
       className="sticky top-0 z-50 overflow-visible border-b border-transparent bg-white/95 py-1 backdrop-blur-sm supports-[backdrop-filter]:bg-white/90"
     >
-      <div className="relative z-10 mx-auto flex h-10 w-full max-w-7xl items-center gap-3 px-1.5 sm:px-2 lg:gap-5 lg:px-2.5 xl:px-3">
+      <div className="relative z-10 mx-auto flex h-11 w-full max-w-7xl items-center gap-3 px-1.5 sm:px-2 lg:gap-5 lg:px-2.5 xl:px-3">
         <Link href="/" aria-label="Smart Grid Analytics Home" className="shrink-0">
           <Image
             src="/Logos/sgrids_main.svg"
@@ -117,7 +117,7 @@ const NavbarHeader: React.FC = () => {
             width={184}
             height={42}
             priority
-            className="h-3.5 w-auto md:h-5 lg:h-6"
+            className="h-4 w-auto md:h-6 lg:h-7"
           />
         </Link>
 
@@ -164,7 +164,7 @@ const NavbarHeader: React.FC = () => {
 
         <Link
           href={navRequestDemo.href}
-          className="ml-auto inline-flex shrink-0 items-center justify-center rounded-full bg-[#FF7F00] px-3.5 py-1.5 text-[0.8125rem] font-semibold leading-none tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)] md:px-4"
+          className="ml-auto inline-flex shrink-0 items-center justify-center rounded-full bg-[#FF7F00] px-4 py-2 text-sm font-semibold leading-none tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)] md:px-5"
         >
           {navRequestDemo.label}
         </Link>

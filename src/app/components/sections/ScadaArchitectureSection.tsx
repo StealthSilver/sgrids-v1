@@ -7,7 +7,7 @@ const layers = [
   {
     label: 'PERCEPTION',
     title: 'Sense',
-    image: '/Images/scada_arc1.png',
+    image: '/Images/scada-architecture-sense.png',
     description:
       'Acquires and validates raw field telemetry, estimates plant state, and handles missing-data interpolation so operators always see a clean, complete picture.',
     bullets: ['Telemetry Acquisition', 'State Estimation', 'Data Validation'],
@@ -15,7 +15,7 @@ const layers = [
   {
     label: 'COGNITION',
     title: 'Think',
-    image: '/Images/scada_arc2.png',
+    image: '/Images/scada-architecture-think.png',
     description:
       'Recognises patterns, detects anomalies, and correlates events across assets and subsystems — grouping root causes before surfacing anything to the operator.',
     bullets: ['Pattern Recognition', 'Anomaly Detection', 'Root-Cause Grouping'],
@@ -23,7 +23,7 @@ const layers = [
   {
     label: 'PRESCRIPTION',
     title: 'Guide',
-    image: '/Images/scada_arc3.png',
+    image: '/Images/scada-architecture-guide.png',
     description:
       'Translates intelligence into operator guidance — root-cause insights, safety-checked recommendations, step-by-step recovery workflows, and escalation paths.',
     bullets: ['Guided Recovery', 'Safety Gate Validation', 'Escalation Triggers'],

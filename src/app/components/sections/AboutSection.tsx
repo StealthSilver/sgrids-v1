@@ -20,24 +20,24 @@ const timelineSteps: TimelineStep[] = [
     label: 'SEE',
     title: 'Real-time plant visibility',
     description: 'SCADA and telemetry unify every asset into one operational picture.',
-    image: '/Images/about_1.svg',
-    icon: '/Icons/about_eye.svg',
+    image: '/Images/home-about-see-visibility.svg',
+    icon: '/Icons/about-see-eye.svg',
   },
   {
     id: 'execute',
     label: 'EXECUTE',
     title: 'Grid-ready EMS dispatch',
     description: 'Converts grid requirements into plant asset setpoints.',
-    image: '/Images/about_2.svg',
-    icon: '/Icons/about_gear.svg',
+    image: '/Images/home-about-execute-dispatch.svg',
+    icon: '/Icons/about-execute-gear.svg',
   },
   {
     id: 'decide',
     label: 'DECIDE',
     title: 'AURA intelligence',
     description: 'Turns forecasts into schedules for hybrid and storage plants.',
-    image: '/Images/about_3.svg',
-    icon: '/Icons/about_ai.svg',
+    image: '/Images/home-about-decide-aura.svg',
+    icon: '/Icons/about-decide-ai.svg',
   },
 ]
 
@@ -69,7 +69,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
   const activeStepData = timelineSteps.find((step) => step.id === activeStep) ?? timelineSteps[0]
 
   return (
-    <section id="about" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="about" className="px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto grid w-full max-w-[1180px] grid-cols-[1fr_0.95fr_1fr] items-center gap-6">
         <div className="max-w-[480px]">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -85,7 +85,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
 
           <div className="mt-5 rounded-[10px] border-[0.95px] border-[#E4E4E7] bg-white px-3.5 py-3">
             <div className="flex items-center gap-2.5">
-              <Image src="/Icons/tick.svg" alt="" width={16} height={16} aria-hidden="true" className="h-4 w-4 shrink-0" />
+              <Image src="/Icons/check-tick.svg" alt="" width={16} height={16} aria-hidden="true" className="h-4 w-4 shrink-0" />
               <p className="[font-family:var(--font-ibm-plex-sans)] text-[11px] font-normal leading-[1.4] text-[#4E4E4E]">
                 EMS and AURA work together continuously observe, decide, act, learn. The platform gets sharper every cycle.
               </p>

@@ -21,7 +21,7 @@ const AuraBannerSection: React.FC<AuraBannerSectionProps> = () => {
 
             <div className="relative mx-auto w-full max-w-[20rem] lg:mx-0 lg:max-w-none lg:justify-self-end">
               <Image
-                src="/Images/aura-blow.png"
+                src="/Images/aura-banner-exploded-view.png"
                 alt="AURA decision intelligence dashboard with charts and analytics"
                 width={640}
                 height={480}

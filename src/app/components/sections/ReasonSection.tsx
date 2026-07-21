@@ -9,10 +9,10 @@ interface ReasonCard {
 }
 
 const reasonCards: ReasonCard[] = [
-  { title: 'Truly Agnostic', image: '/Images/reason_1.svg' },
-  { title: 'Compliance Built in', image: '/Images/reason_2.svg' },
-  { title: '14+ Patents', image: '/Images/reason_3.svg' },
-  { title: 'Proven at Scale', image: '/Images/reason_4.svg' },
+  { title: 'Truly Agnostic', image: '/Images/home-reason-truly-agnostic.svg' },
+  { title: 'Compliance Built in', image: '/Images/home-reason-compliance-built-in.svg' },
+  { title: '14+ Patents', image: '/Images/home-reason-14-patents.svg' },
+  { title: 'Proven at Scale', image: '/Images/home-reason-proven-at-scale.svg' },
 ]
 
 const reasonCardHoverDescription =
@@ -20,7 +20,7 @@ const reasonCardHoverDescription =
 
 const ReasonSection: React.FC<ReasonSectionProps> = () => {
   return (
-    <section id="reason" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="reason" className="px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           WHY SMART GRID ANALYTICS
@@ -44,7 +44,7 @@ const ReasonSection: React.FC<ReasonSectionProps> = () => {
               className="group flex h-[300px] flex-col overflow-hidden rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] p-[10px] shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038]"
             >
               <div className="flex h-[215px] items-center justify-start origin-top-left transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:scale-[0.76]">
-                <Image src={card.image} alt={card.title} width={300} height={215} className="h-full w-full max-w-[270px] object-contain object-left" />
+                <Image src={card.image} alt={card.title} width={300} height={215} className="h-auto w-auto max-h-full max-w-[270px] object-contain object-left" />
               </div>
 
               <div className="relative mt-0.5 min-h-[54px]">

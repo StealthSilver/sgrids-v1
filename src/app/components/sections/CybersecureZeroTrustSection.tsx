@@ -4,11 +4,11 @@ import Image from 'next/image'
 export interface CybersecureZeroTrustSectionProps {}
 
 const steps = [
-  { label: 'Authenticate', image: '/Images/cs-1.png' },
-  { label: 'Authorize', image: '/Images/cs-2.png' },
-  { label: 'Validate', image: '/Images/cs-3.png' },
-  { label: 'Monitor', image: '/Images/cs-4.png' },
-  { label: 'Audit', image: '/Images/cs-5.png' },
+  { label: 'Authenticate', image: '/Images/cybersecure-zero-trust-authenticate.png' },
+  { label: 'Authorize', image: '/Images/cybersecure-zero-trust-authorize.png' },
+  { label: 'Validate', image: '/Images/cybersecure-zero-trust-validate.png' },
+  { label: 'Monitor', image: '/Images/cybersecure-zero-trust-monitor.png' },
+  { label: 'Audit', image: '/Images/cybersecure-zero-trust-audit.png' },
 ] as const
 
 const CybersecureZeroTrustSection: React.FC<CybersecureZeroTrustSectionProps> = () => {

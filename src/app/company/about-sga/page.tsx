@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import AboutSgaCTASection from '@/app/components/sections/AboutSgaCTASection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import AboutSgaExperienceSection from '@/app/components/sections/AboutSgaExperienceSection'
 import AboutSgaHeroSection from '@/app/components/sections/AboutSgaHeroSection'
 import AboutSgaLegacySection from '@/app/components/sections/AboutSgaLegacySection'
@@ -23,7 +23,7 @@ export default function AboutSgaPage(): React.JSX.Element {
       <AboutSgaOperateSection />
       <AboutSgaMissionSection />
       <AboutSgaTeamSection />
-      <AboutSgaCTASection />
+      <BookDemoCTASection />
       <FooterSection />
     </div>
   )

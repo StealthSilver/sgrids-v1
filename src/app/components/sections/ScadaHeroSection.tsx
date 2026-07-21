@@ -50,7 +50,7 @@ const ScadaHeroSection: React.FC<ScadaHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[36rem] lg:max-w-none">
             <Image
-              src="/Images/scada_1.png"
+              src="/Images/scada-hero-dashboard.png"
               alt="Solvyn X SCADA plant overview dashboard on a laptop"
               width={1200}
               height={900}
@@ -71,7 +71,7 @@ const ScadaHeroSection: React.FC<ScadaHeroSectionProps> = () => {
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-[#FF7F0026] sm:h-11 sm:w-11">
                   <Image
-                    src="/Images/scada.svg"
+                    src="/Images/hero-scada-badge.svg"
                     alt=""
                     width={18}
                     height={28}

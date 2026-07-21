@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import CaseStudiesCTASection from '@/app/components/sections/CaseStudiesCTASection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import CaseStudiesFeaturedSection from '@/app/components/sections/CaseStudiesFeaturedSection'
 import CaseStudiesGridSection from '@/app/components/sections/CaseStudiesGridSection'
 import CaseStudiesHeroSection from '@/app/components/sections/CaseStudiesHeroSection'
@@ -19,7 +19,7 @@ export default function CaseStudiesPage(): React.JSX.Element {
       <CaseStudiesFeaturedSection />
       <CaseStudiesGridSection />
       <CaseStudiesProofSection />
-      <CaseStudiesCTASection />
+      <BookDemoCTASection id="case-studies-cta" />
       <FooterSection />
     </div>
   )

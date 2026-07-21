@@ -4,12 +4,17 @@ import Link from 'next/link'
 
 export interface SolvynSectionProps {}
 
+interface SolvynTag {
+  label: string
+  href: string
+}
+
 interface SolvynCard {
   titleLine1: string
   titleLine2: string
   subtitle: string
   image: string
-  tags: string[]
+  tags: SolvynTag[]
 }
 
 const solvynCards: SolvynCard[] = [
@@ -17,42 +22,48 @@ const solvynCards: SolvynCard[] = [
     titleLine1: 'Field',
     titleLine2: 'data capture',
     subtitle: 'Every asset. Every protocol',
-    image: '/Images/solvyn_1.svg',
-    tags: ['Solvyn X'],
+    image: '/Images/home-architecture-field-data-capture.svg',
+    tags: [{ label: 'Solvyn X', href: '/solvyn/solvyn-x' }],
   },
   {
     titleLine1: 'Autonomous',
     titleLine2: 'on-prem Control',
     subtitle: 'Every asset. Every protocol',
-    image: '/Images/solvyn_2.svg',
-    tags: ['EMS', 'SCADA'],
+    image: '/Images/home-architecture-onprem-control.svg',
+    tags: [
+      { label: 'EMS', href: '/solvyn/ems' },
+      { label: 'SCADA', href: '/solvyn/scada' },
+    ],
   },
   {
     titleLine1: 'Secure',
     titleLine2: 'one way sync',
     subtitle: 'OT isolated from cloud',
-    image: '/Images/solvyn_3.svg',
-    tags: ['Cybersecure OT/IT'],
+    image: '/Images/home-architecture-one-way-sync.svg',
+    tags: [{ label: 'Cybersecure OT/IT', href: '/solvyn/cybersecure-ot-it' }],
   },
   {
     titleLine1: 'Centralized',
     titleLine2: 'cloud platform',
     subtitle: 'Infinite Scalability',
-    image: '/Images/solvyn_4.svg',
-    tags: ['Digital Twin', 'Studio'],
+    image: '/Images/home-architecture-cloud-platform.svg',
+    tags: [
+      { label: 'Digital Twin', href: '/solvyn/digital-twin' },
+      { label: 'Studio', href: '/#solvyn-studio' },
+    ],
   },
   {
     titleLine1: 'AI-powered',
     titleLine2: 'optimization',
     subtitle: 'Actionable Intelligence',
-    image: '/Images/solvyn_5.svg',
-    tags: ['AURA'],
+    image: '/Images/home-architecture-ai-optimization.svg',
+    tags: [{ label: 'AURA', href: '/solvyn/aura' }],
   },
 ]
 
 const SolvynSection: React.FC<SolvynSectionProps> = () => {
   return (
-    <section id="solvyn" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="solvyn" className="px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto w-full max-w-7xl">
         <div>
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -63,7 +74,7 @@ const SolvynSection: React.FC<SolvynSectionProps> = () => {
               From Field Data To Actionable Intelligence
             </h2>
             <Link
-              href="#"
+              href="/solvyn/solvyn-x"
               className="group inline-flex h-[34px] shrink-0 items-center justify-center gap-2 rounded-full border border-[#FF7F0030] bg-[#FF7F0012] px-5 [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00] transition-all duration-200 hover:border-[#FF7F00] hover:bg-[#FF7F00] hover:text-white"
             >
               <span>Explore Solvyn</span>
@@ -96,13 +107,13 @@ const SolvynSection: React.FC<SolvynSectionProps> = () => {
 
               <div className={`mt-auto grid gap-2 pt-2 ${card.tags.length === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                 {card.tags.map((tag) => (
-                  <button
-                    key={tag}
-                    type="button"
-                    className="h-[30px] rounded-[8px] border border-[#FF7F0030] bg-[#FF7F0012] px-2 text-center [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00] transition-colors duration-200 hover:border-[#FF7F00] hover:bg-[#FF7F00] hover:text-white"
+                  <Link
+                    key={tag.label}
+                    href={tag.href}
+                    className="inline-flex h-[30px] items-center justify-center rounded-[8px] border border-[#FF7F0030] bg-[#FF7F0012] px-2 text-center [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00] transition-colors duration-200 hover:border-[#FF7F00] hover:bg-[#FF7F00] hover:text-white"
                   >
-                    {tag}
-                  </button>
+                    {tag.label}
+                  </Link>
                 ))}
               </div>
             </article>

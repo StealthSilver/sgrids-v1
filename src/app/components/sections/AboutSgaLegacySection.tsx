@@ -27,7 +27,7 @@ const cards = [
 
 const AboutSgaLegacySection: React.FC<AboutSgaLegacySectionProps> = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           20 Years Of Legacy

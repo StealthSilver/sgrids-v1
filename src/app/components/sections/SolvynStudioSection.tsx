@@ -13,16 +13,16 @@ const sharedStudioHoverDescription =
   'Connects to any inverter, BMS, PPC, or OEM - no vendor lock-in, no proprietary hardware.'
 
 const studioFeatureCards: StudioFeatureCard[] = [
-  { title: 'Drag-and-drop builder', image: '/Images/studio_1.svg' },
-  { title: 'Real-time visualisation', image: '/Images/studio_2.svg' },
-  { title: 'Role-based access', image: '/Images/studio_3.svg' },
-  { title: 'Formula Builder', image: '/Images/studio_4.svg' },
-  { title: 'Rule Engine', image: '/Images/studio_5.svg' },
+  { title: 'Drag-and-drop builder', image: '/Images/studio-drag-drop-builder.svg' },
+  { title: 'Real-time visualisation', image: '/Images/studio-real-time-visualisation.svg' },
+  { title: 'Role-based access', image: '/Images/studio-role-based-access.svg' },
+  { title: 'Formula Builder', image: '/Images/studio-formula-builder.svg' },
+  { title: 'Rule Engine', image: '/Images/studio-rule-engine.svg' },
 ]
 
 const SolvynStudioSection: React.FC<SolvynStudioSectionProps> = () => {
   return (
-    <section id="solvyn-studio" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="solvyn-studio" className="px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
       <div className="mx-auto grid w-full max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.35fr] lg:gap-10">
         <div className="max-w-[510px]">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -46,7 +46,7 @@ const SolvynStudioSection: React.FC<SolvynStudioSectionProps> = () => {
 
           <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
             <Link
-              href="#"
+              href="/solvyn/solvyn-x"
               className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
             >
               Explore Solvyn Studio

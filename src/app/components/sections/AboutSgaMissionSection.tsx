@@ -22,22 +22,25 @@ const bottomValues = [
   {
     title: 'Open And Agnostic',
     description: 'No vendor lock-in. Works with any inverter BMS, PPC, or OEM.',
+    image: '/Images/g3844.png',
   },
   {
     title: 'Security By Architecture',
     description: 'IEC 62443-aligned, auditable, and operationally resilient from day one.',
+    image: '/Images/about-us-2.png',
   },
   {
     title: 'Partners, Not Vendors',
     description: 'Long-term partners to asset owners, EPCs, and grid operators.',
+    image: '/Images/about-us-3.png',
   },
 ] as const
 
-const lightningSrc = '/Images/Solar 2.png'
+const strikeSrc = '/Images/about-strike.png'
 
 const AboutSgaMissionSection: React.FC<AboutSgaMissionSectionProps> = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           Mission &amp; Values
@@ -53,11 +56,11 @@ const AboutSgaMissionSection: React.FC<AboutSgaMissionSectionProps> = () => {
               className="flex flex-col rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-5 py-5 shadow-[0px_4px_12px_0px_#FF6A0014] transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-5 sm:py-6"
             >
               <Image
-                src={lightningSrc}
+                src={strikeSrc}
                 alt=""
-                width={64}
-                height={64}
-                className="h-12 w-12 object-contain drop-shadow-[0px_6px_10px_#FF6A0033] sm:h-14 sm:w-14"
+                width={96}
+                height={96}
+                className="h-14 w-14 object-contain sm:h-16 sm:w-16"
               />
               <h3 className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[1.0625rem] font-semibold leading-[1.25] tracking-[-0.01rem] text-[#1C1B1B] sm:text-[1.125rem]">
                 {value.title}
@@ -76,11 +79,11 @@ const AboutSgaMissionSection: React.FC<AboutSgaMissionSectionProps> = () => {
               className="flex gap-3.5 rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-5 py-5 shadow-[0px_4px_12px_0px_#FF6A0014] transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:gap-4 sm:px-5 sm:py-6"
             >
               <Image
-                src={lightningSrc}
+                src={value.image}
                 alt=""
-                width={48}
-                height={48}
-                className="mt-0.5 h-10 w-10 shrink-0 object-contain drop-shadow-[0px_4px_8px_#FF6A0033] sm:h-11 sm:w-11"
+                width={64}
+                height={64}
+                className="mt-0.5 h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
               />
               <div className="min-w-0">
                 <h3 className="[font-family:var(--font-ibm-plex-sans)] text-[1.0625rem] font-semibold leading-[1.25] tracking-[-0.01rem] text-[#1C1B1B] sm:text-[1.125rem]">

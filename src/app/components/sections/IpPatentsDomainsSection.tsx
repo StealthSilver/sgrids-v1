@@ -8,35 +8,35 @@ const domains = [
     title: 'Digital Twin Technology',
     description:
       'Patented live models for solar and BESS assets forecasting, degradation, and dispatch intelligence.',
-    image: '/Images/ips.png',
+    image: '/Images/ip-patents-domain-digital-twin.png',
     alt: 'Abstract network of cubes representing digital twin technology',
   },
   {
     title: 'EMS & Dispatch Logic',
     description:
       'Proprietary energy optimization methods combining EMS orchestration with intelligent bidding.',
-    image: '/Images/ipt.png',
-    alt: 'Layered solar, wind, and storage illustration representing EMS and dispatch logic',
+    image: '/Images/ip-patents-domain-grid-control.png',
+    alt: 'Shield network graphic representing EMS and dispatch logic',
   },
   {
     title: 'Market Intelligence',
     description:
       'Patented deviation settlement and DSM compliance methods linking plant operations to energy markets.',
-    image: '/Images/ipu.png',
-    alt: 'Circular bar visualization representing market intelligence',
+    image: '/Images/ip-patents-domain-ems-dispatch.png',
+    alt: 'Layered solar, wind, and storage illustration representing market intelligence',
   },
   {
     title: 'Grid Control',
     description:
       'Novel methods for virtual power quality metering, distributed BESS planning, and AI-based dispatch.',
-    image: '/Images/spu.png',
-    alt: 'Shield network graphic representing grid control intellectual property',
+    image: '/Images/ip-patents-domain-market-intelligence.png',
+    alt: 'Circular bar visualization representing grid control intellectual property',
   },
 ] as const
 
 const IpPatentsDomainsSection: React.FC<IpPatentsDomainsSectionProps> = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           Four Domains

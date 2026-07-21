@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export interface NewsCultureSectionProps {}
@@ -7,26 +8,32 @@ const moments = [
   {
     label: 'Solvyn Launch · REI 2025 · Oct 2025',
     background: '#B45309',
+    image: '/Images/news-culture-solvyn-launch-rei-2025.png',
   },
   {
     label: 'WFES · Abu Dhabi · Jan 2026',
     background: '#0B1B3A',
+    image: '/Images/news-culture-wfes-abu-dhabi-2026.png',
   },
   {
     label: 'E-World · Feb 2026',
     background: '#166534',
+    image: '/Images/news-culture-e-world-2026.png',
   },
   {
     label: 'GUVNL Winner · Jan 2026',
     background: '#4338CA',
+    image: '/Images/news-culture-guvnl-winner-2026.png',
   },
   {
     label: 'Forbes India · May 2026',
     background: '#9F1239',
+    image: '/Images/news-culture-forbes-india-2026.png',
   },
   {
-    label: 'Intersolar NA · Feb 2026',
+    label: 'Bharat Electricity Summit 2026',
     background: '#A16207',
+    image: '/Images/news-culture-bharat-electricity-summit-2026.png',
   },
 ] as const
 
@@ -57,10 +64,19 @@ const NewsCultureSection: React.FC<NewsCultureSectionProps> = () => {
           {moments.map((moment) => (
             <article
               key={moment.label}
-              className="relative flex aspect-[16/10] items-end overflow-hidden rounded-[14px] p-4 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-transform duration-200 hover:-translate-y-1 sm:p-5"
+              className="flex flex-col overflow-hidden rounded-[14px] p-1.5 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-transform duration-200 hover:-translate-y-1"
               style={{ backgroundColor: moment.background }}
             >
-              <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-semibold leading-[1.35] text-white sm:text-[0.875rem]">
+              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[10px]">
+                <Image
+                  src={moment.image}
+                  alt={moment.label}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <p className="px-2.5 py-2.5 [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-semibold leading-[1.35] text-white sm:text-[0.875rem]">
                 {moment.label}
               </p>
             </article>

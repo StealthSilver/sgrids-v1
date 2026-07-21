@@ -18,7 +18,7 @@ const featured = {
   description:
     'A full week in Abu Dhabi meeting industry leaders, policymakers, and clients. Solvyn demonstrated live — welcoming government delegations from four countries and deep conversations on the energy transition across the MENA region.',
   href: '#featured-news',
-  image: '/Images/news-wfes.png',
+  image: '/Images/news-featured-wfes.png',
   imageAlt: 'Solvyn booth at World Future Energy Summit 2026 in Abu Dhabi',
 }
 

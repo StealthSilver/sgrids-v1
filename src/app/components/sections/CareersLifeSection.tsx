@@ -6,25 +6,25 @@ export interface CareersLifeSectionProps {}
 const lifeCards = [
   {
     title: 'Bengaluru HQ',
-    image: '/Images/career1.png',
+    image: '/Images/careers-life-bengaluru-hq.png',
     alt: 'Bengaluru HQ — office building with hardware testing lab',
     description: 'With Typhoon HIL lab and hardware testing environment.',
   },
   {
     title: 'Learning & Growth',
-    image: '/Images/career2.png',
+    image: '/Images/careers-life-learning-growth.png',
     alt: 'Learning & Growth — certifications and industry learning',
     description: 'Conferences, certifications, and industry events.',
   },
   {
     title: 'International Exposure',
-    image: '/Images/career3.png',
+    image: '/Images/careers-life-international.png',
     alt: 'International Exposure — global deployments',
     description: 'Deployments across India, UAE, and global markets.',
   },
   {
     title: 'Competitive Compensation',
-    image: '/Images/career4.png',
+    image: '/Images/careers-life-compensation.png',
     alt: 'Competitive Compensation — salary and early-stage equity',
     description: 'Market-rate salary with early-stage equity participation.',
   },
@@ -32,7 +32,7 @@ const lifeCards = [
 
 const CareersLifeSection: React.FC<CareersLifeSectionProps> = () => {
   return (
-    <section id="life-at-sga" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="life-at-sga" className="px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           Life at SGA
@@ -56,13 +56,13 @@ const CareersLifeSection: React.FC<CareersLifeSectionProps> = () => {
                 {card.title}
               </h3>
 
-              <div className="mt-5 flex min-h-[8rem] flex-1 items-center justify-center sm:mt-6 sm:min-h-[9rem]">
+              <div className="mt-5 flex min-h-[8rem] flex-1 items-center justify-start sm:mt-6 sm:min-h-[9rem]">
                 <Image
                   src={card.image}
                   alt={card.alt}
                   width={220}
                   height={220}
-                  className="h-auto max-h-[9rem] w-full object-contain"
+                  className="h-auto max-h-[9rem] w-full object-contain object-left"
                 />
               </div>
 

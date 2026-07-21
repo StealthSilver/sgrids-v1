@@ -25,7 +25,7 @@ const WhitePaperCTASection: React.FC<WhitePaperCTASectionProps> = () => {
             <div className="flex flex-col gap-5 px-5 py-7 sm:flex-row sm:items-center sm:gap-6 sm:px-7 sm:py-8 lg:gap-7 lg:px-8 lg:py-9">
               <div className="relative mx-auto w-full max-w-[10rem] shrink-0 sm:mx-0 sm:max-w-[11rem] lg:max-w-[12.5rem]">
                 <Image
-                  src="/Images/white-paper-call.png"
+                  src="/Images/white-paper-cta.png"
                   alt="White paper notifications"
                   width={400}
                   height={400}

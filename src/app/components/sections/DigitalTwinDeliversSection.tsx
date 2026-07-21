@@ -9,7 +9,7 @@ const delivers = [
     subtitle: 'Generation forecasting',
     description:
       'Module to plant level the most granular solar forecast available in any EMS platform.',
-    image: '/Images/dt%2011.png',
+    image: '/Images/digital-twin-delivers-forecasting.png',
     alt: 'Minute generation forecasting — analytics monitor with orbital data ring',
   },
   {
@@ -17,7 +17,7 @@ const delivers = [
     subtitle: 'BESS dispatch',
     description:
       'Every dispatch decision validated against degradation limits before EMS executes it.',
-    image: '/Images/dt%2012.png',
+    image: '/Images/digital-twin-delivers-warranty-safe.png',
     alt: 'Warranty-safe BESS dispatch — protected server stack with shield',
   },
   {
@@ -25,7 +25,7 @@ const delivers = [
     subtitle: 'Closed-loop operation',
     description:
       'Continuously updated against live telemetry not a static model, a living one.',
-    image: '/Images/dt%2014.png',
+    image: '/Images/digital-twin-delivers-real-time.png',
     alt: 'Real-time closed-loop operation — continuous cycle ring',
   },
   {
@@ -33,7 +33,7 @@ const delivers = [
     subtitle: 'Dual-model architecture',
     description:
       'Two separate patents Solar DT (P1) and BESS DT (P4) purpose-built for each asset class.',
-    image: '/Images/dt%2013.png',
+    image: '/Images/digital-twin-delivers-patented.png',
     alt: 'Patented dual-model architecture — layered twin model stack',
   },
 ] as const

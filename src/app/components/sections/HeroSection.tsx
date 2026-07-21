@@ -7,11 +7,11 @@ export interface HeroSectionProps {}
 
 const HeroSection: React.FC<HeroSectionProps> = () => {
   const capabilities = [
-    { name: 'Solvyn X', highlight: 'Connects', line1: 'Assets and', line2: 'telemetry', icon: '/Icons/Hero_Icons/Solvyn.svg', color: '#518E48' },
-    { name: 'SCADA', highlight: 'Sees', line1: 'Grid and', line2: 'Plant data', icon: '/Icons/Hero_Icons/scada.svg', color: '#0B2B98' },
-    { name: 'Digital Twin', highlight: 'Predicts', line1: 'Performance', line2: 'and faults', icon: '/Icons/Hero_Icons/digital-twin%201.svg', color: '#FEC801' },
-    { name: 'AURA', highlight: 'Decides', line1: 'AI driven', line2: 'optimization', icon: '/Icons/Hero_Icons/artificial-intelligence.svg', color: '#8A70F8' },
-    { name: 'EMS', highlight: 'Executes', line1: 'Automated', line2: 'Control', icon: '/Icons/Hero_Icons/ems.svg', color: '#FF6A00' },
+    { name: 'Solvyn X', highlight: 'Connects', line1: 'Assets and', line2: 'telemetry', icon: '/Icons/Hero_Icons/hero-solvyn-x.svg', color: '#518E48' },
+    { name: 'SCADA', highlight: 'Sees', line1: 'Grid and', line2: 'Plant data', icon: '/Icons/Hero_Icons/hero-scada.svg', color: '#0B2B98' },
+    { name: 'Digital Twin', highlight: 'Predicts', line1: 'Performance', line2: 'and faults', icon: '/Icons/Hero_Icons/hero-digital-twin.svg', color: '#FEC801' },
+    { name: 'AURA', highlight: 'Decides', line1: 'AI driven', line2: 'optimization', icon: '/Icons/Hero_Icons/hero-aura-ai.svg', color: '#8A70F8' },
+    { name: 'EMS', highlight: 'Executes', line1: 'Automated', line2: 'Control', icon: '/Icons/Hero_Icons/hero-ems.svg', color: '#FF6A00' },
   ]
 
   const deploymentCards = [
@@ -21,7 +21,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
       icon: (
         <div className="flex h-[3rem] w-[3rem] shrink-0 self-start items-start justify-center">
           <Image
-            src="/Images/india.png"
+            src="/Images/flag-india.png"
             alt="India flag"
             width={40}
             height={40}
@@ -36,7 +36,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
       icon: (
         <div className="flex h-[3rem] w-[3rem] shrink-0 self-start items-start justify-center">
           <Image
-            src="/Images/uae.png"
+            src="/Images/flag-uae.png"
             alt="UAE flag"
             width={40}
             height={40}
@@ -84,7 +84,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
 
           <div className="mt-8">
             <Link
-              href="#solvyn"
+              href="/solvyn/solvyn-x"
               className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
             >
               Explore solvyn
@@ -95,7 +95,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
 
         <div className="relative mx-auto mt-4 w-full max-w-5xl overflow-visible lg:mt-12 lg:w-full lg:max-w-[74rem]">
           <Image
-            src="/Images/hero_model.png"
+            src="/Images/home-hero-command-center.png"
             alt="Solvyn hybrid energy command center model"
             width={1100}
             height={1200}
@@ -178,11 +178,12 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             </div>
             <div className="relative mt-[0.25rem] h-[2.75rem] pb-[1.5rem]">
               <Image
-                src="/Icons/horizontal_line.svg"
+                src="/Icons/hero-gradient-divider.svg"
                 alt="Gradient divider"
                 width={873}
                 height={3}
-                className="absolute left-0 top-1/2 h-[0.1875rem] w-full -translate-y-1/2"
+                className="absolute left-0 top-1/2 w-full -translate-y-1/2"
+                style={{ width: '100%', height: 'auto' }}
               />
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-[1rem] border border-[#E9D8CE] bg-[#F6F3F1] px-[1.75rem] py-[0.6rem] shadow-[0px_4px_4px_0px_#FF6A0026] backdrop-blur-[30px] [font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-semibold leading-[1] tracking-[0rem] text-[#111111] sm:text-[0.6875rem]">
                 Cybersecure OT/IT Securing Every Layer

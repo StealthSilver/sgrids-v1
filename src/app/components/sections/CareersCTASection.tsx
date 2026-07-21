@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { navContact } from '@/app/data/nav.data'
 
 export interface CareersCTASectionProps {}
 
@@ -19,7 +18,7 @@ function CalendarIcon() {
 
 const CareersCTASection: React.FC<CareersCTASectionProps> = () => {
   return (
-    <section id="careers-cta" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="careers-cta" className="px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="flex flex-col items-center gap-8 rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] px-5 py-8 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] sm:px-8 sm:py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-10 lg:py-12">
           <div className="min-w-0 flex-1 text-left">
@@ -33,7 +32,7 @@ const CareersCTASection: React.FC<CareersCTASectionProps> = () => {
               Send Us Your CV And Tell Us What You&apos;d Like To Work On.
             </p>
 
-            <div className="mt-7 flex flex-wrap items-center gap-3 sm:gap-4">
+            <div className="mt-7">
               <Link
                 href="mailto:info@sgrids.com?subject=CV%20Submission%20-%20Careers"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FF7F00] px-5 py-2 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)] sm:px-6"
@@ -41,23 +40,16 @@ const CareersCTASection: React.FC<CareersCTASectionProps> = () => {
                 <CalendarIcon />
                 Send Your CV
               </Link>
-
-              <Link
-                href={navContact.href}
-                className="inline-flex items-center justify-center rounded-full border border-[#FF7F00] bg-[#FFFFFF] px-5 py-2 text-sm font-semibold leading-5 tracking-[0rem] text-[#1C1B1B] transition-colors duration-200 hover:bg-[#FF7F00] hover:text-white [font-family:var(--font-ibm-plex-sans)] sm:px-6"
-              >
-                Get in Touch
-              </Link>
             </div>
           </div>
 
           <div className="flex shrink-0 justify-center lg:justify-end">
             <Image
-              src="/Images/conversation 1.png"
-              alt=""
-              width={296}
-              height={296}
-              className="h-auto w-[140px] object-contain sm:w-[170px] lg:w-[200px]"
+              src="/Images/Footer.png"
+              alt="Renewable energy infrastructure illustration"
+              width={514}
+              height={343}
+              className="h-auto w-[240px] object-contain sm:w-[280px] lg:w-[300px]"
             />
           </div>
         </div>

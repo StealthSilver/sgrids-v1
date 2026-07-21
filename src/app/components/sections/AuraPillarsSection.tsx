@@ -6,7 +6,7 @@ export interface AuraPillarsSectionProps {}
 const pillars = [
   {
     title: 'Forecasting Intelligence',
-    image: '/Images/aura-s.png',
+    image: '/Images/aura-pillar-forecasting.png',
     alt: 'Forecasting Intelligence — solar panel, wind turbine, and weather',
     bullets: [
       'Solar Forecasting',
@@ -19,7 +19,7 @@ const pillars = [
   },
   {
     title: 'Digital Twin Intelligence',
-    image: '/Images/aura-t.png',
+    image: '/Images/aura-pillar-digital-twin.png',
     alt: 'Digital Twin Intelligence — analytics dashboard with charts',
     bullets: [
       'Solar Digital Twin',
@@ -32,7 +32,7 @@ const pillars = [
   },
   {
     title: 'Scheduling & Optimisation',
-    image: '/Images/aura-u.png',
+    image: '/Images/aura-pillar-scheduling.png',
     alt: 'Scheduling & Optimisation — calendar and battery storage',
     bullets: [
       'Day-Ahead (DAM) Scheduling',
@@ -45,7 +45,7 @@ const pillars = [
   },
   {
     title: 'Revenue & Risk Intelligence',
-    image: '/Images/aura-v.png',
+    image: '/Images/aura-pillar-revenue-risk.png',
     alt: 'Revenue & Risk Intelligence — shield, growth chart, and coins',
     bullets: [
       'DSM Penalty Reduction',

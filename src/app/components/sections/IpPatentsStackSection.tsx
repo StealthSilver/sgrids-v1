@@ -5,7 +5,7 @@ export interface IpPatentsStackSectionProps {}
 
 const IpPatentsStackSection: React.FC<IpPatentsStackSectionProps> = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           Four Domains
@@ -22,7 +22,7 @@ const IpPatentsStackSection: React.FC<IpPatentsStackSectionProps> = () => {
 
         <div className="mt-8 sm:mt-10 lg:mt-12">
           <Image
-            src="/Images/ipbig.png"
+            src="/Images/ip-patents-stack-diagram.png"
             alt="Where IP protection sits in the Solvyn stack — EMS Optimisation, DSM & Deviation Settlement, BESS and Solar Digital Twin, Virtual Power Quality Meter, and Data Foundation"
             width={1600}
             height={1200}

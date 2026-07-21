@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export interface NewsHeroSectionProps {}
 
@@ -24,10 +25,16 @@ const NewsHeroSection: React.FC<NewsHeroSectionProps> = () => {
             </p>
           </div>
 
-          <div
-            aria-hidden="true"
-            className="relative mx-auto aspect-[4/3] w-full max-w-[28rem] rounded-[28px] bg-[#E8E8E8] sm:rounded-[32px] lg:max-w-none lg:rounded-[36px]"
-          />
+          <div className="relative mx-auto aspect-[4/3] w-full max-w-[28rem] overflow-hidden rounded-[28px] sm:rounded-[32px] lg:max-w-none lg:rounded-[36px]">
+            <Image
+              src="/Images/newsHero_section.png"
+              alt="SGA receiving the IESA EMS Player of the Year award"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>

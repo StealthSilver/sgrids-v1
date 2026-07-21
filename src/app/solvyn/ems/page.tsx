@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import EmsCTASection from '@/app/components/sections/EmsCTASection'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import EmsGlanceSection from '@/app/components/sections/EmsGlanceSection'
 import EmsHeroSection from '@/app/components/sections/EmsHeroSection'
 import EmsOperatingModesSection from '@/app/components/sections/EmsOperatingModesSection'
@@ -19,7 +19,7 @@ export default function EmsPage(): React.JSX.Element {
       <EmsOperatingModesSection />
       <EmsGlanceSection />
       <EmsSupportedAssetsSection />
-      <EmsCTASection />
+      <BookDemoCTASection id="ems-cta" />
       <FooterSection />
     </div>
   )

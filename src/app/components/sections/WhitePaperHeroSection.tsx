@@ -37,7 +37,7 @@ const WhitePaperHeroSection: React.FC<WhitePaperHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/papar-1.png"
+              src="/Images/white-paper-hero.png"
               alt="White papers — SGA team research documents"
               width={1200}
               height={900}

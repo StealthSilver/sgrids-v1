@@ -7,7 +7,7 @@ export interface IpPatentsHeroSectionProps {}
 
 const IpPatentsHeroSection: React.FC<IpPatentsHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pb-16 lg:pt-10">
+    <section className="px-4 pb-8 pt-6 sm:px-6 sm:pb-8 sm:pt-8 lg:px-8 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_0.95fr] lg:gap-10 xl:gap-12">
           <div className="flex flex-col items-start">
@@ -39,7 +39,7 @@ const IpPatentsHeroSection: React.FC<IpPatentsHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/ip.png"
+              src="/Images/ip-patents-hero-certificate.png"
               alt="Solvyn IP portfolio — United States patent certificate with digital twin architecture and EMS dispatch logic filings"
               width={1200}
               height={900}
