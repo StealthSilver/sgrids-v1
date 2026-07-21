@@ -19,7 +19,7 @@ function CalendarIcon() {
 
 const NewsCTASection: React.FC<NewsCTASectionProps> = () => {
   return (
-    <section id="news-stay-updated" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="news-stay-updated" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="flex flex-col gap-6 rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] px-5 py-8 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] sm:px-8 sm:py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-10 lg:py-10">
           <div className="min-w-0 flex-1">

@@ -28,7 +28,7 @@ const NewsFeaturedSection: React.FC<NewsFeaturedSectionProps> = () => {
   const isVisible = activeFilter === 'All' || activeFilter === featured.filter
 
   return (
-    <section id="featured-news" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="featured-news" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="flex flex-wrap gap-2 sm:gap-2.5">
           {filters.map((filter) => {
