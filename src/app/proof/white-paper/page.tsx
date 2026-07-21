@@ -19,7 +19,11 @@ export default function WhitePaperPage(): React.JSX.Element {
       <WhitePaperLatestSection />
       <WhitePaperGridSection />
       <WhitePaperCTASection />
-      <BookDemoCTASection id="white-paper-demo-cta" />
+      <BookDemoCTASection
+        id="white-paper-demo-cta"
+        title="Want to discuss the research?"
+        description="Talk To The SGA Team About The Technical Challenges Covered In Our White Papers And How Solvyn Addresses Them In Live Deployments."
+      />
       <FooterSection />
     </div>
   )

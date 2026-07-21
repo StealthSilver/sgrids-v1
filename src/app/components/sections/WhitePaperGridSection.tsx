@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 export interface WhitePaperGridSectionProps {}
 
@@ -17,6 +18,7 @@ type WhitePaper = {
   description: string
   topics?: string
   categories: Filter[]
+  image: string
 }
 
 const whitePapers: WhitePaper[] = [
@@ -29,6 +31,7 @@ const whitePapers: WhitePaper[] = [
     description:
       "A Deep-Dive Into Alberta's Transmission Connected Data Centre (TCDC) Framework Covering Technical Requirements, Engineering Implications, Design Considerations, And How Solvyn Enables Compliance And Optimal Performance.",
     categories: ['All', 'Data Centers', 'Grid Compliance'],
+    image: '/Images/WP_002.png',
   },
   {
     id: 'WP-004',
@@ -39,6 +42,7 @@ const whitePapers: WhitePaper[] = [
     description:
       "An Analysis Of Systematic, Technological, And Procedural Causes Of India's Grid Connection Delays For Renewable Assets With Recommendations For Compliance Reform, Drawing On AEMO's Pre-Approved Model Framework As A Benchmark.",
     categories: ['All', 'India Grid', 'Grid Compliance'],
+    image: '/Images/WP_004.png',
   },
   {
     id: 'WP-03',
@@ -50,6 +54,7 @@ const whitePapers: WhitePaper[] = [
       "How Solvyn's EMS Architecture Proven In Renewable Microgrid Deployments Can Be Adapted To Transform Data Center Backup Infrastructure Into Intelligent, Grid-Interactive, Future-Ready Energy Systems.",
     topics: 'Smart EMS, Data Centres, Microgrid, BESS',
     categories: ['All', 'Data Centers', 'BESS & Storage'],
+    image: '/Images/WP_003.png',
   },
   {
     id: 'WP-05',
@@ -61,6 +66,7 @@ const whitePapers: WhitePaper[] = [
       "A Technical Paper On Forecast-Driven Renewable Energy Dispatch Covering BESS Scheduling Methodology, DSM Compliance, And The Operational Framework Behind Solvyn's 96-Block DAM/RTM Scheduling Intelligence.",
     topics: 'FDRE, DSM',
     categories: ['All', 'BESS & Storage', 'India Grid'],
+    image: '/Images/WP_005.png',
   },
 ]
 
@@ -109,7 +115,14 @@ const WhitePaperGridSection: React.FC<WhitePaperGridSectionProps> = () => {
               className="flex flex-col overflow-hidden rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] p-4 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:p-5"
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[10px] bg-[#E8E8E8] sm:aspect-[16/9]">
-                <div className="absolute left-4 top-4 sm:left-5 sm:top-5">
+                <Image
+                  src={paper.image}
+                  alt={paper.title}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="absolute left-4 top-4 rounded-[8px] bg-white/90 px-2.5 py-1.5 sm:left-5 sm:top-5">
                   <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-semibold leading-[1.2] text-[#1C1B1B] sm:text-[0.875rem]">
                     {paper.id}
                   </p>

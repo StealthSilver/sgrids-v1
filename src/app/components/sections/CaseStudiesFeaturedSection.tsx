@@ -15,7 +15,7 @@ const tags = ['Hybrid EMS', 'AURA', 'Solvyn SCADA', 'CEA Compliant', 'India'] as
 
 const CaseStudiesFeaturedSection: React.FC<CaseStudiesFeaturedSectionProps> = () => {
   return (
-    <section id="featured-deployment" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="featured-deployment" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 xl:gap-12">
           <div className="min-w-0">

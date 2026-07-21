@@ -19,7 +19,12 @@ export default function CaseStudiesPage(): React.JSX.Element {
       <CaseStudiesFeaturedSection />
       <CaseStudiesGridSection />
       <CaseStudiesProofSection />
-      <BookDemoCTASection id="case-studies-cta" />
+      <BookDemoCTASection
+        id="case-studies-cta"
+        className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10"
+        title="Want to see what Solvyn can do for your plant?"
+        description="Talk To Our Team About Your Asset Type, Grid Environment, And Commercial Objectives. We'll Show You The Most Relevant Deployments."
+      />
       <FooterSection />
     </div>
   )

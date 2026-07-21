@@ -5,6 +5,9 @@ import { navRequestDemo } from '@/app/data/nav.data'
 
 export interface BookDemoCTASectionProps {
   id?: string
+  title?: string
+  description?: React.ReactNode
+  className?: string
 }
 
 function CalendarIcon() {
@@ -19,19 +22,29 @@ function CalendarIcon() {
   )
 }
 
-const BookDemoCTASection: React.FC<BookDemoCTASectionProps> = ({ id = 'book-demo-cta' }) => {
+const BookDemoCTASection: React.FC<BookDemoCTASectionProps> = ({
+  id = 'book-demo-cta',
+  title = 'The renewable century is already here.',
+  description,
+  className = 'px-4 py-10 sm:px-6 lg:px-8 lg:py-16',
+}) => {
   return (
-    <section id={id} className="px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+    <section id={id} className={className}>
       <div className="mx-auto w-full max-w-7xl">
         <div className="flex flex-col gap-6 rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] px-5 py-8 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] sm:px-8 sm:py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-10 lg:py-10">
           <div className="min-w-0 flex-1">
             <h2 className="max-w-[38rem] [font-family:var(--font-ibm-plex-sans)] text-[1.5rem] font-bold leading-[1.2] tracking-[-0.03rem] text-[#1C1B1B] sm:text-[1.9rem] lg:text-[2.35rem] lg:leading-[1.16] lg:tracking-[-0.05rem]">
-              The renewable century is already here.
+              {title}
             </h2>
 
             <p className="mt-4 max-w-[36rem] [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#1C1B1B] sm:text-base">
-              If You&apos;re Building, Operating, Or Investing In Renewable Energy
-              <br className="hidden sm:block" /> Infrastructure — Let&apos;s Talk About How Solvyn Can Help.
+              {description ?? (
+                <>
+                  If You&apos;re Building, Operating, Or Investing In Renewable Energy
+                  <br className="hidden sm:block" /> Infrastructure — Let&apos;s Talk About How
+                  Solvyn Can Help.
+                </>
+              )}
             </p>
 
             <div className="mt-7">
