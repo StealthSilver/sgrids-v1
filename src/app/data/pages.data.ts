@@ -6,13 +6,13 @@ export interface SitePageContent {
 
 export const solvynPages = {
   index: {
-    eyebrow: 'Solvyn',
-    title: 'The Solvyn Architecture',
+    eyebrow: 'ENERGY PERFORMANCE',
+    title: 'The Operating System for Intelligent Energy Control',
     description:
-      'From field data capture to AI-powered optimization — a unified platform for SCADA, EMS, digital twin, and secure OT/IT operations.',
+      'An end-to-end operating system that connects, coordinates, and optimizes every layer of your energy portfolio, from field assets to market decisions.',
   },
   'solvyn-x': {
-    eyebrow: 'Solvyn X — Unified Industrial Automation & Data Integration (Layer 01)',
+    eyebrow: 'Solvyn X, Unified Industrial Automation & Data Integration (Layer 01)',
     title: 'Connect Every Asset. Orchestrate Every Interface.',
     description:
       'The integration fabric that unifies every field device, OEM system, grid interface, cloud platform, and enterprise application into one secure, protocol-aware operational backbone.',
@@ -30,7 +30,7 @@ export const solvynPages = {
       'Two patented digital twin models Solar and BESS continuously updated against live telemetry, weather, and operational data. The foundation layer for smarter dispatch, market bidding, and predictive intelligence.',
   },
   aura: {
-    eyebrow: 'AURA — Decision Intelligence Platform · Layer 04',
+    eyebrow: 'AURA, Decision Intelligence Platform · Layer 04',
     title: 'The intelligence behind every smart energy decision.',
     description:
       'A decision intelligence platform for renewable, hybrid, and BESS operations combining digital twins, AI forecasting, BESS scheduling, DSM intelligence, and market optimization into a single decision engine.',
@@ -39,13 +39,13 @@ export const solvynPages = {
     eyebrow: 'GRID INTELLIGENCE 5.0',
     title: 'The control intelligence layer for modern energy systems.',
     description:
-      'Centralized intelligence for renewable and hybrid energy systems — aggregating real-time data, running intelligent algorithms, and executing optimal control actions to ensure safe, stable, and efficient plant operations.',
+      'Centralized intelligence for renewable and hybrid energy systems, aggregating real-time data, running intelligent algorithms, and executing optimal control actions to ensure safe, stable, and efficient plant operations.',
   },
   'cybersecure-ot-it': {
     eyebrow: 'GRID INTELLIGENCE 5.0',
     title: 'The trust layer of the Solvyn Stack',
     description:
-      'Purpose-built OT/IT security for energy control environments — protecting control systems, data flows, and engineering workflows across plant, edge, and cloud environments. Intelligent and connected. Secure and auditable.',
+      'Purpose-built OT/IT security for energy control environments, protecting control systems, data flows, and engineering workflows across plant, edge, and cloud environments. Intelligent and connected. Secure and auditable.',
   },
 } as const satisfies Record<string, SitePageContent>
 
@@ -71,7 +71,7 @@ export const proofPages = {
     eyebrow: 'NEWS & EVENTS',
     title: 'Where SGA shows up. What the world is saying.',
     description:
-      'From conference floors to press rooms, award stages to global summits — every event, every feature, every moment that tells the Solvyn story.',
+      'From conference floors to press rooms, award stages to global summits, every event, every feature, every moment that tells the Solvyn story.',
   },
 } as const satisfies Record<string, SitePageContent>
 
@@ -86,13 +86,13 @@ export const companyPages = {
     eyebrow: 'Company',
     title: 'About SGA',
     description:
-      'We bridge the gap between knowing and doing in renewable energy — EMS and AURA working together to observe, decide, act, and learn.',
+      'We bridge the gap between knowing and doing in renewable energy, EMS and AURA working together to observe, decide, act, and learn.',
   },
   'ip-patents': {
     eyebrow: 'IP & Patents',
     title: 'Our innovation is protected because it is genuinely new.',
     description:
-      'The Solvyn platform is built on a foundation of proprietary methods, patented models, and first-principles engineering. Our growing IP portfolio protects the innovations that make Solvyn fundamentally different — not just incrementally better.',
+      'The Solvyn platform is built on a foundation of proprietary methods, patented models, and first-principles engineering. Our growing IP portfolio protects the innovations that make Solvyn fundamentally different, not just incrementally better.',
   },
   careers: {
     eyebrow: 'Careers at Smart Grid Analytics',

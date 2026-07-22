@@ -7,7 +7,7 @@ const capabilities = [
     label: 'Multi-Protocol',
     title: 'Field Connectivity',
     description:
-      'Modbus TCP/IP, RTU, OPC-DA, OPC UA, DNP3, MQTT, REST API — across inverters, BMS, relays, and meters simultaneously. IEC 61850 on roadmap.',
+      'Modbus TCP/IP, RTU, OPC-DA, OPC UA, DNP3, MQTT, REST API, across inverters, BMS, relays, and meters simultaneously. IEC 61850 on roadmap.',
   },
   {
     label: '72 hrs',
@@ -25,13 +25,13 @@ const capabilities = [
     label: 'Cloud-Ready',
     title: 'Database & Cloud Integration',
     description:
-      'Connects to multiple databases and cloud platforms — AWS, Azure, and Google Cloud — with flexible deployment on-premise, at the edge, or fully cloud-hosted.',
+      'Connects to multiple databases and cloud platforms, AWS, Azure, and Google Cloud, with flexible deployment on-premise, at the edge, or fully cloud-hosted.',
   },
   {
     label: 'Built-In',
     title: 'Redundancy & High Availability',
     description:
-      'Built-in redundancy ensures high availability and data reliability across all communication paths — no single point of failure in your integration layer.',
+      'Built-in redundancy ensures high availability and data reliability across all communication paths, no single point of failure in your integration layer.',
   },
   {
     label: '100ms',
@@ -43,7 +43,7 @@ const capabilities = [
 
 const SolvynXCapabilitiesSection: React.FC<SolvynXCapabilitiesSectionProps> = () => {
   return (
-    <section id="core-capabilities" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="core-capabilities" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div>
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">

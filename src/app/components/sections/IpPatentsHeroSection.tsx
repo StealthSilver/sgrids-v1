@@ -24,7 +24,7 @@ const IpPatentsHeroSection: React.FC<IpPatentsHeroSectionProps> = () => {
             <p className="mt-5 max-w-[32rem] [font-family:var(--font-ibm-plex-sans)] text-sm leading-relaxed text-[#7F7F7F] sm:text-base">
               The Solvyn platform is built on a foundation of proprietary methods, patented models,
               and first-principles engineering. Our growing IP portfolio protects the innovations
-              that make Solvyn fundamentally different — not just incrementally better.
+              that make Solvyn fundamentally different, not just incrementally better.
             </p>
 
             <div className="mt-7">
@@ -32,7 +32,7 @@ const IpPatentsHeroSection: React.FC<IpPatentsHeroSectionProps> = () => {
                 href={navRequestDemo.href}
                 className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
               >
-                Book a Demo
+                Request a Demo
               </Link>
             </div>
           </div>

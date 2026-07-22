@@ -8,31 +8,31 @@ const delivers = [
     title: 'OT Stays Protected',
     description:
       'Field devices, control systems, and communication paths secured at every layer not just the perimeter.',
-    image: '/Images/icon-3d-security-lock.png',
+    image: '/Images/cyber-1.png',
   },
   {
     title: 'Full Operational Visibility',
     description:
-      'Every access, every action, every change — logged, auditable, and traceable for compliance and investigation.',
-    image: '/Images/icon-3d-lightbulb.png',
+      'Every access, every action, every change, logged, auditable, and traceable for compliance and investigation.',
+    image: '/Images/cyber-2.png',
   },
   {
     title: 'No Operational Disruption',
     description:
       'Security architecture designed not to impact control loop performance 100ms EMS dispatch unaffected.',
-    image: '/Images/icon-3d-lightbulb.png',
+    image: '/Images/cyber-3.png',
   },
   {
     title: 'Compliance Ready',
     description:
       'IEC 62443, NIST, CEA (2021 Guidelines + draft 2025 Regulations) and CSIRT-Power-aligned audit-ready from day one of deployment.',
-    image: '/Images/icon-3d-compliance-card.png',
+    image: '/Images/cyber-4.png',
   },
 ] as const
 
 const CybersecureDeliversSection: React.FC<CybersecureDeliversSectionProps> = () => {
   return (
-    <section id="what-it-delivers" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="what-it-delivers" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div>
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -49,13 +49,13 @@ const CybersecureDeliversSection: React.FC<CybersecureDeliversSectionProps> = ()
               key={item.title}
               className="flex flex-col rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] px-5 py-5 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-6 sm:py-6"
             >
-              <div className="flex h-[4.5rem] w-[4.5rem] items-center justify-center sm:h-[5rem] sm:w-[5rem]">
+              <div className="flex h-[5.5rem] w-full items-center justify-start sm:h-[6.25rem]">
                 <Image
                   src={item.image}
                   alt=""
-                  width={80}
-                  height={80}
-                  className="h-full w-full object-contain"
+                  width={140}
+                  height={140}
+                  className="h-full w-auto max-w-full object-contain object-left"
                 />
               </div>
               <h3 className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[18px] font-semibold leading-[1.2] text-[#131313]">

@@ -25,7 +25,11 @@ export default function SolvynXPage(): React.JSX.Element {
       <SolvynXTagMappingSection />
       <SolvynXTestbedSection />
       <SolvynXUseCasesSection />
-      <BookDemoCTASection id="solvyn-x-cta" />
+      <BookDemoCTASection
+        id="solvyn-x-cta"
+        title="Ready to unify your plant data?"
+        description="See How Solvyn X Connects Your Assets, Reduces Integration Time, And Becomes The Data Backbone Of Your Entire Operational Stack."
+      />
       <FooterSection />
     </div>
   )

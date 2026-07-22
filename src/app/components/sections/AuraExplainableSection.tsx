@@ -8,7 +8,7 @@ const steps = [
     number: '01',
     title: 'Deviation Detected',
     description:
-      'Actual performance compared against schedule in real time — not just flagged after the fact.',
+      'Actual performance compared against schedule in real time, not just flagged after the fact.',
   },
   {
     number: '02',
@@ -43,7 +43,7 @@ const tradeOffs: { label: string; value: string; emphasize?: boolean }[] = [
 
 const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
   return (
-    <section id="explainable-intelligence" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="explainable-intelligence" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-14">
           <div className="min-w-0">
@@ -54,7 +54,7 @@ const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
               Intelligence you can trust because you can see its reasoning.
             </h2>
             <p className="mt-4 max-w-[36rem] [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-              AURA doesn&apos;t just optimize — it explains. Every dispatch decision, every schedule
+              AURA doesn&apos;t just optimize, it explains. Every dispatch decision, every schedule
               correction, every trade-off is traceable and human-readable.
             </p>
 
@@ -119,7 +119,7 @@ const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
                   </h4>
                   <p className="mt-2 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] leading-[1.45] text-white sm:text-[0.8125rem]">
                     <span className="font-semibold">SOC at 67.4% vs. 74.8% scheduled</span>
-                    {' — '}
+                    {', '}
                     <span className="font-semibold">5% deviation threshold exceeded</span>
                   </p>
                   <p className="mt-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] leading-[1.45] text-white/75 sm:text-[0.8125rem]">

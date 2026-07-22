@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
   name: 'Smart Grid Analytics',
   tagline: 'Energy That Thinks',
   description:
-    'SmartGrid Analytics gives energy operators real-time visibility, predictive fault detection, and AI-powered load forecasting — all in one platform.',
+    'SmartGrid Analytics gives energy operators real-time visibility, predictive fault detection, and AI-powered load forecasting, all in one platform.',
   url: 'https://smartgrid-analytics.com',
   ogImage: '/og-image.png',
   twitterHandle: '@smartgridai',
@@ -44,7 +44,7 @@ export const siteViewport: Viewport = {
 export const siteMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
+    default: `${siteConfig.name}, ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -71,7 +71,7 @@ export const siteMetadata: Metadata = {
     locale: siteConfig.locale,
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name}, ${siteConfig.tagline}`,
     description: siteConfig.description,
     images: [
       {
@@ -85,7 +85,7 @@ export const siteMetadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name}, ${siteConfig.tagline}`,
     description: siteConfig.description,
     site: siteConfig.twitterHandle,
     creator: siteConfig.twitterHandle,

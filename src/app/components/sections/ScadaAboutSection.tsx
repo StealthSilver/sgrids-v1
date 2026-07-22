@@ -47,7 +47,7 @@ const energyCards = [
 
 const ScadaAboutSection: React.FC<ScadaAboutSectionProps> = () => {
   return (
-    <section id="about-scada" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="about-scada" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div>
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -73,7 +73,7 @@ const ScadaAboutSection: React.FC<ScadaAboutSectionProps> = () => {
           </div>
         </div>
 
-        <div className="mt-12 sm:mt-14 lg:mt-16">
+        <div className="mt-8 sm:mt-8 lg:mt-10">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
             SCADA FOR ENERGY
           </p>

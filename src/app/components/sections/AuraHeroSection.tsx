@@ -7,13 +7,13 @@ export interface AuraHeroSectionProps {}
 
 const AuraHeroSection: React.FC<AuraHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pb-16 lg:pt-10">
+    <section className="px-4 pb-8 pt-6 sm:px-6 sm:pb-8 sm:pt-8 lg:px-8 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_0.95fr] lg:gap-10 xl:gap-12">
           <div className="flex flex-col items-start">
             <div className="mb-4 inline-flex h-7 items-center justify-center rounded-full bg-[#FF7F0026] px-3.5 py-1">
               <span className="[font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-bold uppercase leading-[1] tracking-[0.015rem] text-[#FF7F00] sm:text-[0.6875rem]">
-                AURA — DECISION INTELLIGENCE PLATFORM · LAYER 04
+                AURA, DECISION INTELLIGENCE PLATFORM · LAYER 04
               </span>
             </div>
 
@@ -32,7 +32,7 @@ const AuraHeroSection: React.FC<AuraHeroSectionProps> = () => {
                 href={navRequestDemo.href}
                 className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
               >
-                Book a Demo
+                Request a Demo
               </Link>
 
               <Link

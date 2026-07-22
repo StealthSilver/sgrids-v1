@@ -5,7 +5,7 @@ export interface SolvynXProtocolSectionProps {}
 
 const SolvynXProtocolSection: React.FC<SolvynXProtocolSectionProps> = () => {
   return (
-    <section id="protocol-support" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="protocol-support" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 xl:gap-12">
         <div className="max-w-[520px]">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -15,7 +15,7 @@ const SolvynXProtocolSection: React.FC<SolvynXProtocolSectionProps> = () => {
             Solvyn X speaks the full language of energy infrastructure.
           </h2>
           <p className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-            So your team spends time on operations — not on integration. Every major field protocol is
+            So your team spends time on operations, not on integration. Every major field protocol is
             supported out of the box, with pre-built domain templates that eliminate configuration work
             for every common asset type.
           </p>

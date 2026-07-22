@@ -25,7 +25,12 @@ export default function AuraPage(): React.JSX.Element {
       <AuraPillarsSection />
       <AuraExplainableSection />
       <AuraBannerSection />
-      <BookDemoCTASection id="aura-cta" />
+      <BookDemoCTASection
+        id="aura-cta"
+        className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10"
+        title="See AURA make decisions."
+        description="Talk To Our Team About Your Commercial And Operational Context. We'll Show You How AURA's Four Capability Pillars Map To Your Revenue And Risk Challenges."
+      />
       <FooterSection />
     </div>
   )

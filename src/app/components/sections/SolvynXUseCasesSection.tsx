@@ -7,28 +7,28 @@ const useCases = [
   {
     title: 'Renewable Energy Plants',
     description: 'Solar, wind, hydro and storage assets.',
-    image: '/Images/icon-3d-security-lock.png',
+    image: '/Images/solx-1.png',
   },
   {
     title: 'Industrial Automation Systems',
     description: 'PLCs, DCS, and control system integration.',
-    image: '/Images/icon-3d-lightbulb.png',
+    image: '/Images/solx-2.png',
   },
   {
     title: 'Multi-Site Enterprise Integration',
     description: 'Standardize data across assets and locations.',
-    image: '/Images/icon-3d-lightbulb.png',
+    image: '/Images/solx-3.png',
   },
   {
     title: 'SCADA, EMS & IoT Ecosystems',
     description: 'Seamless connectivity across platforms and protocols.',
-    image: '/Images/icon-3d-compliance-card.png',
+    image: '/Images/solx-4.png',
   },
 ] as const
 
 const SolvynXUseCasesSection: React.FC<SolvynXUseCasesSectionProps> = () => {
   return (
-    <section id="use-cases" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="use-cases" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           USE CASES
@@ -43,12 +43,12 @@ const SolvynXUseCasesSection: React.FC<SolvynXUseCasesSectionProps> = () => {
               key={useCase.title}
               className="flex flex-col rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] px-5 py-5 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-6 sm:py-6"
             >
-              <div className="flex h-[72px] w-[72px] items-center justify-center sm:h-[80px] sm:w-[80px]">
+              <div className="flex h-[112px] w-[112px] items-center justify-center sm:h-[128px] sm:w-[128px]">
                 <Image
                   src={useCase.image}
                   alt=""
-                  width={160}
-                  height={160}
+                  width={256}
+                  height={256}
                   className="h-full w-full object-contain"
                 />
               </div>

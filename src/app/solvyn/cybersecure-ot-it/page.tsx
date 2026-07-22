@@ -21,7 +21,11 @@ export default function CybersecureOtItPage(): React.JSX.Element {
       <CybersecureZeroTrustSection />
       <CybersecureLayersSection />
       <CybersecureDeliversSection />
-      <BookDemoCTASection id="cybersecure-cta" />
+      <BookDemoCTASection
+        id="cybersecure-cta"
+        title="See the Digital Twin in action."
+        description="Talk To Our Team About Your Plant Type And Operational Context. We'll Show You Exactly How The Solar And BESS Digital Twins Map To Your Assets."
+      />
       <FooterSection />
     </div>
   )

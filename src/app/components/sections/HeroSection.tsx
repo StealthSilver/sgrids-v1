@@ -84,7 +84,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
 
           <div className="mt-8">
             <Link
-              href="/solvyn/solvyn-x"
+              href="/solvyn"
               className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
             >
               Explore solvyn

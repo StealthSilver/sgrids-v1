@@ -29,14 +29,14 @@ const pressItems = [
   {
     source: 'Forbes India',
     description:
-      'Featured In Forbes India Great Places To Work — Leading Workplace Excellence, Recognising People-First Culture And Progress.',
+      'Featured In Forbes India Great Places To Work, Leading Workplace Excellence, Recognising People-First Culture And Progress.',
     date: '28-04-2026',
     cta: 'READ',
   },
   {
     source: 'REI RenewX',
     description:
-      'Highlights From The Bengaluru Press Conference — Venkata Krishnan On How Solvyn And AURA Enable Smarter, Data-Driven Grid Operations.',
+      'Highlights From The Bengaluru Press Conference, Venkata Krishnan On How Solvyn And AURA Enable Smarter, Data-Driven Grid Operations.',
     date: '08-04-2026',
     cta: 'READ',
   },
@@ -50,21 +50,21 @@ const pressItems = [
   {
     source: 'Stationary Energy Storage India',
     description:
-      'Kumar M Presents "Orchestrating The Renewable Future" — EMS For Solar, Wind, PCS & BESS Integration.',
+      'Kumar M Presents "Orchestrating The Renewable Future", EMS For Solar, Wind, PCS & BESS Integration.',
     date: '20-03-2026',
     cta: 'READ',
   },
   {
     source: 'India AI',
     description:
-      'Featured In The India AI Impact Summit Compendium — Real-World Impact Of AI In Energy. Intelligence Across Operational Power Systems.',
+      'Featured In The India AI Impact Summit Compendium, Real-World Impact Of AI In Energy. Intelligence Across Operational Power Systems.',
     date: '19-02-2026',
     cta: 'READ',
   },
   {
     source: 'Silicon India Magazine',
     description:
-      'Kumar M Featured — Leadership Driving Smarter, More Resilient Energy Systems (StartUp India Cover).',
+      'Kumar M Featured, Leadership Driving Smarter, More Resilient Energy Systems (StartUp India Cover).',
     date: '06-03-2026',
     cta: 'READ',
   },
@@ -78,35 +78,35 @@ const pressItems = [
   {
     source: 'Vibrant Gujarat · GUVNL',
     description:
-      'Winner At The GUVNL Track Showcase — Smart Planning & Management Of BESS, Recognised At Vibrant Gujarat Regional Conference.',
+      'Winner At The GUVNL Track Showcase, Smart Planning & Management Of BESS, Recognised At Vibrant Gujarat Regional Conference.',
     date: '15-01-2026',
     cta: 'READ',
   },
   {
     source: 'APEPDCL · AP Cohort',
     description:
-      'Selected As The Winner From 50+ Startups — Smart Meter Data Analytics For Revenue Protection In The AP Cohort.',
+      'Selected As The Winner From 50+ Startups, Smart Meter Data Analytics For Revenue Protection In The AP Cohort.',
     date: '18-12-2025',
     cta: 'READ',
   },
   {
     source: 'The O&M Conference 2025',
     description:
-      "India's Renewable Future Depends On Accurate Forecasting And Smarter Scheduling — SGA On The O&M Of Solar Power Plants Panel.",
+      "India's Renewable Future Depends On Accurate Forecasting And Smarter Scheduling, SGA On The O&M Of Solar Power Plants Panel.",
     date: '02-12-2025',
     cta: 'READ',
   },
   {
     source: 'Team Recognition',
     description:
-      'SGA RAVEN Team Honoured — Recognition For Real-Time Theft Detection, Billing Anomaly Identification, And Revenue Protection.',
+      'SGA RAVEN Team Honoured, Recognition For Real-Time Theft Detection, Billing Anomaly Identification, And Revenue Protection.',
     date: '28-11-2025',
     cta: 'READ',
   },
   {
     source: 'WFES 2026 · Abu Dhabi',
     description:
-      'SGA On The Global Stage — Panel Conversations On The Energy Transition At The World Future Energy Summit 2026.',
+      'SGA On The Global Stage, Panel Conversations On The Energy Transition At The World Future Energy Summit 2026.',
     date: '14-01-2026',
     cta: 'READ',
   },

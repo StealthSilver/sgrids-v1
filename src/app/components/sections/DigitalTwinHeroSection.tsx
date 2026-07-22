@@ -7,9 +7,9 @@ export interface DigitalTwinHeroSectionProps {}
 
 const DigitalTwinHeroSection: React.FC<DigitalTwinHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pb-16 lg:pt-10">
+    <section className="px-4 pb-8 pt-6 sm:px-6 sm:pb-8 sm:pt-8 lg:px-8 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-7xl">
-        <div className="grid items-center gap-8 lg:grid-cols-[1fr_0.95fr] lg:gap-10 xl:gap-12">
+        <div className="grid items-center gap-6 lg:grid-cols-[0.9fr_1.15fr] lg:gap-8 xl:gap-10">
           <div className="flex flex-col items-start">
             <div className="mb-4 inline-flex h-7 items-center justify-center rounded-full bg-[#FF7F0026] px-3.5 py-1">
               <span className="[font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-bold uppercase leading-[1] tracking-[0.015rem] text-[#FF7F00] sm:text-[0.6875rem]">
@@ -36,12 +36,12 @@ const DigitalTwinHeroSection: React.FC<DigitalTwinHeroSectionProps> = () => {
                 href={navRequestDemo.href}
                 className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
               >
-                Book a Demo
+                Request a Demo
               </Link>
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
+          <div className="relative mx-auto w-full max-w-[34rem] lg:max-w-none lg:justify-self-end lg:w-[108%]">
             <Image
               src="/Images/digital-twin-hero.png"
               alt="Digital Twin — live solar and BESS plant models connected by real-time data orbits"

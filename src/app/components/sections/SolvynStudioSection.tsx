@@ -10,7 +10,7 @@ interface StudioFeatureCard {
 }
 
 const sharedStudioHoverDescription =
-  'Connects to any inverter, BMS, PPC, or OEM - no vendor lock-in, no proprietary hardware.'
+  'Connects to any inverter, BMS, PPC, or OEM, no vendor lock-in, no proprietary hardware.'
 
 const studioFeatureCards: StudioFeatureCard[] = [
   { title: 'Drag-and-drop builder', image: '/Images/studio-drag-drop-builder.svg' },

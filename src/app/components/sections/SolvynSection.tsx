@@ -74,7 +74,7 @@ const SolvynSection: React.FC<SolvynSectionProps> = () => {
               From Field Data To Actionable Intelligence
             </h2>
             <Link
-              href="/solvyn/solvyn-x"
+              href="/solvyn"
               className="group inline-flex h-[34px] shrink-0 items-center justify-center gap-2 rounded-full border border-[#FF7F0030] bg-[#FF7F0012] px-5 [font-family:var(--font-ibm-plex-sans)] text-sm font-medium leading-[1] text-[#FF7F00] transition-all duration-200 hover:border-[#FF7F00] hover:bg-[#FF7F00] hover:text-white"
             >
               <span>Explore Solvyn</span>

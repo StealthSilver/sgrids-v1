@@ -35,7 +35,7 @@ const caseStudies: CaseStudy[] = [
     bullets: [
       'Stable power with dynamic load balancing',
       'Reduced grid dependency, enhanced self-sufficiency',
-      'First-ever EMS deployment in India — new benchmark',
+      'First-ever EMS deployment in India, new benchmark',
     ],
     solutions: 'EMS • Peak Shaving • Fluctuation Control',
   },
@@ -143,7 +143,7 @@ const caseStudies: CaseStudy[] = [
     bullets: [
       '30B+ data tags processed daily across 248 containers',
       '2.59Mn+ tag values per minute for OEM warranty compliance',
-      '1.5 days per block — 4 OEM hardware lines unified',
+      '1.5 days per block, 4 OEM hardware lines unified',
     ],
     solutions: 'Solvyn EMS • SCADA • DAM/RTM • LDC Sync',
     status: 'Coming Soon',
@@ -170,7 +170,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: 'SGA2024009',
     title: '4-Layer Hybrid EMS Kurnool 405 MW',
-    subtitle: 'Beyond the standard hybrid model — 4-layer control architecture.',
+    subtitle: 'Beyond the standard hybrid model, 4-layer control architecture.',
     tags: ['Hybrid', 'AURA', '405 MW', 'India'],
     categories: ['All', 'Hybrid', 'BESS', 'Grid Scale'],
     metrics: [
@@ -205,7 +205,7 @@ const CaseStudiesGridSection: React.FC<CaseStudiesGridSectionProps> = () => {
           Deployments we can share from a portfolio of 500+
         </h2>
         <p className="mt-4 max-w-[42rem] [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-          Each project below represents a different challenge, asset class, and grid environment —
+          Each project below represents a different challenge, asset class, and grid environment ,
           together they show what Solvyn looks like in the field.
         </p>
 

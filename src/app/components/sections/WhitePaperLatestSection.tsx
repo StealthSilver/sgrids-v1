@@ -9,12 +9,12 @@ const topics = [
   'Technical And Operational Implications For Data Centre Operators',
   'Emerging And Underexplored Research Topics',
   'Recommendations For Data Centre Operators And Ecosystem Stakeholders',
-  'AURA EDGE DC — AI-Based Grid Orchestration For Data Centres',
+  'AURA EDGE DC, AI-Based Grid Orchestration For Data Centres',
 ] as const
 
 const WhitePaperLatestSection: React.FC<WhitePaperLatestSectionProps> = () => {
   return (
-    <section id="white-papers" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="white-papers" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto grid w-full max-w-7xl items-stretch gap-5 sm:gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 xl:gap-10">
         <article className="flex flex-col overflow-hidden rounded-[14px] bg-[#0B1B3A] px-5 py-7 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] sm:px-7 sm:py-8 lg:px-8 lg:py-9">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">

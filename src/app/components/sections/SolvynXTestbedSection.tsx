@@ -9,12 +9,12 @@ const steps = [
   'Technical And Operational Implications For Data Centre Operators',
   'Emerging And Underexplored Research Topics',
   'Recommendations For Data Centre Operators And Ecosystem Stakeholders',
-  'AURA EDGE DC — AI-Based Grid Orchestration For Data Centres',
+  'AURA EDGE DC, AI-Based Grid Orchestration For Data Centres',
 ] as const
 
 const SolvynXTestbedSection: React.FC<SolvynXTestbedSectionProps> = () => {
   return (
-    <section id="digital-twin-testbed" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="digital-twin-testbed" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 xl:gap-14">
         <div className="max-w-[520px]">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -32,7 +32,7 @@ const SolvynXTestbedSection: React.FC<SolvynXTestbedSectionProps> = () => {
           </h2>
 
           <p className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-            Solvyn X includes a built-in digital twin testbed — a simulation environment where every
+            Solvyn X includes a built-in digital twin testbed, a simulation environment where every
             tag mapping, protocol configuration, and data flow is validated against a virtual plant
             model before any live connection is made.
           </p>

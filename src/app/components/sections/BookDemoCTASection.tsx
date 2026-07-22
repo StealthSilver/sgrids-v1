@@ -5,9 +5,10 @@ import { navRequestDemo } from '@/app/data/nav.data'
 
 export interface BookDemoCTASectionProps {
   id?: string
-  title?: string
+  title?: React.ReactNode
   description?: React.ReactNode
   className?: string
+  ctaLabel?: string
 }
 
 function CalendarIcon() {
@@ -26,7 +27,8 @@ const BookDemoCTASection: React.FC<BookDemoCTASectionProps> = ({
   id = 'book-demo-cta',
   title = 'The renewable century is already here.',
   description,
-  className = 'px-4 py-10 sm:px-6 lg:px-8 lg:py-16',
+  className = 'px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10',
+  ctaLabel = 'Request a Demo',
 }) => {
   return (
     <section id={id} className={className}>
@@ -41,7 +43,7 @@ const BookDemoCTASection: React.FC<BookDemoCTASectionProps> = ({
               {description ?? (
                 <>
                   If You&apos;re Building, Operating, Or Investing In Renewable Energy
-                  <br className="hidden sm:block" /> Infrastructure — Let&apos;s Talk About How
+                  <br className="hidden sm:block" /> Infrastructure, Let&apos;s Talk About How
                   Solvyn Can Help.
                 </>
               )}
@@ -53,7 +55,7 @@ const BookDemoCTASection: React.FC<BookDemoCTASectionProps> = ({
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FF7F00] px-5 py-2 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)] sm:px-6"
               >
                 <CalendarIcon />
-                Book a Demo
+                {ctaLabel}
               </Link>
             </div>
           </div>

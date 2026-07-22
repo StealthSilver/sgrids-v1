@@ -16,7 +16,7 @@ const featured = {
   meta: 'World Future Energy Summit · Abu Dhabi · Jan 2026',
   title: 'SGA at WFES 2026 government delegations from Kuwait, Jordan, Tunisia & Egypt',
   description:
-    'A full week in Abu Dhabi meeting industry leaders, policymakers, and clients. Solvyn demonstrated live — welcoming government delegations from four countries and deep conversations on the energy transition across the MENA region.',
+    'A full week in Abu Dhabi meeting industry leaders, policymakers, and clients. Solvyn demonstrated live, welcoming government delegations from four countries and deep conversations on the energy transition across the MENA region.',
   href: '#featured-news',
   image: '/Images/news-featured-wfes.png',
   imageAlt: 'Solvyn booth at World Future Energy Summit 2026 in Abu Dhabi',

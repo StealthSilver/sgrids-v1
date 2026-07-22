@@ -7,7 +7,7 @@ export interface EmsHeroSectionProps {}
 
 const EmsHeroSection: React.FC<EmsHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pb-16 lg:pt-10">
+    <section className="px-4 pb-8 pt-6 sm:px-6 sm:pb-8 sm:pt-8 lg:px-8 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_0.95fr] lg:gap-10 xl:gap-12">
           <div className="flex flex-col items-start">
@@ -22,7 +22,7 @@ const EmsHeroSection: React.FC<EmsHeroSectionProps> = () => {
             </h1>
 
             <p className="mt-5 max-w-[32rem] [font-family:var(--font-ibm-plex-sans)] text-sm leading-relaxed text-[#7F7F7F] sm:text-base">
-              Centralized intelligence for renewable and hybrid energy systems — aggregating
+              Centralized intelligence for renewable and hybrid energy systems, aggregating
               real-time data, running intelligent algorithms, and executing optimal control actions
               to ensure safe, stable, and efficient plant operations.
             </p>
@@ -36,7 +36,7 @@ const EmsHeroSection: React.FC<EmsHeroSectionProps> = () => {
                 href={navRequestDemo.href}
                 className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
               >
-                Book a Demo
+                Request a Demo
               </Link>
             </div>
           </div>

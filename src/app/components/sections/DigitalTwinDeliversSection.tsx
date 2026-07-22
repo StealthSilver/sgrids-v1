@@ -40,7 +40,7 @@ const delivers = [
 
 const DigitalTwinDeliversSection: React.FC<DigitalTwinDeliversSectionProps> = () => {
   return (
-    <section id="what-it-delivers" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="what-it-delivers" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           WHAT IT DELIVERS
@@ -49,28 +49,28 @@ const DigitalTwinDeliversSection: React.FC<DigitalTwinDeliversSectionProps> = ()
           A model that makes every other system smarter.
         </h2>
 
-        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 lg:mt-12 lg:grid-cols-4 lg:gap-3 xl:gap-4">
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 lg:gap-4">
           {delivers.map((item) => (
             <article
               key={item.title}
-              className="flex flex-col rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-5 py-5 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-5 sm:py-6"
+              className="flex min-h-[22rem] flex-col rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-5 py-6 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:min-h-[24rem] sm:px-6 sm:py-7"
             >
-              <div className="flex h-[5.5rem] w-full items-center justify-start sm:h-[6.25rem]">
+              <div className="flex h-[9.5rem] w-full items-center justify-center sm:h-[11rem]">
                 <Image
                   src={item.image}
                   alt={item.alt}
-                  width={140}
-                  height={140}
-                  className="h-full w-auto max-w-full object-contain object-left"
+                  width={220}
+                  height={220}
+                  className="h-full w-auto max-w-full object-contain"
                 />
               </div>
-              <h3 className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[1.0625rem] font-semibold leading-[1.2] tracking-[-0.01rem] text-[#131313] sm:text-[1.125rem]">
+              <h3 className="mt-5 [font-family:var(--font-ibm-plex-sans)] text-[1.125rem] font-bold leading-[1.2] tracking-[-0.01rem] text-[#131313] sm:text-[1.25rem]">
                 {item.title}
               </h3>
-              <p className="mt-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium leading-[1.3] text-[#FF7F00] sm:text-[0.9375rem]">
+              <p className="mt-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-medium leading-[1.3] text-[#FF7F00] sm:text-[1rem]">
                 {item.subtitle}
               </p>
-              <p className="mt-2 [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] leading-[1.4] text-[#4E4E4E] sm:text-[0.875rem]">
+              <p className="mt-3 [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] leading-[1.45] text-[#4E4E4E] sm:text-[0.875rem]">
                 {item.description}
               </p>
             </article>

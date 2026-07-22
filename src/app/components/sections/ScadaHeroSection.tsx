@@ -14,7 +14,7 @@ const features = [
 
 const ScadaHeroSection: React.FC<ScadaHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pb-16 lg:pt-10">
+    <section className="px-4 pb-8 pt-6 sm:px-6 sm:pb-8 sm:pt-8 lg:px-8 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 xl:gap-12">
           <div className="flex flex-col items-start">
@@ -43,7 +43,7 @@ const ScadaHeroSection: React.FC<ScadaHeroSectionProps> = () => {
                 href={navRequestDemo.href}
                 className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
               >
-                Book a Demo
+                Request a Demo
               </Link>
             </div>
           </div>
@@ -69,13 +69,13 @@ const ScadaHeroSection: React.FC<ScadaHeroSectionProps> = () => {
                   index > 0 ? 'lg:border-l lg:border-[#E0D8D0]' : ''
                 }`}
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-[#FF7F0026] sm:h-11 sm:w-11">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[0.75rem] bg-[#FF7F0026] sm:h-14 sm:w-14">
                   <Image
                     src="/Images/hero-scada-badge.svg"
                     alt=""
-                    width={18}
-                    height={28}
-                    className="h-[1.375rem] w-auto"
+                    width={22}
+                    height={34}
+                    className="h-[1.75rem] w-auto sm:h-8"
                   />
                 </div>
                 <div className="min-w-0">

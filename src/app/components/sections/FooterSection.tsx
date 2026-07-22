@@ -14,7 +14,7 @@ const footerLinkClasses =
   'inline-flex [font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium leading-[1.35] text-[#808080] transition-colors duration-200 hover:text-[#FF7F00]'
 
 const platformLinks: FooterLink[] = [
-  { label: 'Solvyn Architecture', href: '/solvyn/solvyn-x' },
+  { label: 'Solvyn Architecture', href: '/solvyn' },
   { label: 'Solvyn Studio', href: '/#solvyn-studio' },
   { label: 'Digital Twin', href: '/solvyn/digital-twin' },
   { label: 'AURA Intelligence', href: '/solvyn/aura' },

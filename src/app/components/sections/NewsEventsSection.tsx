@@ -10,9 +10,9 @@ const events = [
     tag: 'NEWS & EVENTS',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'OCT–NOV 2025',
-    title: 'REI 2025 — Solvyn Launched At India\'s Largest Renewable Expo',
+    title: 'REI 2025, Solvyn Launched At India\'s Largest Renewable Expo',
     description:
-      'Three Days On The Floor At REI 2025. Solvyn Officially Launched — Showcasing EMS, AURA, Digital Twins, DSM, PQ, And EaaS. Booth Buzzing Across All Three Days.',
+      'Three Days On The Floor At REI 2025. Solvyn Officially Launched, Showcasing EMS, AURA, Digital Twins, DSM, PQ, And EaaS. Booth Buzzing Across All Three Days.',
   },
   {
     image: '/Images/news-event-dsm-panel.png',

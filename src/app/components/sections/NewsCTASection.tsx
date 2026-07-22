@@ -39,7 +39,7 @@ const NewsCTASection: React.FC<NewsCTASectionProps> = () => {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FF7F00] px-5 py-2 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)] sm:px-6"
               >
                 <CalendarIcon />
-                Book a Demo
+                Request a Demo
               </Link>
             </div>
           </div>

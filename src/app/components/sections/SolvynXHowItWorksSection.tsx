@@ -38,7 +38,7 @@ const steps = [
 
 const SolvynXHowItWorksSection: React.FC<SolvynXHowItWorksSectionProps> = () => {
   return (
-    <section id="how-it-works" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="how-it-works" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           HOW IT WORKS
@@ -47,7 +47,7 @@ const SolvynXHowItWorksSection: React.FC<SolvynXHowItWorksSectionProps> = () => 
           From field signal to operational intelligence.
         </h2>
         <p className="mt-4 max-w-[720px] [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-          Solvyn X sits at the centre of your plant data architecture — normalising every data stream
+          Solvyn X sits at the centre of your plant data architecture, normalising every data stream
           and publishing it simultaneously to every system that needs it.
         </p>
 

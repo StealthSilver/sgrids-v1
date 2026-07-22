@@ -404,7 +404,7 @@ const categories: ModeCategory[] = [
 
 const EmsOperatingModesSection: React.FC<EmsOperatingModesSectionProps> = () => {
   return (
-    <section id="operating-modes" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="operating-modes" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           OPERATING MODES
@@ -418,7 +418,7 @@ const EmsOperatingModesSection: React.FC<EmsOperatingModesSectionProps> = () => 
         </p>
 
         {/* Desktop / tablet table */}
-        <div className="mt-8 hidden overflow-hidden rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] shadow-[0px_7.72px_9.64px_0px_#FF6A0026] md:mt-10 md:block lg:mt-12">
+        <div className="mt-8 hidden overflow-hidden rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] shadow-[0px_7.72px_9.64px_0px_#FF6A0026] md:block">
           {categories.map((category, rowIndex) => {
             const isLastRow = rowIndex === categories.length - 1
             const colCount = category.cells.length
@@ -432,7 +432,7 @@ const EmsOperatingModesSection: React.FC<EmsOperatingModesSectionProps> = () => 
                 }}
               >
                 <div
-                  className={`flex flex-col items-start justify-center gap-3 px-5 py-7 lg:px-6 lg:py-8 ${category.labelClassName}`}
+                  className={`flex flex-col items-start justify-center gap-2 px-4 py-4 lg:px-5 lg:py-5 ${category.labelClassName}`}
                 >
                   {category.headerIcon}
                   <span className="[font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-semibold leading-[1.25] tracking-[-0.01rem] text-white lg:text-[0.875rem]">
@@ -443,16 +443,16 @@ const EmsOperatingModesSection: React.FC<EmsOperatingModesSectionProps> = () => 
                 {category.cells.map((cell) => (
                   <div
                     key={cell.title}
-                    className="flex flex-col items-center justify-center border-l border-[#E8C4A0] px-3 py-7 text-center lg:px-4 lg:py-8"
+                    className="flex flex-col items-center justify-center border-l border-[#E8C4A0] px-2.5 py-4 text-center lg:px-3 lg:py-5"
                   >
                     {cell.icon ? (
-                      <div className="mb-3 flex h-8 items-center justify-center">{cell.icon}</div>
+                      <div className="mb-1.5 flex h-7 items-center justify-center">{cell.icon}</div>
                     ) : null}
                     <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-semibold leading-[1.25] tracking-[-0.01rem] text-[#1C1B1B] lg:text-[0.875rem]">
                       {cell.title}
                     </p>
                     {cell.description ? (
-                      <p className="mt-1.5 max-w-[11rem] [font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] leading-[1.35] text-[#7F7F7F] lg:text-[0.75rem]">
+                      <p className="mt-1 max-w-[11rem] [font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] leading-[1.35] text-[#7F7F7F] lg:text-[0.75rem]">
                         {cell.description}
                       </p>
                     ) : null}
@@ -471,7 +471,7 @@ const EmsOperatingModesSection: React.FC<EmsOperatingModesSectionProps> = () => 
               className="overflow-hidden rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] shadow-[0px_7.72px_9.64px_0px_#FF6A0026]"
             >
               <div
-                className={`flex items-center gap-3 px-4 py-3.5 ${category.labelClassName}`}
+                className={`flex items-center gap-2.5 px-4 py-2.5 ${category.labelClassName}`}
               >
                 {category.headerIcon}
                 <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-semibold leading-[1.25] text-white">
@@ -480,9 +480,9 @@ const EmsOperatingModesSection: React.FC<EmsOperatingModesSectionProps> = () => 
               </div>
               <div className="divide-y divide-[#E8C4A0]">
                 {category.cells.map((cell) => (
-                  <div key={cell.title} className="flex items-start gap-3.5 px-4 py-4">
+                  <div key={cell.title} className="flex items-start gap-3 px-4 py-2.5">
                     {cell.icon ? (
-                      <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center">
+                      <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center">
                         {cell.icon}
                       </div>
                     ) : null}
@@ -491,7 +491,7 @@ const EmsOperatingModesSection: React.FC<EmsOperatingModesSectionProps> = () => 
                         {cell.title}
                       </p>
                       {cell.description ? (
-                        <p className="mt-1 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] leading-[1.4] text-[#7F7F7F]">
+                        <p className="mt-0.5 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] leading-[1.4] text-[#7F7F7F]">
                           {cell.description}
                         </p>
                       ) : null}

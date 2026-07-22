@@ -154,7 +154,7 @@ function TagMappingIllustration() {
 
 const SolvynXTagMappingSection: React.FC<SolvynXTagMappingSectionProps> = () => {
   return (
-    <section id="ai-tag-mapping" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="ai-tag-mapping" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 xl:gap-14">
         <div className="max-w-[540px]">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
@@ -173,7 +173,7 @@ const SolvynXTagMappingSection: React.FC<SolvynXTagMappingSectionProps> = () => 
 
           <p className="mt-5 [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
             The AI auto-mapping engine recognises device signatures, infers data structures, and maps
-            thousands of field tags automatically — reducing integration effort from weeks to hours,
+            thousands of field tags automatically, reducing integration effort from weeks to hours,
             without manual configuration or specialist knowledge.
           </p>
 
@@ -182,7 +182,7 @@ const SolvynXTagMappingSection: React.FC<SolvynXTagMappingSectionProps> = () => 
               href={navRequestDemo.href}
               className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
             >
-              Book a Demo
+              Request a Demo
             </Link>
           </div>
         </div>

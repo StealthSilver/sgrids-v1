@@ -23,7 +23,12 @@ export default function DigitalTwinPage(): React.JSX.Element {
       <DigitalTwinHowItWorksSection />
       <DigitalTwinEcosystemSection />
       <DigitalTwinDeliversSection />
-      <BookDemoCTASection id="digital-twin-cta" />
+      <BookDemoCTASection
+        id="digital-twin-cta"
+        className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10"
+        title="Ready to build a living model of your plant?"
+        description="Talk To Our Team About Your Plant Type And Operational Context. We'll Show You Exactly How The Solar And BESS Digital Twins Map To Your Assets."
+      />
       <FooterSection />
     </div>
   )

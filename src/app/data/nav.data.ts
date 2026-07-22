@@ -20,8 +20,9 @@ export const navMenus: NavMenu[] = [
   {
     id: 'solvyn',
     label: 'Solvyn',
-    href: '/solvyn/solvyn-x',
+    href: '/solvyn',
     items: [
+      { label: 'Solvyn', href: '/solvyn' },
       { label: 'Solvyn X', href: '/solvyn/solvyn-x' },
       { label: 'SCADA', href: '/solvyn/scada' },
       { label: 'Digital Twin', href: '/solvyn/digital-twin' },

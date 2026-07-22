@@ -6,15 +6,15 @@ export interface CareersOpeningsSectionProps {}
 
 const openings = [
   {
-    title: 'Senior Software Engineer — EMS Platform',
+    title: 'Senior Software Engineer, EMS Platform',
     tags: ['Engineering', 'Full-time', 'Bengaluru'],
   },
   {
-    title: 'Senior Software Engineer — EMS Platform',
+    title: 'Senior Software Engineer, EMS Platform',
     tags: ['Engineering', 'Full-time', 'Bengaluru'],
   },
   {
-    title: 'Senior Software Engineer — EMS Platform',
+    title: 'Senior Software Engineer, EMS Platform',
     tags: ['Engineering', 'Full-time', 'Bengaluru'],
   },
 ] as const

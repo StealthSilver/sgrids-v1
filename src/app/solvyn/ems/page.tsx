@@ -19,7 +19,18 @@ export default function EmsPage(): React.JSX.Element {
       <EmsOperatingModesSection />
       <EmsGlanceSection />
       <EmsSupportedAssetsSection />
-      <BookDemoCTASection id="ems-cta" />
+      <BookDemoCTASection
+        id="ems-cta"
+        className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10"
+        title={
+          <>
+            Built for <span className="text-[#FF7F00]">Performance.</span>
+            <br />
+            Engineered for <span className="text-[#FF7F00]">Reliability.</span>
+          </>
+        }
+        description="Solvyn EMS Empowers Utilities And IPPs With The Visibility, Control, And Automation Needed For Tomorrow's Grid Across Every Asset Class, Every Grid Code, And Every Market Condition."
+      />
       <FooterSection />
     </div>
   )

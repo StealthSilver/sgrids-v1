@@ -60,7 +60,7 @@ const pillars = [
 
 const AuraPillarsSection: React.FC<AuraPillarsSectionProps> = () => {
   return (
-    <section id="capability-pillars" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="capability-pillars" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           CAPABILITY PILLARS
@@ -73,23 +73,23 @@ const AuraPillarsSection: React.FC<AuraPillarsSectionProps> = () => {
           {pillars.map((pillar) => (
             <article
               key={pillar.title}
-              className="flex flex-col rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-4 py-5 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-5 sm:py-6"
+              className="flex flex-col rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-4 py-4 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-5 sm:py-5"
             >
               <h3 className="text-center [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1.2] tracking-[-0.01rem] text-[#131313] sm:text-[1rem]">
                 {pillar.title}
               </h3>
 
-              <div className="mt-4 flex min-h-[7.5rem] w-full items-center justify-center sm:min-h-[8.5rem]">
+              <div className="mt-3 flex min-h-[9.5rem] w-full items-center justify-center sm:min-h-[11rem]">
                 <Image
                   src={pillar.image}
                   alt={pillar.alt}
-                  width={220}
-                  height={220}
-                  className="h-auto max-h-[8.5rem] w-full object-contain"
+                  width={260}
+                  height={260}
+                  className="h-auto max-h-[10.5rem] w-full object-contain sm:max-h-[11.5rem]"
                 />
               </div>
 
-              <ul className="mt-4 space-y-1.5">
+              <ul className="mt-3 space-y-1.5">
                 {pillar.bullets.map((bullet) => (
                   <li
                     key={bullet}

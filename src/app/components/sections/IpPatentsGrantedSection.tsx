@@ -86,7 +86,7 @@ const IpPatentsGrantedSection: React.FC<IpPatentsGrantedSectionProps> = () => {
 
             <p className="mt-4 max-w-[36rem] [font-family:var(--font-ibm-plex-sans)] text-sm leading-relaxed text-[#7F7F7F] sm:text-base">
               A patented digital twin system that creates a continuously updated virtual model of a
-              solar power plant — using irradiance, temperature, weather, and live telemetry to
+              solar power plant, using irradiance, temperature, weather, and live telemetry to
               forecast, detect, and optimize performance in real time.
             </p>
 

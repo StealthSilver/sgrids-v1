@@ -91,7 +91,7 @@ const layers = [
 
 const CybersecureLayersSection: React.FC<CybersecureLayersSectionProps> = () => {
   return (
-    <section id="security-layers" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="security-layers" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="hidden overflow-hidden rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] shadow-[0px_7.72px_9.64px_0px_#FF6A0026] md:block">
           <table className="w-full table-fixed border-collapse">

@@ -38,7 +38,7 @@ const steps = [
 
 const AuraHowItWorksSection: React.FC<AuraHowItWorksSectionProps> = () => {
   return (
-    <section id="how-it-works" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="how-it-works" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           HOW IT WORKS
@@ -55,23 +55,23 @@ const AuraHowItWorksSection: React.FC<AuraHowItWorksSectionProps> = () => {
           {steps.map((item) => (
             <article
               key={item.title}
-              className="flex flex-col items-center rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-4 py-5 text-center transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-4 sm:py-6"
+              className="flex flex-col items-center rounded-[14px] border border-[#E8C4A0] bg-[#FFFFFF] px-3 py-4 text-center transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:px-3 sm:py-5"
             >
-              <div className="flex min-h-[7.5rem] w-full items-center justify-center sm:min-h-[8.5rem]">
+              <div className="flex min-h-[9.5rem] w-full items-center justify-center sm:min-h-[11rem]">
                 <Image
                   src={item.image}
                   alt={item.alt}
-                  width={220}
-                  height={220}
-                  className="h-auto max-h-[8.5rem] w-full object-contain"
+                  width={260}
+                  height={260}
+                  className="h-auto max-h-[10.5rem] w-full object-contain sm:max-h-[11.5rem]"
                 />
               </div>
 
-              <h3 className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1.2] tracking-[-0.01rem] text-[#131313] sm:text-[1rem]">
+              <h3 className="mt-3 [font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1.2] tracking-[-0.01rem] text-[#131313] sm:text-[1rem]">
                 {item.title}
               </h3>
 
-              <p className="mt-2 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] leading-[1.35] text-[#4E4E4E] sm:text-[0.8125rem]">
+              <p className="mt-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] leading-[1.35] text-[#4E4E4E] sm:text-[0.8125rem]">
                 {item.description}
               </p>
             </article>

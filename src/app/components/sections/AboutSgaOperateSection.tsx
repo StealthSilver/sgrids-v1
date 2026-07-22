@@ -53,7 +53,7 @@ const AboutSgaOperateSection: React.FC<AboutSgaOperateSectionProps> = () => {
               <span className="block">Designed For The World</span>
             </h2>
             <p className="mt-5 max-w-[28rem] [font-family:var(--font-ibm-plex-sans)] text-sm leading-relaxed text-[#7F7F7F] sm:text-base">
-              Solvyn is engineered in Bengaluru and operates across 21+ grid codes — from
+              Solvyn is engineered in Bengaluru and operates across 21+ grid codes, from
               India&apos;s CEA and IEGC frameworks to DEWA, AEMO, ENTSO-E, NRC, and beyond. Every
               market we enter, we go deep.
             </p>

@@ -14,13 +14,13 @@ const stats = [
 
 const SolvynXHeroSection: React.FC<SolvynXHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8 lg:pb-16 lg:pt-10">
+    <section className="px-4 pb-8 pt-6 sm:px-6 sm:pb-8 sm:pt-8 lg:px-8 lg:pb-10 lg:pt-10">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_0.95fr] lg:gap-10 xl:gap-12">
           <div className="flex flex-col items-start">
             <div className="mb-4 inline-flex max-w-full items-center justify-center rounded-full bg-[#FF7F0026] px-3.5 py-1.5">
               <span className="[font-family:var(--font-ibm-plex-sans)] text-[0.5625rem] font-bold uppercase leading-[1.2] tracking-[0.015rem] text-[#FF7F00] sm:text-[0.625rem] lg:text-[0.6875rem]">
-                Solvyn X — Unified Industrial Automation &amp; Data Integration (Layer 01)
+                Solvyn X, Unified Industrial Automation &amp; Data Integration (Layer 01)
               </span>
             </div>
 
@@ -39,7 +39,7 @@ const SolvynXHeroSection: React.FC<SolvynXHeroSectionProps> = () => {
                 href={navRequestDemo.href}
                 className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
               >
-                Book a Demo
+                Request a Demo
               </Link>
             </div>
 
@@ -87,24 +87,24 @@ const SolvynXHeroSection: React.FC<SolvynXHeroSectionProps> = () => {
             {stats.map((stat, index) => (
               <div
                 key={stat.value}
-                className={`flex items-center gap-3 sm:gap-3.5 lg:px-5 xl:px-7 ${
+                className={`flex items-center gap-3.5 sm:gap-4 lg:px-5 xl:px-7 ${
                   index > 0 ? 'lg:border-l lg:border-[#E0D8D0]' : ''
                 }`}
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-[#FF7F0026] sm:h-11 sm:w-11">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[0.75rem] bg-[#FF7F0026] sm:h-14 sm:w-14">
                   <Image
                     src="/Images/hero-scada-badge.svg"
                     alt=""
-                    width={18}
-                    height={28}
-                    className="h-[1.375rem] w-auto"
+                    width={22}
+                    height={34}
+                    className="h-[1.75rem] w-auto sm:h-8"
                   />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="[font-family:var(--font-ibm-plex-sans)] text-[0.9375rem] font-semibold leading-[1.15] tracking-[-0.01rem] text-[#1C1B1B] sm:text-[1rem]">
+                  <h3 className="[font-family:var(--font-ibm-plex-sans)] text-[1.125rem] font-semibold leading-[1.15] tracking-[-0.01rem] text-[#1C1B1B] sm:text-[1.25rem]">
                     {stat.value}
                   </h3>
-                  <p className="mt-0.5 [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] leading-[1.3] text-[#7F7F7F] sm:text-[0.8125rem]">
+                  <p className="mt-0.5 [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] leading-[1.3] text-[#7F7F7F] sm:text-[0.875rem]">
                     {stat.label}
                   </p>
                 </div>

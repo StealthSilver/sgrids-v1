@@ -43,7 +43,7 @@ const steps = [
 
 const DigitalTwinSolarSection: React.FC<DigitalTwinSolarSectionProps> = () => {
   return (
-    <section id="solar-digital-twin" className="px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section id="solar-digital-twin" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
           SOLAR DIGITAL TWIN
@@ -57,7 +57,7 @@ const DigitalTwinSolarSection: React.FC<DigitalTwinSolarSectionProps> = () => {
           plant data.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 lg:mt-12 lg:grid-cols-5 lg:gap-3 xl:gap-4">
+        <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-5 lg:gap-3 xl:gap-4">
           {steps.map((item) => (
             <article
               key={item.step}

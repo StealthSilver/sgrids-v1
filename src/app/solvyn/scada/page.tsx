@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BookDemoCTASection from '@/app/components/sections/BookDemoCTASection'
 import FooterSection from '@/app/components/sections/FooterSection'
 import ScadaAboutSection from '@/app/components/sections/ScadaAboutSection'
 import ScadaArchitectureSection from '@/app/components/sections/ScadaArchitectureSection'
@@ -18,6 +19,10 @@ export default function ScadaPage(): React.JSX.Element {
       <ScadaAboutSection />
       <ScadaArchitectureSection />
       <ScadaCapabilitiesSection />
+      <BookDemoCTASection
+        id="scada-cta"
+        className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10"
+      />
       <FooterSection />
     </div>
   )

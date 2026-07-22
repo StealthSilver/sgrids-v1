@@ -20,7 +20,7 @@ const NewsHeroSection: React.FC<NewsHeroSectionProps> = () => {
             </h1>
 
             <p className="mt-5 max-w-[32rem] [font-family:var(--font-ibm-plex-sans)] text-sm leading-relaxed text-[#7F7F7F] sm:text-base">
-              From conference floors to press rooms, award stages to global summits — every event,
+              From conference floors to press rooms, award stages to global summits, every event,
               every feature, every moment that tells the Solvyn story.
             </p>
           </div>
