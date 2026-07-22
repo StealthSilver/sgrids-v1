@@ -76,7 +76,7 @@ const WhitePaperLatestSection: React.FC<WhitePaperLatestSectionProps> = () => {
                     {topic}
                   </p>
                   <Image
-                    src="/Icons/view-eye.svg"
+                    src="/assets/shared/icons/view-eye.svg"
                     alt=""
                     width={22}
                     height={14}

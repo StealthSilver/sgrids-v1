@@ -9,41 +9,31 @@ const capabilities = [
   {
     name: 'Solvyn X',
     highlight: 'Connects',
-    line1: 'Assets and',
-    line2: 'telemetry',
-    icon: '/Icons/Hero_Icons/hero-solvyn-x.svg',
+    icon: '/assets/shared/icons/product-solvyn-x.svg',
     color: '#518E48',
   },
   {
     name: 'SCADA',
     highlight: 'Sees',
-    line1: 'Grid and',
-    line2: 'Plant data',
-    icon: '/Icons/Hero_Icons/hero-scada.svg',
+    icon: '/assets/shared/icons/product-scada.svg',
     color: '#0B2B98',
   },
   {
     name: 'Digital Twin',
     highlight: 'Predicts',
-    line1: 'Performance',
-    line2: 'and faults',
-    icon: '/Icons/Hero_Icons/hero-digital-twin.svg',
+    icon: '/assets/shared/icons/product-digital-twin.svg',
     color: '#FEC801',
   },
   {
     name: 'AURA',
     highlight: 'Decides',
-    line1: 'AI driven',
-    line2: 'optimization',
-    icon: '/Icons/Hero_Icons/hero-aura-ai.svg',
+    icon: '/assets/shared/icons/product-aura.svg',
     color: '#8A70F8',
   },
   {
     name: 'EMS',
     highlight: 'Executes',
-    line1: 'Automated',
-    line2: 'Control',
-    icon: '/Icons/Hero_Icons/hero-ems.svg',
+    icon: '/assets/shared/icons/product-ems.svg',
     color: '#FF6A00',
   },
 ] as const
@@ -82,7 +72,7 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
 
           <div className="relative mx-auto mt-4 w-full max-w-5xl overflow-visible lg:mt-8 lg:ml-auto lg:mr-0 lg:w-full lg:max-w-[74rem]">
             <Image
-              src="/Images/solvyn-landing-hero.png"
+              src="/assets/solvyn/images/hero.png"
               alt="Solvyn operating system connecting wind, solar, storage, and control systems"
               width={1200}
               height={900}
@@ -114,17 +104,12 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
                 >
                   {capability.highlight}
                 </p>
-                <p className="mt-[0.1875rem] [font-family:var(--font-ibm-plex-sans)] text-[0.75rem] font-semibold leading-[1.35] tracking-[0rem] text-black">
-                  {capability.line1}
-                  <br />
-                  {capability.line2}
-                </p>
               </div>
             ))}
           </div>
           <div className="relative mt-[0.25rem] h-[2.75rem] pb-[1.5rem]">
             <Image
-              src="/Icons/hero-gradient-divider.svg"
+              src="/assets/shared/icons/hero-gradient-divider.svg"
               alt="Gradient divider"
               width={873}
               height={3}

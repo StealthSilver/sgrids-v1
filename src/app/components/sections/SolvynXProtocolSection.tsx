@@ -23,7 +23,7 @@ const SolvynXProtocolSection: React.FC<SolvynXProtocolSectionProps> = () => {
 
         <div className="relative w-full overflow-hidden rounded-[14px]">
           <Image
-            src="/Images/solvyn-x-protocol-diagram.png"
+            src="/assets/solvyn-x/images/protocol-diagram.png"
             alt="Solvyn X protocol support and domain templates across energy infrastructure"
             width={1200}
             height={900}

@@ -43,7 +43,7 @@ const outcomes = [
 function ShieldLockIcon() {
   return (
     <Image
-      src="/Images/careers_shield.png"
+      src="/assets/shared/images/shield-accent.png"
       alt=""
       aria-hidden="true"
       width={96}

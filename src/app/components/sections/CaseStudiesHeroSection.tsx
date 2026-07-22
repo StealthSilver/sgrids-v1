@@ -38,7 +38,7 @@ const CaseStudiesHeroSection: React.FC<CaseStudiesHeroSectionProps> = () => {
 
           <div className="mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/caseHero_Section.png"
+              src="/assets/case-studies/images/hero.png"
               alt="Solar and wind farm connected by intelligent energy control"
               width={933}
               height={605}

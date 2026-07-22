@@ -14,25 +14,25 @@ const teamCards: TeamMemberCard[] = [
   {
     name: 'Kumar M',
     title: 'Founder & CEO',
-    image: '/Images/team-kumar-m.png',
+    image: '/assets/home/images/team-kumar-m.png',
     bio: "20+ years of expertise in renewables with a deep background in controls automation. Founded SGA to build the unified operating infrastructure that renewable energy needs. Primary inventor behind SGA's patent portfolio including patented Solar and BESS Digital Twins, EMS dispatch logic, and the AURA intelligence architecture.",
   },
   {
     name: 'Venkata Krishnan',
     title: 'Co-Founder & CGO',
-    image: '/Images/tam-venkata-krishnan.png',
+    image: '/assets/home/images/team-venkata-krishnan.png',
     bio: '20+ years in renewables with a background in mechanical engineering. Specialises in growth strategies, business development, and market expansion.',
   },
   {
     name: 'Thirumaleswar Reddy',
     title: 'Co-Founder & CTO',
-    image: '/Images/team-thirumaleswar-reddy-v2.png',
+    image: '/assets/home/images/team-thirumaleswar-reddy.png',
     bio: '25+ years in software development and IT infrastructure. Expert in digital solutions architecting Solvyn for utility-grade reliability and scalability.',
   },
   {
     name: 'Pankaj Ghai',
     title: 'Strategic Advisor',
-    image: '/Images/team-pankaj-ghai-v2.png',
+    image: '/assets/home/images/team-pankaj-ghai.png',
     bio: '20+ years in private equity and climate-focused consulting. Expert in North American expansion, cash flow optimisation, and strategic scaling.',
   },
 ]

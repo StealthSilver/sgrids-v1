@@ -7,31 +7,31 @@ const ecosystemItems = [
   {
     title: 'Forecasting Engines',
     subtitle: 'Weather & Generation Forecasting',
-    image: '/Images/aura-ecosystem-forecasting-engines.png',
+    image: '/assets/aura/images/ecosystem-forecasting-engines.png',
     alt: 'Forecasting Engines — sun and cloud weather illustration',
   },
   {
     title: 'Market Systems',
     subtitle: 'CXP, PXIL, IEX, CAISO',
-    image: '/Images/aura-ecosystem-market-systems.png',
+    image: '/assets/aura/images/ecosystem-market-systems.png',
     alt: 'Market Systems — growth chart with upward arrow',
   },
   {
     title: 'Solvyn AURA',
     subtitle: 'Decision Intelligence Platform',
-    image: '/Images/aura-ecosystem-decision-platform.png',
+    image: '/assets/aura/images/ecosystem-decision-platform.png',
     alt: 'Solvyn AURA — dual-tone brain decision intelligence',
   },
   {
     title: 'Solvyn EMS & Plant',
     subtitle: 'Execution & Optimal Decisions',
-    image: '/Images/aura-ecosystem-ems-plant.png',
+    image: '/assets/aura/images/ecosystem-ems-plant.png',
     alt: 'Solvyn EMS & Plant — battery and control unit execution',
   },
   {
     title: 'Analytics Dashboards',
     subtitle: 'Reports, Intelligence & Performance',
-    image: '/Images/aura-ecosystem-dashboards.png',
+    image: '/assets/aura/images/ecosystem-dashboards.png',
     alt: 'Analytics Dashboards — charts and performance reports',
   },
 ] as const

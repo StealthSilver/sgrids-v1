@@ -22,21 +22,21 @@ const bottomValues = [
   {
     title: 'Open And Agnostic',
     description: 'No vendor lock-in. Works with any inverter BMS, PPC, or OEM.',
-    image: '/Images/g3844.png',
+    image: '/assets/about-sga/images/mission-1.png',
   },
   {
     title: 'Security By Architecture',
     description: 'IEC 62443-aligned, auditable, and operationally resilient from day one.',
-    image: '/Images/about-us-2.png',
+    image: '/assets/about-sga/images/mission-2.png',
   },
   {
     title: 'Partners, Not Vendors',
     description: 'Long-term partners to asset owners, EPCs, and grid operators.',
-    image: '/Images/about-us-3.png',
+    image: '/assets/about-sga/images/mission-3.png',
   },
 ] as const
 
-const strikeSrc = '/Images/about-strike.png'
+const strikeSrc = '/assets/about-sga/images/mission-strike.png'
 
 const AboutSgaMissionSection: React.FC<AboutSgaMissionSectionProps> = () => {
   return (

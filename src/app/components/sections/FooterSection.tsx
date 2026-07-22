@@ -103,7 +103,7 @@ const FooterSection: React.FC<FooterSectionProps> = () => {
           <div className="w-full max-w-[320px]">
             <Link href="/" aria-label={`${siteConfig.name} Home`} className="inline-flex">
               <Image
-                src="/Logos/sgrids_main.svg"
+                src="/assets/brand/logo-sgrids-main.svg"
                 alt="Sgrids logo"
                 width={184}
                 height={42}

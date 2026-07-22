@@ -25,22 +25,22 @@ const beyondItems = [
 const energyCards = [
   {
     title: 'Field Data',
-    image: '/Images/scada-about-field-data.png',
+    image: '/assets/scada/images/about-field-data.png',
     description: 'Inverters, Meters, BESS, Protection, Systems, PLCs, RTUs & More',
   },
   {
     title: 'Control Systems',
-    image: '/Images/scada-about-control-systems.png',
+    image: '/assets/scada/images/about-control-systems.png',
     description: 'PLCs, RTUs, SCADA I/O, Gateways Edge Devices',
   },
   {
     title: 'Solvyn SCADA',
-    image: '/Images/scada-about-solvyn-scada.png',
+    image: '/assets/shared/images/product-scada.png',
     description: 'Monitoring Control Analytics Automation',
   },
   {
     title: 'Outcomes',
-    image: '/Images/scada-about-outcomes.png',
+    image: '/assets/scada/images/about-outcomes.png',
     description: 'Insights, Reporting Workflows Confident Decisions',
   },
 ] as const

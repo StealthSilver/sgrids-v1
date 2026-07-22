@@ -8,25 +8,25 @@ const audiences = [
     title: 'IPPs And Asset Owners',
     description:
       'Maximise revenue, protect battery life, enforce compliance, and gain full portfolio visibility without a separate toolchain for each plant.',
-    image: '/Images/solvyn-landing-ipps.png',
+    image: '/assets/solvyn/images/audience-ipps.png',
   },
   {
     title: 'Grid And Utility Operators',
     description:
       'Automate grid-code compliance, manage frequency and ramp-rate obligations, and coordinate dispatch across hybrid generation assets.',
-    image: '/Images/solvyn-landing-grid.png',
+    image: '/assets/solvyn/images/audience-grid-operators.png',
   },
   {
     title: 'EPC And O&M Teams',
     description:
       'Commission faster, diagnose faults earlier, respond with guided workflows, and maintain auditability across every control action.',
-    image: '/Images/solvyn-landing-epc.png',
+    image: '/assets/solvyn/images/audience-epc-om.png',
   },
   {
     title: 'Traders And Market Teams',
     description:
       'Align dispatch with market schedules, participate in DAM and RTM with 96-block precision, and optimise revenue alongside degradation and grid obligations.',
-    image: '/Images/solvyn-landing-traders.png',
+    image: '/assets/solvyn/images/audience-traders.png',
   },
 ] as const
 

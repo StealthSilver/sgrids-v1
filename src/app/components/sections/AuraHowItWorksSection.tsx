@@ -7,31 +7,31 @@ const steps = [
   {
     title: 'Data Ingestion',
     description: 'Weather, Plant, Market, SCADA, Meters, DSM',
-    image: '/Images/aura-works-data-ingestion.png',
+    image: '/assets/aura/images/how-it-works-data-ingestion.png',
     alt: 'Data Ingestion — database stack with weather signal',
   },
   {
     title: 'AI-Assisted Forecasting',
     description: 'Generation, Demand Price, Congestion',
-    image: '/Images/aura-works-forecasting.png',
+    image: '/assets/aura/images/how-it-works-forecasting.png',
     alt: 'AI-Assisted Forecasting — cloud connected to network nodes',
   },
   {
     title: 'Optimization Engine',
     description: 'Run Constraints, Objectives, Optimisation Models',
-    image: '/Images/aura-works-optimization.png',
+    image: '/assets/aura/images/how-it-works-optimization.png',
     alt: 'Optimization Engine — central decision node network',
   },
   {
     title: 'Power Scheduling',
     description: 'DAM / RTM, 15-Minute Granularity, Schedules',
-    image: '/Images/aura-works-scheduling.png',
+    image: '/assets/aura/images/how-it-works-scheduling.png',
     alt: 'Power Scheduling — calendar with clock',
   },
   {
     title: 'Actionable Insights',
     description: 'Dashboards, Alerts, Confident Decisions',
-    image: '/Images/aura-works-insights.png',
+    image: '/assets/aura/images/how-it-works-insights.png',
     alt: 'Actionable Insights — charts with upward trend',
   },
 ] as const

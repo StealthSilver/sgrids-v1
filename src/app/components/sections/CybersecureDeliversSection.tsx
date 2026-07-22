@@ -8,25 +8,25 @@ const delivers = [
     title: 'OT Stays Protected',
     description:
       'Field devices, control systems, and communication paths secured at every layer not just the perimeter.',
-    image: '/Images/cyber-1.png',
+    image: '/assets/cybersecure/images/delivers-1.png',
   },
   {
     title: 'Full Operational Visibility',
     description:
       'Every access, every action, every change, logged, auditable, and traceable for compliance and investigation.',
-    image: '/Images/cyber-2.png',
+    image: '/assets/cybersecure/images/delivers-2.png',
   },
   {
     title: 'No Operational Disruption',
     description:
       'Security architecture designed not to impact control loop performance 100ms EMS dispatch unaffected.',
-    image: '/Images/cyber-3.png',
+    image: '/assets/cybersecure/images/delivers-3.png',
   },
   {
     title: 'Compliance Ready',
     description:
       'IEC 62443, NIST, CEA (2021 Guidelines + draft 2025 Regulations) and CSIRT-Power-aligned audit-ready from day one of deployment.',
-    image: '/Images/cyber-4.png',
+    image: '/assets/cybersecure/images/delivers-4.png',
   },
 ] as const
 

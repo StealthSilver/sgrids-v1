@@ -31,7 +31,7 @@ const whitePapers: WhitePaper[] = [
     description:
       "A Deep-Dive Into Alberta's Transmission Connected Data Centre (TCDC) Framework Covering Technical Requirements, Engineering Implications, Design Considerations, And How Solvyn Enables Compliance And Optimal Performance.",
     categories: ['All', 'Data Centers', 'Grid Compliance'],
-    image: '/Images/WP_002.png',
+    image: '/assets/white-paper/images/paper-002.png',
   },
   {
     id: 'WP-004',
@@ -42,7 +42,7 @@ const whitePapers: WhitePaper[] = [
     description:
       "An Analysis Of Systematic, Technological, And Procedural Causes Of India's Grid Connection Delays For Renewable Assets With Recommendations For Compliance Reform, Drawing On AEMO's Pre-Approved Model Framework As A Benchmark.",
     categories: ['All', 'India Grid', 'Grid Compliance'],
-    image: '/Images/WP_004.png',
+    image: '/assets/white-paper/images/paper-004.png',
   },
   {
     id: 'WP-03',
@@ -54,7 +54,7 @@ const whitePapers: WhitePaper[] = [
       "How Solvyn's EMS Architecture Proven In Renewable Microgrid Deployments Can Be Adapted To Transform Data Center Backup Infrastructure Into Intelligent, Grid-Interactive, Future-Ready Energy Systems.",
     topics: 'Smart EMS, Data Centres, Microgrid, BESS',
     categories: ['All', 'Data Centers', 'BESS & Storage'],
-    image: '/Images/WP_003.png',
+    image: '/assets/white-paper/images/paper-003.png',
   },
   {
     id: 'WP-05',
@@ -66,7 +66,7 @@ const whitePapers: WhitePaper[] = [
       "A Technical Paper On Forecast-Driven Renewable Energy Dispatch Covering BESS Scheduling Methodology, DSM Compliance, And The Operational Framework Behind Solvyn's 96-Block DAM/RTM Scheduling Intelligence.",
     topics: 'FDRE, DSM',
     categories: ['All', 'BESS & Storage', 'India Grid'],
-    image: '/Images/WP_005.png',
+    image: '/assets/white-paper/images/paper-005.png',
   },
 ]
 

@@ -82,7 +82,7 @@ const CaseStudiesFeaturedSection: React.FC<CaseStudiesFeaturedSectionProps> = ()
 
           <div className="relative mx-auto w-full max-w-[32rem] lg:max-w-none">
             <Image
-              src="/Images/case-studies-featured.png"
+              src="/assets/case-studies/images/featured.png"
               alt="Kurnool Hybrid Plant — Wind, Solar, and BESS orchestrated by Solvyn Hybrid EMS, AURA, and SCADA"
               width={920}
               height={954}

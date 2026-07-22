@@ -260,7 +260,7 @@ const NavbarHeader: React.FC = () => {
       <div className="relative z-50 mx-auto flex h-11 w-full max-w-7xl items-center gap-3 bg-white/95 px-3 sm:px-4 md:px-2 lg:gap-5 lg:px-2.5 xl:px-3">
         <Link href="/" aria-label="Smart Grid Analytics Home" className="shrink-0" onClick={closeMobile}>
           <Image
-            src="/Logos/sgrids_main.svg"
+            src="/assets/brand/logo-sgrids-main.svg"
             alt="Sgrids logo"
             width={184}
             height={42}

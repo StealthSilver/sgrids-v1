@@ -27,7 +27,7 @@ const NewsHeroSection: React.FC<NewsHeroSectionProps> = () => {
 
           <div className="relative mx-auto aspect-[4/3] w-full max-w-[28rem] overflow-hidden rounded-[28px] sm:rounded-[32px] lg:max-w-none lg:rounded-[36px]">
             <Image
-              src="/Images/newsHero_section.png"
+              src="/assets/news/images/hero.png"
               alt="SGA receiving the IESA EMS Player of the Year award"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

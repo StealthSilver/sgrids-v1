@@ -57,7 +57,7 @@ const CybersecureMattersSection: React.FC<CybersecureMattersSectionProps> = () =
 
           <div className="order-1 mx-auto w-full max-w-[22rem] sm:max-w-[26rem] lg:order-2 lg:max-w-none">
             <Image
-              src="/Images/cybersecure-trust-model.png"
+              src="/assets/cybersecure/images/trust-model.png"
               alt="Cybersecure OT/IT — security connecting plant, edge, and cloud"
               width={900}
               height={900}

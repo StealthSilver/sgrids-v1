@@ -9,10 +9,10 @@ interface ReasonCard {
 }
 
 const reasonCards: ReasonCard[] = [
-  { title: 'Truly Agnostic', image: '/Images/home-reason-truly-agnostic.svg' },
-  { title: 'Compliance Built in', image: '/Images/home-reason-compliance-built-in.svg' },
-  { title: '14+ Patents', image: '/Images/home-reason-14-patents.svg' },
-  { title: 'Proven at Scale', image: '/Images/home-reason-proven-at-scale.svg' },
+  { title: 'Truly Agnostic', image: '/assets/home/images/reason-truly-agnostic.svg' },
+  { title: 'Compliance Built in', image: '/assets/home/images/reason-compliance-built-in.svg' },
+  { title: '14+ Patents', image: '/assets/home/images/reason-14-patents.svg' },
+  { title: 'Proven at Scale', image: '/assets/home/images/reason-proven-at-scale.svg' },
 ]
 
 const reasonCardHoverDescription =

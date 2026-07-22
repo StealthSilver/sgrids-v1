@@ -20,24 +20,24 @@ const timelineSteps: TimelineStep[] = [
     label: 'SEE',
     title: 'Real-time plant visibility',
     description: 'SCADA and telemetry unify every asset into one operational picture.',
-    image: '/Images/home-about-see-visibility.svg',
-    icon: '/Icons/about-see-eye.svg',
+    image: '/assets/home/images/about-see-visibility.svg',
+    icon: '/assets/home/icons/about-see-eye.svg',
   },
   {
     id: 'execute',
     label: 'EXECUTE',
     title: 'Grid-ready EMS dispatch',
     description: 'Converts grid requirements into plant asset setpoints.',
-    image: '/Images/home-about-execute-dispatch.svg',
-    icon: '/Icons/about-execute-gear.svg',
+    image: '/assets/home/images/about-execute-dispatch.svg',
+    icon: '/assets/home/icons/about-execute-gear.svg',
   },
   {
     id: 'decide',
     label: 'DECIDE',
     title: 'AURA intelligence',
     description: 'Turns forecasts into schedules for hybrid and storage plants.',
-    image: '/Images/home-about-decide-aura.svg',
-    icon: '/Icons/about-decide-ai.svg',
+    image: '/assets/home/images/about-decide-aura.svg',
+    icon: '/assets/home/icons/about-decide-ai.svg',
   },
 ]
 
@@ -85,7 +85,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
 
           <div className="mt-5 rounded-[10px] border-[0.95px] border-[#E4E4E7] bg-white px-3.5 py-3">
             <div className="flex items-center gap-2.5">
-              <Image src="/Icons/check-tick.svg" alt="" width={16} height={16} aria-hidden="true" className="h-4 w-4 shrink-0" />
+              <Image src="/assets/shared/icons/check-tick.svg" alt="" width={16} height={16} aria-hidden="true" className="h-4 w-4 shrink-0" />
               <p className="[font-family:var(--font-ibm-plex-sans)] text-[11px] font-normal leading-[1.4] text-[#4E4E4E]">
                 EMS and AURA work together continuously observe, decide, act, learn. The platform gets sharper every cycle.
               </p>

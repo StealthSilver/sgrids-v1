@@ -46,7 +46,7 @@ const AuraHeroSection: React.FC<AuraHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/aura-hero.png"
+              src="/assets/aura/images/hero.png"
               alt="AURA — decision intelligence platform with solar, BESS, wind, and market optimization dashboard"
               width={1200}
               height={900}

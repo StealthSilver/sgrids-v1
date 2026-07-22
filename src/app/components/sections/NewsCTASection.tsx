@@ -46,7 +46,7 @@ const NewsCTASection: React.FC<NewsCTASectionProps> = () => {
 
           <div className="flex shrink-0 justify-center lg:justify-end">
             <Image
-              src="/Images/Footer.png"
+              src="/assets/shared/images/cta-footer-banner.png"
               alt="Renewable energy infrastructure illustration"
               width={514}
               height={343}

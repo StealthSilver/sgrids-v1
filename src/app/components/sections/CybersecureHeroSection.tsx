@@ -11,7 +11,7 @@ const capabilities = [
     highlight: 'Connects',
     line1: 'Assets and',
     line2: 'telemetry',
-    icon: '/Icons/Hero_Icons/hero-solvyn-x.svg',
+    icon: '/assets/shared/icons/product-solvyn-x.svg',
     color: '#518E48',
   },
   {
@@ -19,7 +19,7 @@ const capabilities = [
     highlight: 'Sees',
     line1: 'Grid and',
     line2: 'Plant data',
-    icon: '/Icons/Hero_Icons/hero-scada.svg',
+    icon: '/assets/shared/icons/product-scada.svg',
     color: '#0B2B98',
   },
   {
@@ -27,7 +27,7 @@ const capabilities = [
     highlight: 'Predicts',
     line1: 'Performance',
     line2: 'and faults',
-    icon: '/Icons/Hero_Icons/hero-digital-twin.svg',
+    icon: '/assets/shared/icons/product-digital-twin.svg',
     color: '#FEC801',
   },
   {
@@ -35,7 +35,7 @@ const capabilities = [
     highlight: 'Decides',
     line1: 'AI driven',
     line2: 'optimization',
-    icon: '/Icons/Hero_Icons/hero-aura-ai.svg',
+    icon: '/assets/shared/icons/product-aura.svg',
     color: '#8A70F8',
   },
   {
@@ -43,7 +43,7 @@ const capabilities = [
     highlight: 'Executes',
     line1: 'Automated',
     line2: 'Control',
-    icon: '/Icons/Hero_Icons/hero-ems.svg',
+    icon: '/assets/shared/icons/product-ems.svg',
     color: '#FF6A00',
   },
 ] as const
@@ -115,7 +115,7 @@ const CybersecureHeroSection: React.FC<CybersecureHeroSectionProps> = () => {
               </div>
               <div className="relative mt-[0.25rem] h-[2.75rem] pb-[1.5rem]">
                 <Image
-                  src="/Icons/hero-gradient-divider.svg"
+                  src="/assets/shared/icons/hero-gradient-divider.svg"
                   alt="Gradient divider"
                   width={873}
                   height={3}
@@ -131,7 +131,7 @@ const CybersecureHeroSection: React.FC<CybersecureHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/cybersecure-hero-shield.png"
+              src="/assets/cybersecure/images/hero-shield.png"
               alt="Cybersecure OT/IT — trust layer protecting plant, edge, and cloud"
               width={1200}
               height={900}

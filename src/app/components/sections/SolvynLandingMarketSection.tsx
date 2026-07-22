@@ -7,25 +7,25 @@ const cards = [
   {
     title: 'Fragmented Systems',
     description: 'Every Asset Speaks A Different Language.',
-    image: '/Images/solvyn-landing-fragmented.png',
+    image: '/assets/solvyn/images/market-fragmented-systems.png',
     dark: false,
   },
   {
     title: 'Hybrid Complexity',
     description: 'Markets, Compliance, And BESS Simultaneously.',
-    image: '/Images/solvyn-landing-hybrid.png',
+    image: '/assets/solvyn/images/market-hybrid-complexity.png',
     dark: false,
   },
   {
     title: 'The Intelligence Gap',
     description: "Knowing What Happened Isn't Enough.",
-    image: '/Images/solvyn-landing-intelligence-gap.png',
+    image: '/assets/solvyn/images/market-intelligence-gap.png',
     dark: false,
   },
   {
     title: 'Solvyn Closes Every Gap.',
     description: 'One Platform. Every Layer.',
-    image: '/Images/solvyn-landing-closes-gap.png',
+    image: '/assets/solvyn/images/market-closes-gap.png',
     dark: true,
   },
 ] as const

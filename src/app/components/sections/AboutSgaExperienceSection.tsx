@@ -14,22 +14,22 @@ const certifications = [
 const firsts = [
   {
     title: 'Solar Power Plant Controller',
-    image: '/Images/about-sga-first-green-hydrogen.png',
+    image: '/assets/about-sga/images/experience-green-hydrogen.png',
     alt: 'Solar panel and sun icon',
   },
   {
     title: 'Hybrid Power Plant Controller',
-    image: '/Images/about-sga-first-solar-controller.png',
+    image: '/assets/about-sga/images/experience-solar-controller.png',
     alt: 'Hybrid wind and solar icon',
   },
   {
     title: 'Green Hydrogen Project',
-    image: '/Images/about-sga-first-hybrid-controller.png',
+    image: '/assets/about-sga/images/experience-hybrid-controller.png',
     alt: 'Green hydrogen facility icon',
   },
   {
     title: 'Large Scale BESS EMS',
-    image: '/Images/about-sga-first-bess-ems.png',
+    image: '/assets/about-sga/images/experience-bess-ems.png',
     alt: 'Battery energy storage pack icon',
   },
 ] as const

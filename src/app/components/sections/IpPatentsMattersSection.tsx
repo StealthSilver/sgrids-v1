@@ -8,28 +8,28 @@ const reasons = [
     title: 'Built From First Principles',
     description:
       'Every patent reflects a method we invented not an existing approach we implemented.',
-    image: '/Images/ip-patents-first-principles.png',
+    image: '/assets/ip-patents/images/matters-first-principles.png',
     alt: 'Drafting compass icon representing first-principles engineering',
   },
   {
     title: 'Protected As It Scales',
     description:
       'Our IP estate grows alongside the platform covering new innovations as they reach maturity.',
-    image: '/Images/ip-patents-protected-at-scale.png',
+    image: '/assets/ip-patents/images/matters-protected-at-scale.png',
     alt: 'Shield with checkmark icon representing protected intellectual property',
   },
   {
     title: 'Filed Internationally',
     description:
       'Patent applications cover key markets including India, UAE, Australia, USA, and Europe.',
-    image: '/Images/ip-patents-filed-internationally.png',
+    image: '/assets/ip-patents/images/matters-filed-internationally.png',
     alt: 'Globe icon representing international patent filings',
   },
   {
     title: 'Validated Externally',
     description:
       'Third-party validated through OPAL-RT, Typhoon HIL, DNV-GL, and ISO 27001.',
-    image: '/Images/ip-patents-validated-externally.png',
+    image: '/assets/ip-patents/images/matters-validated-externally.png',
     alt: 'Award badge icon representing external validation',
   },
 ] as const

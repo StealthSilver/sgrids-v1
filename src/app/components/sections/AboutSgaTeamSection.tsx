@@ -10,17 +10,17 @@ const stats = [
   {
     value: '20+',
     label: 'Years of Experience',
-    image: '/Images/about-kumar-1.png',
+    image: '/assets/about-sga/images/team-kumar-1.png',
   },
   {
     value: '14+',
     label: 'Patents Filed',
-    image: '/Images/about-kumar-2.png',
+    image: '/assets/about-sga/images/team-kumar-2.png',
   },
   {
     value: 'Industry Firsts',
     label: "India's First Hybrid EMS",
-    image: '/Images/about-kumar-3.png',
+    image: '/assets/about-sga/images/team-kumar-3.png',
   },
 ] as const
 
@@ -28,21 +28,21 @@ const members = [
   {
     name: 'Venkata Krishnan',
     title: 'Co-Founder & CGO',
-    image: '/Images/venkat.png',
+    image: '/assets/about-sga/images/team-venkat.png',
     bio: '20+ years in renewables with a background in mechanical engineering. Specialises in growth strategies, business development, and market expansion.',
     expertise: 'Renewable Energy & Growth Strategy',
   },
   {
     name: 'Thirumaleswar Reddy',
     title: 'Co-Founder & CTO',
-    image: '/Images/tirumala.png',
+    image: '/assets/about-sga/images/team-tirumala.png',
     bio: '25+ years in software development and IT infrastructure. Expert in digital solutions architecting Solvyn for utility-grade reliability and scalability.',
     expertise: 'Software Development & IT Infrastructure',
   },
   {
     name: 'Pankaj Ghai',
     title: 'Strategic Advisor',
-    image: '/Images/Pankaj.png',
+    image: '/assets/about-sga/images/team-pankaj.png',
     bio: '20+ years in private equity and climate-focused consulting. Expert in North American expansion, cash flow optimisation, and strategic scaling.',
     expertise: 'Private Equity & Climate Infrastructure',
   },
@@ -63,7 +63,7 @@ const AboutSgaTeamSection: React.FC<AboutSgaTeamSectionProps> = () => {
           <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,17.5rem)_1fr] lg:gap-8 xl:grid-cols-[minmax(0,19.5rem)_1fr] xl:gap-10">
             <div className="mx-auto w-full max-w-[17.5rem] overflow-hidden rounded-[14px] border border-[#FF7F00] bg-white lg:mx-0 lg:max-w-none">
               <Image
-                src="/Images/kumar.png"
+                src="/assets/about-sga/images/team-kumar.png"
                 alt="Kumar M, Founder and Chief Executive Officer"
                 width={409}
                 height={441}

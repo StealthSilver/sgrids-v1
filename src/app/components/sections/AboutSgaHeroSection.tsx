@@ -10,37 +10,37 @@ const stats = [
     value: '95+',
     unit: 'GW',
     label: 'capacity under management',
-    icon: '/Images/about-1-icon.png',
+    icon: '/assets/about-sga/images/hero-stat-1.png',
   },
   {
     value: '500+',
     unit: 'GW',
     label: 'Projects delivered globally',
-    icon: '/Images/about-2-icon.png',
+    icon: '/assets/about-sga/images/hero-stat-2.png',
   },
   {
     value: '5.5+',
     unit: 'GWh',
     label: 'BESS storage capacity',
-    icon: '/Images/about-3-icon.png',
+    icon: '/assets/about-sga/images/hero-stat-3.png',
   },
   {
     value: '21+',
     unit: null,
     label: 'Country grid codes',
-    icon: '/Images/about-4-icon.png',
+    icon: '/assets/about-sga/images/hero-stat-4.png',
   },
   {
     value: '99.5%+',
     unit: null,
     label: 'Platform availability',
-    icon: '/Images/about-5-icon.png',
+    icon: '/assets/about-sga/images/hero-stat-5.png',
   },
   {
     value: '14+',
     unit: null,
     label: 'Patents filed',
-    icon: '/Images/about-6-icon.png',
+    icon: '/assets/about-sga/images/hero-stat-6.png',
   },
 ] as const
 
@@ -78,7 +78,7 @@ const AboutSgaHeroSection: React.FC<AboutSgaHeroSectionProps> = () => {
             <div className="mt-6 flex w-full max-w-[22rem] items-stretch rounded-[14px] border border-[#FF7F00] bg-[#FFFFFF] px-4 py-3.5 shadow-[0px_4px_12px_0px_#FF6A001A] sm:max-w-[24rem] sm:px-5 sm:py-4">
               <div className="flex shrink-0 items-center pr-4 sm:pr-5">
                 <Image
-                  src="/Images/hero-mission-emblem.png"
+                  src="/assets/shared/images/mission-emblem.png"
                   alt=""
                   width={56}
                   height={56}
@@ -105,7 +105,7 @@ const AboutSgaHeroSection: React.FC<AboutSgaHeroSectionProps> = () => {
           <div className="relative mx-auto w-full max-w-[28rem] self-stretch lg:max-w-none">
             <div className="relative h-full min-h-[16rem] w-full overflow-hidden rounded-[1.25rem] sm:min-h-[20rem] sm:rounded-[1.5rem] lg:min-h-full">
               <Image
-                src="/Images/about_section-Hero.png"
+                src="/assets/about-sga/images/hero.png"
                 alt="Smart Grid Analytics founding team"
                 fill
                 sizes="(max-width: 1024px) 100vw, 48vw"

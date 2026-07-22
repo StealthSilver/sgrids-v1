@@ -22,7 +22,7 @@ const IpPatentsStackSection: React.FC<IpPatentsStackSectionProps> = () => {
 
         <div className="mt-8 sm:mt-10 lg:mt-12">
           <Image
-            src="/Images/ip-patents-stack-diagram.png"
+            src="/assets/ip-patents/images/stack-diagram.png"
             alt="Where IP protection sits in the Solvyn stack — EMS Optimisation, DSM & Deviation Settlement, BESS and Solar Digital Twin, Virtual Power Quality Meter, and Data Foundation"
             width={1600}
             height={1200}

@@ -43,7 +43,7 @@ const EmsHeroSection: React.FC<EmsHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/Images/ems-hero.png"
+              src="/assets/ems/images/hero.png"
               alt="EMS Core — centralized control intelligence connected to solar, battery, grid, market, and hybrid assets"
               width={1200}
               height={900}

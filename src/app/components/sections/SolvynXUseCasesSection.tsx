@@ -7,22 +7,22 @@ const useCases = [
   {
     title: 'Renewable Energy Plants',
     description: 'Solar, wind, hydro and storage assets.',
-    image: '/Images/solx-1.png',
+    image: '/assets/solvyn-x/images/use-case-1.png',
   },
   {
     title: 'Industrial Automation Systems',
     description: 'PLCs, DCS, and control system integration.',
-    image: '/Images/solx-2.png',
+    image: '/assets/solvyn-x/images/use-case-2.png',
   },
   {
     title: 'Multi-Site Enterprise Integration',
     description: 'Standardize data across assets and locations.',
-    image: '/Images/solx-3.png',
+    image: '/assets/solvyn-x/images/use-case-3.png',
   },
   {
     title: 'SCADA, EMS & IoT Ecosystems',
     description: 'Seamless connectivity across platforms and protocols.',
-    image: '/Images/solx-4.png',
+    image: '/assets/solvyn-x/images/use-case-4.png',
   },
 ] as const
 

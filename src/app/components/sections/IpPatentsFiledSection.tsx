@@ -81,7 +81,7 @@ const IpPatentsFiledSection: React.FC<IpPatentsFiledSectionProps> = () => {
 
             <div className="flex items-center justify-center lg:shrink-0 lg:pl-10 xl:pl-14">
               <Image
-                src="/Images/careers_shield.png"
+                src="/assets/shared/images/shield-accent.png"
                 alt=""
                 aria-hidden="true"
                 width={96}

@@ -8,19 +8,19 @@ const stats = [
     value: '95+',
     label: 'GW Under Active Management',
     color: '#E03E2F',
-    image: '/Images/about-where-1.png',
+    image: '/assets/about-sga/images/operate-region-1.png',
   },
   {
     value: '500+',
     label: 'Projects Delivered Globally',
     color: '#FF7F00',
-    image: '/Images/about-where-2.png',
+    image: '/assets/about-sga/images/operate-region-2.png',
   },
   {
     value: '21+',
     label: 'Country Grid Codes Compliant',
     color: '#0B2B98',
-    image: '/Images/about-where-3.png',
+    image: '/assets/about-sga/images/operate-region-3.png',
   },
 ] as const
 
@@ -29,7 +29,7 @@ const AboutSgaOperateSection: React.FC<AboutSgaOperateSectionProps> = () => {
     <section className="relative overflow-hidden px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="pointer-events-none absolute inset-y-0 right-0 left-0" aria-hidden="true">
         <Image
-          src="/Images/Where_We_Operate.png"
+          src="/assets/about-sga/images/operate-map.png"
           alt=""
           fill
           sizes="100vw"
