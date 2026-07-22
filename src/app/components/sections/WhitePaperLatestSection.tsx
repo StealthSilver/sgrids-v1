@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -76,7 +77,7 @@ const WhitePaperLatestSection: React.FC<WhitePaperLatestSectionProps> = () => {
                     {topic}
                   </p>
                   <Image
-                    src="/assets/shared/icons/view-eye.svg"
+                    src={assetUrl('/assets/shared/icons/view-eye.svg')}
                     alt=""
                     width={22}
                     height={14}

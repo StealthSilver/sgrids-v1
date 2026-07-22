@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -6,14 +7,14 @@ export interface DigitalTwinModelsSectionProps {}
 const models = [
   {
     title: 'Solar Digital Twin',
-    image: '/assets/digital-twin/images/model-solar.png',
+    image: assetUrl('/assets/digital-twin/images/model-solar.png'),
     alt: 'Solar Digital Twin — solar panels with live data overlays',
     description:
       'Minute-by-minute generation forecasting from module to plant level using irradiance, temperature, PVsyst, and weather inputs to simulate performance, identify losses, and predict faults.',
   },
   {
     title: 'BESS Digital Twin',
-    image: '/assets/digital-twin/images/model-bess.png',
+    image: assetUrl('/assets/digital-twin/images/model-bess.png'),
     alt: 'BESS Digital Twin — battery storage units with orbital data rings',
     description:
       'Physics-based and AI-driven intelligence predicting degradation, validating dispatch, and forecasting lifecycle performance real-time closed-loop with EMS and BMS for warranty-safe operation.',

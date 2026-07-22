@@ -1,14 +1,15 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
 export interface CybersecureZeroTrustSectionProps {}
 
 const steps = [
-  { label: 'Authenticate', image: '/assets/cybersecure/images/zero-trust-authenticate.png' },
-  { label: 'Authorize', image: '/assets/cybersecure/images/zero-trust-authorize.png' },
-  { label: 'Validate', image: '/assets/cybersecure/images/zero-trust-validate.png' },
-  { label: 'Monitor', image: '/assets/cybersecure/images/zero-trust-monitor.png' },
-  { label: 'Audit', image: '/assets/cybersecure/images/zero-trust-audit.png' },
+  { label: 'Authenticate', image: assetUrl('/assets/cybersecure/images/zero-trust-authenticate.png') },
+  { label: 'Authorize', image: assetUrl('/assets/cybersecure/images/zero-trust-authorize.png') },
+  { label: 'Validate', image: assetUrl('/assets/cybersecure/images/zero-trust-validate.png') },
+  { label: 'Monitor', image: assetUrl('/assets/cybersecure/images/zero-trust-monitor.png') },
+  { label: 'Audit', image: assetUrl('/assets/cybersecure/images/zero-trust-audit.png') },
 ] as const
 
 const CybersecureZeroTrustSection: React.FC<CybersecureZeroTrustSectionProps> = () => {

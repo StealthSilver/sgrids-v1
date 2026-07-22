@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -65,7 +66,7 @@ const NewsAwardsSection: React.FC<NewsAwardsSectionProps> = () => {
               className="flex gap-4 rounded-[14px] border border-[#E8C4A0] bg-[#FAFAFA] p-4 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:gap-5 sm:p-5"
             >
               <Image
-                src="/assets/news/images/awards-strike.png"
+                src={assetUrl('/assets/news/images/awards-strike.png')}
                 alt=""
                 aria-hidden="true"
                 width={160}

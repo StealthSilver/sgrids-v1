@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -22,14 +23,14 @@ const solvynCards: SolvynCard[] = [
     titleLine1: 'Field',
     titleLine2: 'data capture',
     subtitle: 'Every asset. Every protocol',
-    image: '/assets/home/images/architecture-field-data-capture.svg',
+    image: assetUrl('/assets/home/images/architecture-field-data-capture.svg'),
     tags: [{ label: 'Solvyn X', href: '/solvyn/solvyn-x' }],
   },
   {
     titleLine1: 'Autonomous',
     titleLine2: 'on-prem Control',
     subtitle: 'Every asset. Every protocol',
-    image: '/assets/home/images/architecture-onprem-control.svg',
+    image: assetUrl('/assets/home/images/architecture-onprem-control.svg'),
     tags: [
       { label: 'EMS', href: '/solvyn/ems' },
       { label: 'SCADA', href: '/solvyn/scada' },
@@ -39,14 +40,14 @@ const solvynCards: SolvynCard[] = [
     titleLine1: 'Secure',
     titleLine2: 'one way sync',
     subtitle: 'OT isolated from cloud',
-    image: '/assets/home/images/architecture-one-way-sync.svg',
+    image: assetUrl('/assets/home/images/architecture-one-way-sync.svg'),
     tags: [{ label: 'Cybersecure OT/IT', href: '/solvyn/cybersecure-ot-it' }],
   },
   {
     titleLine1: 'Centralized',
     titleLine2: 'cloud platform',
     subtitle: 'Infinite Scalability',
-    image: '/assets/home/images/architecture-cloud-platform.svg',
+    image: assetUrl('/assets/home/images/architecture-cloud-platform.svg'),
     tags: [
       { label: 'Digital Twin', href: '/solvyn/digital-twin' },
       { label: 'Studio', href: '/#solvyn-studio' },
@@ -56,7 +57,7 @@ const solvynCards: SolvynCard[] = [
     titleLine1: 'AI-powered',
     titleLine2: 'optimization',
     subtitle: 'Actionable Intelligence',
-    image: '/assets/home/images/architecture-ai-optimization.svg',
+    image: assetUrl('/assets/home/images/architecture-ai-optimization.svg'),
     tags: [{ label: 'AURA', href: '/solvyn/aura' }],
   },
 ]

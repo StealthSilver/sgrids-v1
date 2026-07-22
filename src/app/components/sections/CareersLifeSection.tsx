@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -6,25 +7,25 @@ export interface CareersLifeSectionProps {}
 const lifeCards = [
   {
     title: 'Bengaluru HQ',
-    image: '/assets/careers/images/life-bengaluru-hq.png',
+    image: assetUrl('/assets/careers/images/life-bengaluru-hq.png'),
     alt: 'Bengaluru HQ — office building with hardware testing lab',
     description: 'With Typhoon HIL lab and hardware testing environment.',
   },
   {
     title: 'Learning & Growth',
-    image: '/assets/careers/images/life-learning-growth.png',
+    image: assetUrl('/assets/careers/images/life-learning-growth.png'),
     alt: 'Learning & Growth — certifications and industry learning',
     description: 'Conferences, certifications, and industry events.',
   },
   {
     title: 'International Exposure',
-    image: '/assets/careers/images/life-international.png',
+    image: assetUrl('/assets/careers/images/life-international.png'),
     alt: 'International Exposure — global deployments',
     description: 'Deployments across India, UAE, and global markets.',
   },
   {
     title: 'Competitive Compensation',
-    image: '/assets/careers/images/life-compensation.png',
+    image: assetUrl('/assets/careers/images/life-compensation.png'),
     alt: 'Competitive Compensation — salary and early-stage equity',
     description: 'Market-rate salary with early-stage equity participation.',
   },

@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -147,7 +148,7 @@ const NewsPressSection: React.FC<NewsPressSectionProps> = () => {
 
               <div className="relative mt-4 aspect-[9/10] w-full overflow-hidden rounded-[8px]">
                 <Image
-                  src={`/assets/news/images/press-${String(index + 1).padStart(2, "0")}.png`}
+                  src={assetUrl(`/assets/news/images/press-${String(index + 1).padStart(2, "0")}.png`)}
                   alt={item.source}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -25,7 +26,7 @@ const reasons = [
 function ShieldLockIcon() {
   return (
     <Image
-      src="/assets/shared/images/shield-accent.png"
+      src={assetUrl('/assets/shared/images/shield-accent.png')}
       alt=""
       aria-hidden="true"
       width={96}

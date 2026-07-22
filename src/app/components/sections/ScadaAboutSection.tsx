@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -25,22 +26,22 @@ const beyondItems = [
 const energyCards = [
   {
     title: 'Field Data',
-    image: '/assets/scada/images/about-field-data.png',
+    image: assetUrl('/assets/scada/images/about-field-data.png'),
     description: 'Inverters, Meters, BESS, Protection, Systems, PLCs, RTUs & More',
   },
   {
     title: 'Control Systems',
-    image: '/assets/scada/images/about-control-systems.png',
+    image: assetUrl('/assets/scada/images/about-control-systems.png'),
     description: 'PLCs, RTUs, SCADA I/O, Gateways Edge Devices',
   },
   {
     title: 'Solvyn SCADA',
-    image: '/assets/shared/images/product-scada.png',
+    image: assetUrl('/assets/shared/images/product-scada.png'),
     description: 'Monitoring Control Analytics Automation',
   },
   {
     title: 'Outcomes',
-    image: '/assets/scada/images/about-outcomes.png',
+    image: assetUrl('/assets/scada/images/about-outcomes.png'),
     description: 'Insights, Reporting Workflows Confident Decisions',
   },
 ] as const

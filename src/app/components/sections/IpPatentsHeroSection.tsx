@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -39,7 +40,7 @@ const IpPatentsHeroSection: React.FC<IpPatentsHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/assets/ip-patents/images/hero-certificate.png"
+              src={assetUrl('/assets/ip-patents/images/hero-certificate.png')}
               alt="Solvyn IP portfolio — United States patent certificate with digital twin architecture and EMS dispatch logic filings"
               width={1200}
               height={900}

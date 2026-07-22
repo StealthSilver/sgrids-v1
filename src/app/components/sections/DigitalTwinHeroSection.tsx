@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -43,7 +44,7 @@ const DigitalTwinHeroSection: React.FC<DigitalTwinHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[34rem] lg:max-w-none lg:justify-self-end lg:w-[108%]">
             <Image
-              src="/assets/digital-twin/images/hero.png"
+              src={assetUrl('/assets/digital-twin/images/hero.png')}
               alt="Digital Twin — live solar and BESS plant models connected by real-time data orbits"
               width={1200}
               height={900}

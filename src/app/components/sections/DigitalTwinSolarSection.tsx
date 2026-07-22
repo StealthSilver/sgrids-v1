@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -7,35 +8,35 @@ const steps = [
   {
     step: 'STEP 01',
     title: 'Module',
-    image: '/assets/digital-twin/images/solar-module.png',
+    image: assetUrl('/assets/digital-twin/images/solar-module.png'),
     product: 'Solvyn X',
     description: 'Cell-level irradiance and temperature',
   },
   {
     step: 'STEP 02',
     title: 'String',
-    image: '/assets/digital-twin/images/solar-string.png',
+    image: assetUrl('/assets/digital-twin/images/solar-string.png'),
     product: 'Solvyn SCADA',
     description: 'String current mis-match fault detection',
   },
   {
     step: 'STEP 03',
     title: 'Inverter',
-    image: '/assets/digital-twin/images/solar-inverter.png',
+    image: assetUrl('/assets/digital-twin/images/solar-inverter.png'),
     product: 'Digital Twin',
     description: 'Clipping efficiency diagnostics',
   },
   {
     step: 'STEP 04',
     title: 'Transformer',
-    image: '/assets/digital-twin/images/solar-transformer.png',
+    image: assetUrl('/assets/digital-twin/images/solar-transformer.png'),
     product: 'AURA',
     description: 'Loss modelling thermal loading',
   },
   {
     step: 'STEP 05',
     title: 'Plant',
-    image: '/assets/digital-twin/images/solar-plant.png',
+    image: assetUrl('/assets/digital-twin/images/solar-plant.png'),
     product: 'Solvyn EMS',
     description: 'Total output PR capacity factor',
   },

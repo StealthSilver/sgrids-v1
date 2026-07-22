@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -82,7 +83,7 @@ const CaseStudiesFeaturedSection: React.FC<CaseStudiesFeaturedSectionProps> = ()
 
           <div className="relative mx-auto w-full max-w-[32rem] lg:max-w-none">
             <Image
-              src="/assets/case-studies/images/featured.png"
+              src={assetUrl('/assets/case-studies/images/featured.png')}
               alt="Kurnool Hybrid Plant — Wind, Solar, and BESS orchestrated by Solvyn Hybrid EMS, AURA, and SCADA"
               width={920}
               height={954}

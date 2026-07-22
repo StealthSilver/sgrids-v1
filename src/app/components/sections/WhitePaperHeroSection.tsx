@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -37,7 +38,7 @@ const WhitePaperHeroSection: React.FC<WhitePaperHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/assets/white-paper/images/hero.png"
+              src={assetUrl('/assets/white-paper/images/hero.png')}
               alt="White papers — SGA team research documents"
               width={1200}
               height={900}

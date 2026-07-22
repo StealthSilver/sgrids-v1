@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -103,7 +104,7 @@ const FooterSection: React.FC<FooterSectionProps> = () => {
           <div className="w-full max-w-[320px]">
             <Link href="/" aria-label={`${siteConfig.name} Home`} className="inline-flex">
               <Image
-                src="/assets/brand/logo-sgrids-main.svg"
+                src={assetUrl('/assets/brand/logo-sgrids-main.svg')}
                 alt="Sgrids logo"
                 width={184}
                 height={42}

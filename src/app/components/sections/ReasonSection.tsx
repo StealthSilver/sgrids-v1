@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -9,10 +10,10 @@ interface ReasonCard {
 }
 
 const reasonCards: ReasonCard[] = [
-  { title: 'Truly Agnostic', image: '/assets/home/images/reason-truly-agnostic.svg' },
-  { title: 'Compliance Built in', image: '/assets/home/images/reason-compliance-built-in.svg' },
-  { title: '14+ Patents', image: '/assets/home/images/reason-14-patents.svg' },
-  { title: 'Proven at Scale', image: '/assets/home/images/reason-proven-at-scale.svg' },
+  { title: 'Truly Agnostic', image: assetUrl('/assets/home/images/reason-truly-agnostic.svg') },
+  { title: 'Compliance Built in', image: assetUrl('/assets/home/images/reason-compliance-built-in.svg') },
+  { title: '14+ Patents', image: assetUrl('/assets/home/images/reason-14-patents.svg') },
+  { title: 'Proven at Scale', image: assetUrl('/assets/home/images/reason-proven-at-scale.svg') },
 ]
 
 const reasonCardHoverDescription =

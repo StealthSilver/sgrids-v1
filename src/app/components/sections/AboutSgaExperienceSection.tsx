@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -14,22 +15,22 @@ const certifications = [
 const firsts = [
   {
     title: 'Solar Power Plant Controller',
-    image: '/assets/about-sga/images/experience-green-hydrogen.png',
+    image: assetUrl('/assets/about-sga/images/experience-green-hydrogen.png'),
     alt: 'Solar panel and sun icon',
   },
   {
     title: 'Hybrid Power Plant Controller',
-    image: '/assets/about-sga/images/experience-solar-controller.png',
+    image: assetUrl('/assets/about-sga/images/experience-solar-controller.png'),
     alt: 'Hybrid wind and solar icon',
   },
   {
     title: 'Green Hydrogen Project',
-    image: '/assets/about-sga/images/experience-hybrid-controller.png',
+    image: assetUrl('/assets/about-sga/images/experience-hybrid-controller.png'),
     alt: 'Green hydrogen facility icon',
   },
   {
     title: 'Large Scale BESS EMS',
-    image: '/assets/about-sga/images/experience-bess-ems.png',
+    image: assetUrl('/assets/about-sga/images/experience-bess-ems.png'),
     alt: 'Battery energy storage pack icon',
   },
 ] as const

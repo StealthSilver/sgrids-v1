@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -35,7 +36,7 @@ function FeatureCard({ title, description }: { title: string; description: strin
     <article className="flex items-start gap-3 rounded-[12px] border border-[#EFE6DF] bg-[#FFFFFF] px-3.5 py-3.5 shadow-[0px_4px_10px_0px_#FF6A0014] sm:gap-3.5 sm:px-4 sm:py-4">
       <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FF7F0026] sm:h-9 sm:w-9">
         <Image
-          src="/assets/shared/icons/view-eye.svg"
+          src={assetUrl('/assets/shared/icons/view-eye.svg')}
           alt=""
           width={18}
           height={12}
@@ -61,7 +62,7 @@ const IpPatentsGrantedSection: React.FC<IpPatentsGrantedSectionProps> = () => {
         <div className="grid items-start gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 xl:gap-12">
           <div className="relative mx-auto w-full max-w-[28rem] lg:mx-0 lg:max-w-none">
             <Image
-              src="/assets/ip-patents/images/granted-certificate.png"
+              src={assetUrl('/assets/ip-patents/images/granted-certificate.png')}
               alt="WIPO Certificate of Grant for Digital Twin System for Solar Power Plants, WO2024171209A1"
               width={1200}
               height={1400}
@@ -107,7 +108,7 @@ const IpPatentsGrantedSection: React.FC<IpPatentsGrantedSectionProps> = () => {
             <div className="flex items-start gap-3.5 sm:gap-4">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FF7F0026] sm:h-10 sm:w-10">
                 <Image
-                  src="/assets/shared/icons/view-eye.svg"
+                  src={assetUrl('/assets/shared/icons/view-eye.svg')}
                   alt=""
                   width={20}
                   height={13}
@@ -126,7 +127,7 @@ const IpPatentsGrantedSection: React.FC<IpPatentsGrantedSectionProps> = () => {
 
             <div className="relative mx-auto w-full max-w-[36rem] lg:mx-0 lg:max-w-none">
               <Image
-                src="/assets/ip-patents/images/forecast-stack.png"
+                src={assetUrl('/assets/ip-patents/images/forecast-stack.png')}
                 alt="Module to plant forecast stack — module, string, inverter, transformer, plant"
                 width={1200}
                 height={320}

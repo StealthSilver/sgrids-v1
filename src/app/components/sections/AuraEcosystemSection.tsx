@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -7,31 +8,31 @@ const ecosystemItems = [
   {
     title: 'Forecasting Engines',
     subtitle: 'Weather & Generation Forecasting',
-    image: '/assets/aura/images/ecosystem-forecasting-engines.png',
+    image: assetUrl('/assets/aura/images/ecosystem-forecasting-engines.png'),
     alt: 'Forecasting Engines — sun and cloud weather illustration',
   },
   {
     title: 'Market Systems',
     subtitle: 'CXP, PXIL, IEX, CAISO',
-    image: '/assets/aura/images/ecosystem-market-systems.png',
+    image: assetUrl('/assets/aura/images/ecosystem-market-systems.png'),
     alt: 'Market Systems — growth chart with upward arrow',
   },
   {
     title: 'Solvyn AURA',
     subtitle: 'Decision Intelligence Platform',
-    image: '/assets/aura/images/ecosystem-decision-platform.png',
+    image: assetUrl('/assets/aura/images/ecosystem-decision-platform.png'),
     alt: 'Solvyn AURA — dual-tone brain decision intelligence',
   },
   {
     title: 'Solvyn EMS & Plant',
     subtitle: 'Execution & Optimal Decisions',
-    image: '/assets/aura/images/ecosystem-ems-plant.png',
+    image: assetUrl('/assets/aura/images/ecosystem-ems-plant.png'),
     alt: 'Solvyn EMS & Plant — battery and control unit execution',
   },
   {
     title: 'Analytics Dashboards',
     subtitle: 'Reports, Intelligence & Performance',
-    image: '/assets/aura/images/ecosystem-dashboards.png',
+    image: assetUrl('/assets/aura/images/ecosystem-dashboards.png'),
     alt: 'Analytics Dashboards — charts and performance reports',
   },
 ] as const

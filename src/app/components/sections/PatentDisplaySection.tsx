@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -10,10 +11,10 @@ interface CapabilityTag {
 }
 
 const capabilityTags: CapabilityTag[] = [
-  { line1: 'Digital', line2: 'Twin', icon: '/assets/home/icons/patent-digital-twin.svg' },
-  { line1: 'EMS', line2: 'Dispatch', icon: '/assets/home/icons/patent-ems-dispatch.svg' },
-  { line1: 'AURA', line2: 'Intelligence', icon: '/assets/home/icons/patent-aura-intelligence.svg' },
-  { line1: 'Grid', line2: 'Control', icon: '/assets/home/icons/patent-grid-control.svg' },
+  { line1: 'Digital', line2: 'Twin', icon: assetUrl('/assets/home/icons/patent-digital-twin.svg') },
+  { line1: 'EMS', line2: 'Dispatch', icon: assetUrl('/assets/home/icons/patent-ems-dispatch.svg') },
+  { line1: 'AURA', line2: 'Intelligence', icon: assetUrl('/assets/home/icons/patent-aura-intelligence.svg') },
+  { line1: 'Grid', line2: 'Control', icon: assetUrl('/assets/home/icons/patent-grid-control.svg') },
 ]
 
 const PatentDisplaySection: React.FC<PatentDisplaySectionProps> = () => {
@@ -63,7 +64,7 @@ const PatentDisplaySection: React.FC<PatentDisplaySectionProps> = () => {
 
         <div className="relative z-[2] mt-4 flex shrink-0 flex-col items-center justify-center gap-4 border-t border-white/20 pt-5 text-center sm:pt-6 lg:mt-0 lg:border-t-0 lg:pt-0 lg:pl-4">
           <Image
-            src="/assets/home/icons/patents-shield.svg"
+            src={assetUrl('/assets/home/icons/patents-shield.svg')}
             alt=""
             width={80}
             height={80}

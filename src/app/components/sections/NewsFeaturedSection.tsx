@@ -1,5 +1,6 @@
 'use client'
 
+import { assetUrl } from '@/lib/cdn'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -18,7 +19,7 @@ const featured = {
   description:
     'A full week in Abu Dhabi meeting industry leaders, policymakers, and clients. Solvyn demonstrated live, welcoming government delegations from four countries and deep conversations on the energy transition across the MENA region.',
   href: '#featured-news',
-  image: '/assets/news/images/featured-wfes.png',
+  image: assetUrl('/assets/news/images/featured-wfes.png'),
   imageAlt: 'Solvyn booth at World Future Energy Summit 2026 in Abu Dhabi',
 }
 

@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -23,7 +24,7 @@ const SolvynXProtocolSection: React.FC<SolvynXProtocolSectionProps> = () => {
 
         <div className="relative w-full overflow-hidden rounded-[14px]">
           <Image
-            src="/assets/solvyn-x/images/protocol-diagram.png"
+            src={assetUrl('/assets/solvyn-x/images/protocol-diagram.png')}
             alt="Solvyn X protocol support and domain templates across energy infrastructure"
             width={1200}
             height={900}

@@ -1,6 +1,7 @@
 // Data: site metadata and SEO constants for root layout
 
 import type { Metadata, Viewport } from 'next'
+import { assetUrl } from '@/lib/cdn'
 
 export interface SiteConfig {
   name: string
@@ -94,7 +95,7 @@ export const siteMetadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/assets/brand/icon.svg', type: 'image/svg+xml' },
+      { url: assetUrl('/assets/brand/icon.svg'), type: 'image/svg+xml' },
       { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
     ],
     apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],

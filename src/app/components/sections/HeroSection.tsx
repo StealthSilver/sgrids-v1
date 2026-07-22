@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,11 +8,11 @@ export interface HeroSectionProps {}
 
 const HeroSection: React.FC<HeroSectionProps> = () => {
   const capabilities = [
-    { name: 'Solvyn X', highlight: 'Connects', line1: 'Assets and', line2: 'telemetry', icon: '/assets/shared/icons/product-solvyn-x.svg', color: '#518E48' },
-    { name: 'SCADA', highlight: 'Sees', line1: 'Grid and', line2: 'Plant data', icon: '/assets/shared/icons/product-scada.svg', color: '#0B2B98' },
-    { name: 'Digital Twin', highlight: 'Predicts', line1: 'Performance', line2: 'and faults', icon: '/assets/shared/icons/product-digital-twin.svg', color: '#FEC801' },
-    { name: 'AURA', highlight: 'Decides', line1: 'AI driven', line2: 'optimization', icon: '/assets/shared/icons/product-aura.svg', color: '#8A70F8' },
-    { name: 'EMS', highlight: 'Executes', line1: 'Automated', line2: 'Control', icon: '/assets/shared/icons/product-ems.svg', color: '#FF6A00' },
+    { name: 'Solvyn X', highlight: 'Connects', line1: 'Assets and', line2: 'telemetry', icon: assetUrl('/assets/shared/icons/product-solvyn-x.svg'), color: '#518E48' },
+    { name: 'SCADA', highlight: 'Sees', line1: 'Grid and', line2: 'Plant data', icon: assetUrl('/assets/shared/icons/product-scada.svg'), color: '#0B2B98' },
+    { name: 'Digital Twin', highlight: 'Predicts', line1: 'Performance', line2: 'and faults', icon: assetUrl('/assets/shared/icons/product-digital-twin.svg'), color: '#FEC801' },
+    { name: 'AURA', highlight: 'Decides', line1: 'AI driven', line2: 'optimization', icon: assetUrl('/assets/shared/icons/product-aura.svg'), color: '#8A70F8' },
+    { name: 'EMS', highlight: 'Executes', line1: 'Automated', line2: 'Control', icon: assetUrl('/assets/shared/icons/product-ems.svg'), color: '#FF6A00' },
   ]
 
   const deploymentCards = [
@@ -21,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
       icon: (
         <div className="flex h-[3rem] w-[3rem] shrink-0 self-start items-start justify-center">
           <Image
-            src="/assets/home/images/flag-india.png"
+            src={assetUrl('/assets/home/images/flag-india.png')}
             alt="India flag"
             width={40}
             height={40}
@@ -36,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
       icon: (
         <div className="flex h-[3rem] w-[3rem] shrink-0 self-start items-start justify-center">
           <Image
-            src="/assets/home/images/flag-uae.png"
+            src={assetUrl('/assets/home/images/flag-uae.png')}
             alt="UAE flag"
             width={40}
             height={40}
@@ -50,7 +51,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
       details: ['Smart Grid and Hybrid', 'Deployment'],
       icon: (
         <div className="flex h-[3rem] w-[3rem] shrink-0 self-start items-start justify-center rounded-full text-[#F07A00]">
-          <Image src="/assets/shared/icons/globe.svg" alt="Global icon" width={40} height={40} className="h-[2.5rem] w-[2.5rem]" />
+          <Image src={assetUrl('/assets/shared/icons/globe.svg')} alt="Global icon" width={40} height={40} className="h-[2.5rem] w-[2.5rem]" />
         </div>
       ),
     },
@@ -95,7 +96,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
 
         <div className="relative mx-auto mt-4 w-full max-w-5xl overflow-visible lg:mt-12 lg:w-full lg:max-w-[74rem]">
           <Image
-            src="/assets/home/images/hero-command-center.png"
+            src={assetUrl('/assets/home/images/hero-command-center.png')}
             alt="Solvyn hybrid energy command center model"
             width={1100}
             height={1200}
@@ -178,7 +179,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             </div>
             <div className="relative mt-[0.25rem] h-[2.75rem] pb-[1.5rem]">
               <Image
-                src="/assets/shared/icons/hero-gradient-divider.svg"
+                src={assetUrl('/assets/shared/icons/hero-gradient-divider.svg')}
                 alt="Gradient divider"
                 width={873}
                 height={3}

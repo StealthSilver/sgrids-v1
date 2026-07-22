@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -7,31 +8,31 @@ const steps = [
   {
     titleLine1: 'Ingest',
     titleLine2: 'Devices & Systems',
-    image: '/assets/solvyn-x/images/how-it-works-ingest.png',
+    image: assetUrl('/assets/solvyn-x/images/how-it-works-ingest.png'),
     description: 'PLC/RTU, Sensors,\nMeters, Inverters,\nBMS, PPCs',
   },
   {
     titleLine1: 'Process',
     titleLine2: 'Solvyn X',
-    image: '/assets/solvyn-x/images/how-it-works-process.png',
+    image: assetUrl('/assets/solvyn-x/images/how-it-works-process.png'),
     description: 'Connect, Convert,\nSynchronize',
   },
   {
     titleLine1: 'Cloud & Data',
     titleLine2: 'Databases & Cloud',
-    image: '/assets/solvyn-x/images/how-it-works-cloud-data.png',
+    image: assetUrl('/assets/solvyn-x/images/how-it-works-cloud-data.png'),
     description: 'AWS, Azure, GCP,\nOn-Prem',
   },
   {
     titleLine1: 'Control',
     titleLine2: 'EMS + SCADA',
-    image: '/assets/solvyn-x/images/how-it-works-control.png',
+    image: assetUrl('/assets/solvyn-x/images/how-it-works-control.png'),
     description: 'Dispatch, Visibility,\nAlarms, Schedules',
   },
   {
     titleLine1: 'Enterprise',
     titleLine2: 'Business Systems',
-    image: '/assets/solvyn-x/images/how-it-works-enterprise.png',
+    image: assetUrl('/assets/solvyn-x/images/how-it-works-enterprise.png'),
     description: 'CMMS, ERP\nAnalytics, Finance',
   },
 ] as const

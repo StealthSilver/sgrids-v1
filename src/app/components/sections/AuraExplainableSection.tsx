@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -88,7 +89,7 @@ const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
             <div className="mt-6 flex flex-col divide-y divide-white/10">
               <div className="flex gap-3 pb-5 sm:gap-4">
                 <Image
-                  src="/assets/aura/images/explainable-step-1.png"
+                  src={assetUrl('/assets/aura/images/explainable-step-1.png')}
                   alt=""
                   width={48}
                   height={48}
@@ -107,7 +108,7 @@ const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
 
               <div className="flex gap-3 py-5 sm:gap-4">
                 <Image
-                  src="/assets/aura/images/explainable-step-2.png"
+                  src={assetUrl('/assets/aura/images/explainable-step-2.png')}
                   alt=""
                   width={48}
                   height={48}
@@ -130,7 +131,7 @@ const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
 
               <div className="flex gap-3 py-5 sm:gap-4">
                 <Image
-                  src="/assets/aura/images/explainable-step-4.png"
+                  src={assetUrl('/assets/aura/images/explainable-step-4.png')}
                   alt=""
                   width={48}
                   height={48}
@@ -170,7 +171,7 @@ const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
 
               <div className="flex gap-3 py-5 sm:gap-4">
                 <Image
-                  src="/assets/aura/images/explainable-step-3.png"
+                  src={assetUrl('/assets/aura/images/explainable-step-3.png')}
                   alt=""
                   width={48}
                   height={48}
@@ -189,7 +190,7 @@ const AuraExplainableSection: React.FC<AuraExplainableSectionProps> = () => {
 
               <div className="flex gap-3 pt-5 sm:gap-4">
                 <Image
-                  src="/assets/aura/images/explainable-step-5.png"
+                  src={assetUrl('/assets/aura/images/explainable-step-5.png')}
                   alt=""
                   width={48}
                   height={48}

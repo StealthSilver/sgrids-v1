@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -6,7 +7,7 @@ export interface AuraPillarsSectionProps {}
 const pillars = [
   {
     title: 'Forecasting Intelligence',
-    image: '/assets/aura/images/pillar-forecasting.png',
+    image: assetUrl('/assets/aura/images/pillar-forecasting.png'),
     alt: 'Forecasting Intelligence — solar panel, wind turbine, and weather',
     bullets: [
       'Solar Forecasting',
@@ -19,7 +20,7 @@ const pillars = [
   },
   {
     title: 'Digital Twin Intelligence',
-    image: '/assets/aura/images/pillar-digital-twin.png',
+    image: assetUrl('/assets/aura/images/pillar-digital-twin.png'),
     alt: 'Digital Twin Intelligence — analytics dashboard with charts',
     bullets: [
       'Solar Digital Twin',
@@ -32,7 +33,7 @@ const pillars = [
   },
   {
     title: 'Scheduling & Optimisation',
-    image: '/assets/aura/images/pillar-scheduling.png',
+    image: assetUrl('/assets/aura/images/pillar-scheduling.png'),
     alt: 'Scheduling & Optimisation — calendar and battery storage',
     bullets: [
       'Day-Ahead (DAM) Scheduling',
@@ -45,7 +46,7 @@ const pillars = [
   },
   {
     title: 'Revenue & Risk Intelligence',
-    image: '/assets/aura/images/pillar-revenue-risk.png',
+    image: assetUrl('/assets/aura/images/pillar-revenue-risk.png'),
     alt: 'Revenue & Risk Intelligence — shield, growth chart, and coins',
     bullets: [
       'DSM Penalty Reduction',

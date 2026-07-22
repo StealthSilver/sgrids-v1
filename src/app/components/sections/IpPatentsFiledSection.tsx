@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -81,7 +82,7 @@ const IpPatentsFiledSection: React.FC<IpPatentsFiledSectionProps> = () => {
 
             <div className="flex items-center justify-center lg:shrink-0 lg:pl-10 xl:pl-14">
               <Image
-                src="/assets/shared/images/shield-accent.png"
+                src={assetUrl('/assets/shared/images/shield-accent.png')}
                 alt=""
                 aria-hidden="true"
                 width={96}

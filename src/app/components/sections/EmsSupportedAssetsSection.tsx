@@ -1,14 +1,15 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
 export interface EmsSupportedAssetsSectionProps {}
 
 const assets = [
-  { title: 'Solar', image: '/assets/shared/images/asset-solar.svg' },
-  { title: 'Wind', image: '/assets/shared/images/asset-wind.svg' },
-  { title: 'BESS', image: '/assets/shared/images/asset-bess.svg' },
-  { title: 'Hybrid', image: '/assets/shared/images/asset-hybrid.svg' },
-  { title: 'Green H₂', image: '/assets/shared/images/asset-h2.svg' },
+  { title: 'Solar', image: assetUrl('/assets/shared/images/asset-solar.svg') },
+  { title: 'Wind', image: assetUrl('/assets/shared/images/asset-wind.svg') },
+  { title: 'BESS', image: assetUrl('/assets/shared/images/asset-bess.svg') },
+  { title: 'Hybrid', image: assetUrl('/assets/shared/images/asset-hybrid.svg') },
+  { title: 'Green H₂', image: assetUrl('/assets/shared/images/asset-h2.svg') },
 ] as const
 
 const EmsSupportedAssetsSection: React.FC<EmsSupportedAssetsSectionProps> = () => {

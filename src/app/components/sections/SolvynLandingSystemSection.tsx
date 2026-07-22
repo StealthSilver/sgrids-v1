@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,7 +11,7 @@ const products = [
     subtitle: 'Integration & Connectivity',
     description:
       'Every asset, protocol, and enterprise system unified through one secure data backbone.',
-    image: '/assets/home/images/architecture-field-data-capture.svg',
+    image: assetUrl('/assets/home/images/architecture-field-data-capture.svg'),
     href: '/solvyn/solvyn-x',
     tags: ['Modbus', 'OPC UA', 'DNP3', 'MQTT'],
   },
@@ -19,7 +20,7 @@ const products = [
     subtitle: 'Digital Nervous System',
     description:
       'Live plant intelligence cognitive alarms, guided recovery, and schedule compliance in one view.',
-    image: '/assets/shared/images/product-scada.png',
+    image: assetUrl('/assets/shared/images/product-scada.png'),
     href: '/solvyn/scada',
     tags: ['Perception', 'Cognition', 'Prescription'],
   },
@@ -28,7 +29,7 @@ const products = [
     subtitle: 'Live Plant Model · Patented',
     description:
       'Continuously updated Solar & BESS models forecasting, degradation, and DSM scheduling.',
-    image: '/assets/digital-twin/images/model-solar.png',
+    image: assetUrl('/assets/digital-twin/images/model-solar.png'),
     href: '/solvyn/digital-twin',
     tags: ['Solar', 'BESS', '14+ Patents'],
   },
@@ -37,7 +38,7 @@ const products = [
     subtitle: 'Decision Intelligence',
     description:
       'AI-driven forecasting, scheduling, and revenue-risk optimisation that turns plant models into actionable decisions.',
-    image: '/assets/solvyn/images/system-aura.png',
+    image: assetUrl('/assets/solvyn/images/system-aura.png'),
     href: '/solvyn/aura',
     tags: ['Forecasting', 'Scheduling', 'Market Intel'],
   },
@@ -46,7 +47,7 @@ const products = [
     subtitle: 'Control Intelligence',
     description:
       'Real-time dispatch that executes compliant, degradation-aware control across hybrid assets.',
-    image: '/assets/solvyn/images/system-ems.png',
+    image: assetUrl('/assets/solvyn/images/system-ems.png'),
     href: '/solvyn/ems',
     tags: ['Dispatch', 'Grid Codes', 'Hybrid Control'],
   },
@@ -55,7 +56,7 @@ const products = [
     subtitle: 'Trust Layer',
     description:
       'Zero-trust security protecting control systems, data flows, and engineering workflows end to end.',
-    image: '/assets/solvyn/images/system-cybersecure.png',
+    image: assetUrl('/assets/solvyn/images/system-cybersecure.png'),
     href: '/solvyn/cybersecure-ot-it',
     tags: ['Authenticate', 'Authorize', 'Audit'],
   },

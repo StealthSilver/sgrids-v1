@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -7,25 +8,25 @@ const cards = [
   {
     title: 'Fragmented Systems',
     description: 'Every Asset Speaks A Different Language.',
-    image: '/assets/solvyn/images/market-fragmented-systems.png',
+    image: assetUrl('/assets/solvyn/images/market-fragmented-systems.png'),
     dark: false,
   },
   {
     title: 'Hybrid Complexity',
     description: 'Markets, Compliance, And BESS Simultaneously.',
-    image: '/assets/solvyn/images/market-hybrid-complexity.png',
+    image: assetUrl('/assets/solvyn/images/market-hybrid-complexity.png'),
     dark: false,
   },
   {
     title: 'The Intelligence Gap',
     description: "Knowing What Happened Isn't Enough.",
-    image: '/assets/solvyn/images/market-intelligence-gap.png',
+    image: assetUrl('/assets/solvyn/images/market-intelligence-gap.png'),
     dark: false,
   },
   {
     title: 'Solvyn Closes Every Gap.',
     description: 'One Platform. Every Layer.',
-    image: '/assets/solvyn/images/market-closes-gap.png',
+    image: assetUrl('/assets/solvyn/images/market-closes-gap.png'),
     dark: true,
   },
 ] as const

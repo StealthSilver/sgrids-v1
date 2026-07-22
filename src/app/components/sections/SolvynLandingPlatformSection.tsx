@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -42,7 +43,7 @@ const SolvynLandingPlatformSection: React.FC<SolvynLandingPlatformSectionProps> 
 
         <div className="relative w-full overflow-hidden rounded-[14px] border border-[#EFE6DF] bg-[#0B0B0B] shadow-[0px_7.72px_9.64px_0px_#FF6A0026]">
           <Image
-            src="/assets/solvyn/images/platform.png"
+            src={assetUrl('/assets/solvyn/images/platform.png')}
             alt="Solvyn platform SCADA dashboard overview"
             width={1400}
             height={900}

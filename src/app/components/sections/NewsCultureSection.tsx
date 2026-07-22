@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,32 +9,32 @@ const moments = [
   {
     label: 'Solvyn Launch · REI 2025 · Oct 2025',
     background: '#B45309',
-    image: '/assets/news/images/culture-solvyn-launch-rei-2025.png',
+    image: assetUrl('/assets/news/images/culture-solvyn-launch-rei-2025.png'),
   },
   {
     label: 'WFES · Abu Dhabi · Jan 2026',
     background: '#0B1B3A',
-    image: '/assets/news/images/culture-wfes-abu-dhabi-2026.png',
+    image: assetUrl('/assets/news/images/culture-wfes-abu-dhabi-2026.png'),
   },
   {
     label: 'E-World · Feb 2026',
     background: '#166534',
-    image: '/assets/news/images/culture-e-world-2026.png',
+    image: assetUrl('/assets/news/images/culture-e-world-2026.png'),
   },
   {
     label: 'GUVNL Winner · Jan 2026',
     background: '#4338CA',
-    image: '/assets/news/images/culture-guvnl-winner-2026.png',
+    image: assetUrl('/assets/news/images/culture-guvnl-winner-2026.png'),
   },
   {
     label: 'Forbes India · May 2026',
     background: '#9F1239',
-    image: '/assets/news/images/culture-forbes-india-2026.png',
+    image: assetUrl('/assets/news/images/culture-forbes-india-2026.png'),
   },
   {
     label: 'Bharat Electricity Summit 2026',
     background: '#A16207',
-    image: '/assets/news/images/culture-bharat-electricity-summit-2026.png',
+    image: assetUrl('/assets/news/images/culture-bharat-electricity-summit-2026.png'),
   },
 ] as const
 

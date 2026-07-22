@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -6,7 +7,7 @@ export interface NewsEventsSectionProps {}
 
 const events = [
   {
-    image: '/assets/news/images/event-rei-2025.png',
+    image: assetUrl('/assets/news/images/event-rei-2025.png'),
     tag: 'NEWS & EVENTS',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'OCT–NOV 2025',
@@ -15,7 +16,7 @@ const events = [
       'Three Days On The Floor At REI 2025. Solvyn Officially Launched, Showcasing EMS, AURA, Digital Twins, DSM, PQ, And EaaS. Booth Buzzing Across All Three Days.',
   },
   {
-    image: '/assets/news/images/event-dsm-panel.png',
+    image: assetUrl('/assets/news/images/event-dsm-panel.png'),
     tag: 'CONFERENCE',
     tagClass: 'bg-[#1A6B6B26] text-[#1A6B6B]',
     date: 'NOV 2025',
@@ -24,7 +25,7 @@ const events = [
       'Venkata Krishnan Panelist Alongside NTPC Renewable, BluPine, ACME, Hero Future Energies On DSM, Digital Twin Forecasting, And 5-Min-Ahead Scheduling.',
   },
   {
-    image: '/assets/news/images/event-500gw-panel.png',
+    image: assetUrl('/assets/news/images/event-500gw-panel.png'),
     tag: 'PANEL',
     tagClass: 'bg-[#2F6FED26] text-[#2F6FED]',
     date: 'NOV 2025',
@@ -33,7 +34,7 @@ const events = [
       'Venkata Krishnan Joined Waaree, ENGIE, Premier Energies, And SWELECT To Discuss India\'s Path To 500 GW.',
   },
   {
-    image: '/assets/news/images/event-europe-energy.png',
+    image: assetUrl('/assets/news/images/event-europe-energy.png'),
     tag: 'EXHIBITION',
     tagClass: 'bg-[#1F6B4A26] text-[#1F6B4A]',
     date: 'FEB 2026',
@@ -42,7 +43,7 @@ const events = [
       'Kumar M Presented Solvyn\'s Intelligence Layer At Europe\'s Premier Energy Event Demonstrating Solar, Wind, Storage, And Hydrogen Coordination In Real Time.',
   },
   {
-    image: '/assets/news/images/event-san-diego.png',
+    image: assetUrl('/assets/news/images/event-san-diego.png'),
     tag: 'EXHIBITION',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'FEB 18–20, 2026',
@@ -51,7 +52,7 @@ const events = [
       'Venkata Krishnan Representing SGA In San Diego Conversations On Grid-Code Compliance, Smarter BESS, And Real-Time Optimization For Hybrid Assets.',
   },
   {
-    image: '/assets/news/images/event-bes-2026.png',
+    image: assetUrl('/assets/news/images/event-bes-2026.png'),
     tag: 'SUMMIT',
     tagClass: 'bg-[#6B3FA026] text-[#6B3FA0]',
     date: '2026',
@@ -60,7 +61,7 @@ const events = [
       'SGA Leadership At BES 2026, Engaging In Conversations On Electricity\'s Future And India\'s Clean Energy Transition Agenda.',
   },
   {
-    image: '/assets/news/images/event-bes-2026.png',
+    image: assetUrl('/assets/news/images/event-bes-2026.png'),
     tag: 'SPEAKING SESSION',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'MAR 21 2026',
@@ -69,7 +70,7 @@ const events = [
       'An Insightful Session On How Advanced EMS Systems Are Driving Intelligent Grid Integration, Optimising Storage Performance, And Improving Operational Efficiency.',
   },
   {
-    image: '/assets/news/images/event-bes-2026.png',
+    image: assetUrl('/assets/news/images/event-bes-2026.png'),
     tag: 'PRESS CONFERENCE',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'APR 8 2026',
@@ -78,7 +79,7 @@ const events = [
       'Panelist At The RenewX Press Conference Highlighting How Solvyn And Solvyn AURA Enable Smarter, Data-Driven Grid Operations.',
   },
   {
-    image: '/assets/news/images/event-bes-2026.png',
+    image: assetUrl('/assets/news/images/event-bes-2026.png'),
     tag: 'RECOGNITION',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'JUN 2 2026',

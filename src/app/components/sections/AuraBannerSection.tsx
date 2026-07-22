@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -21,7 +22,7 @@ const AuraBannerSection: React.FC<AuraBannerSectionProps> = () => {
 
             <div className="relative mx-auto w-[11.5rem] shrink-0 sm:w-[13rem] lg:mx-0 lg:w-[14.5rem] xl:w-[15.5rem]">
               <Image
-                src="/assets/aura/images/banner-exploded-view.png"
+                src={assetUrl('/assets/aura/images/banner-exploded-view.png')}
                 alt="AURA decision intelligence dashboard with charts and analytics"
                 width={640}
                 height={480}

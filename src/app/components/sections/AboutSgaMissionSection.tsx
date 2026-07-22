@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -22,21 +23,21 @@ const bottomValues = [
   {
     title: 'Open And Agnostic',
     description: 'No vendor lock-in. Works with any inverter BMS, PPC, or OEM.',
-    image: '/assets/about-sga/images/mission-1.png',
+    image: assetUrl('/assets/about-sga/images/mission-1.png'),
   },
   {
     title: 'Security By Architecture',
     description: 'IEC 62443-aligned, auditable, and operationally resilient from day one.',
-    image: '/assets/about-sga/images/mission-2.png',
+    image: assetUrl('/assets/about-sga/images/mission-2.png'),
   },
   {
     title: 'Partners, Not Vendors',
     description: 'Long-term partners to asset owners, EPCs, and grid operators.',
-    image: '/assets/about-sga/images/mission-3.png',
+    image: assetUrl('/assets/about-sga/images/mission-3.png'),
   },
 ] as const
 
-const strikeSrc = '/assets/about-sga/images/mission-strike.png'
+const strikeSrc = assetUrl('/assets/about-sga/images/mission-strike.png')
 
 const AboutSgaMissionSection: React.FC<AboutSgaMissionSectionProps> = () => {
   return (

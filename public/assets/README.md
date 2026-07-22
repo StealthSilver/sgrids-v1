@@ -2,6 +2,16 @@
 
 Send this entire `assets/` folder to DevOps for CDN upload.
 
+## Live CDN base URL
+
+`https://d23qtl0wnqfa3h.cloudfront.net`
+
+Example:
+`https://d23qtl0wnqfa3h.cloudfront.net/assets/aura/images/hero.png`
+
+The Next.js app resolves every `/assets/...` path through `assetUrl()` using `NEXT_PUBLIC_CDN_URL`
+(defaulting to the CloudFront URL above).
+
 ## Structure
 
 ```
@@ -26,22 +36,20 @@ assets/
   ip-patents/            # /company/ip-patents
 ```
 
-Each page folder contains `images/` and (where needed) `icons/`.
-
 ## CDN path convention
 
-Local path today:
+Local path shape:
 `/assets/<section>/images/<name>.png`
 
-CDN path after deploy (example):
-`https://cdn.example.com/assets/<section>/images/<name>.png`
+CDN URL:
+`https://d23qtl0wnqfa3h.cloudfront.net/assets/<section>/images/<name>.png`
 
-Keep the `/assets/...` suffix identical so the app can switch via a single CDN base URL.
+Keep the `/assets/...` suffix identical so the app can switch hosts via `NEXT_PUBLIC_CDN_URL`.
 
 ## Replacing an asset
 
 1. Find the page folder (e.g. `aura/images/`)
 2. Replace the file **keeping the same filename**
-3. Invalidate CDN cache for that path
+3. Invalidate CloudFront cache for that path (cache is currently long-lived / immutable)
 
 See `CDN_MANIFEST.json` for the full old→new mapping used during migration.

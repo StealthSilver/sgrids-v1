@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,31 +10,31 @@ const capabilities = [
   {
     name: 'Solvyn X',
     highlight: 'Connects',
-    icon: '/assets/shared/icons/product-solvyn-x.svg',
+    icon: assetUrl('/assets/shared/icons/product-solvyn-x.svg'),
     color: '#518E48',
   },
   {
     name: 'SCADA',
     highlight: 'Sees',
-    icon: '/assets/shared/icons/product-scada.svg',
+    icon: assetUrl('/assets/shared/icons/product-scada.svg'),
     color: '#0B2B98',
   },
   {
     name: 'Digital Twin',
     highlight: 'Predicts',
-    icon: '/assets/shared/icons/product-digital-twin.svg',
+    icon: assetUrl('/assets/shared/icons/product-digital-twin.svg'),
     color: '#FEC801',
   },
   {
     name: 'AURA',
     highlight: 'Decides',
-    icon: '/assets/shared/icons/product-aura.svg',
+    icon: assetUrl('/assets/shared/icons/product-aura.svg'),
     color: '#8A70F8',
   },
   {
     name: 'EMS',
     highlight: 'Executes',
-    icon: '/assets/shared/icons/product-ems.svg',
+    icon: assetUrl('/assets/shared/icons/product-ems.svg'),
     color: '#FF6A00',
   },
 ] as const
@@ -72,7 +73,7 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
 
           <div className="relative mx-auto mt-4 w-full max-w-5xl overflow-visible lg:mt-8 lg:ml-auto lg:mr-0 lg:w-full lg:max-w-[74rem]">
             <Image
-              src="/assets/solvyn/images/hero.png"
+              src={assetUrl('/assets/solvyn/images/hero.png')}
               alt="Solvyn operating system connecting wind, solar, storage, and control systems"
               width={1200}
               height={900}
@@ -109,7 +110,7 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
           </div>
           <div className="relative mt-[0.25rem] h-[2.75rem] pb-[1.5rem]">
             <Image
-              src="/assets/shared/icons/hero-gradient-divider.svg"
+              src={assetUrl('/assets/shared/icons/hero-gradient-divider.svg')}
               alt="Gradient divider"
               width={873}
               height={3}

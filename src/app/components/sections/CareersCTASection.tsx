@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -45,7 +46,7 @@ const CareersCTASection: React.FC<CareersCTASectionProps> = () => {
 
           <div className="flex shrink-0 justify-center lg:justify-end">
             <Image
-              src="/assets/shared/images/cta-footer-banner.png"
+              src={assetUrl('/assets/shared/images/cta-footer-banner.png')}
               alt="Renewable energy infrastructure illustration"
               width={514}
               height={343}

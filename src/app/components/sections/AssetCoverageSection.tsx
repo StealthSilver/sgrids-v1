@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -13,27 +14,27 @@ const assetCards: AssetCard[] = [
   {
     title: 'Solar',
     description: 'Patented Digital Twin from module to plant level. String fault detection and compliant dispatch.',
-    image: '/assets/shared/images/asset-solar.svg',
+    image: assetUrl('/assets/shared/images/asset-solar.svg'),
   },
   {
     title: 'Wind',
     description: 'Turbine controller integration, ramp-rate management, and frequency response.',
-    image: '/assets/shared/images/asset-wind.svg',
+    image: assetUrl('/assets/shared/images/asset-wind.svg'),
   },
   {
     title: 'BESS',
     description: 'Degradation-aware dispatch, SOH management, cycle cost optimisation, warranty-safe operation.',
-    image: '/assets/shared/images/asset-bess.svg',
+    image: assetUrl('/assets/shared/images/asset-bess.svg'),
   },
   {
     title: 'Hybrid',
     description: '11 operating modes, inter-PPA awareness, real-time mode arbitration across mixed portfolios.',
-    image: '/assets/shared/images/asset-hybrid.svg',
+    image: assetUrl('/assets/shared/images/asset-hybrid.svg'),
   },
   {
     title: 'Green H₂',
     description: 'Electrolysis load management, renewable coupling, grid-code compliant operation.',
-    image: '/assets/shared/images/asset-h2.svg',
+    image: assetUrl('/assets/shared/images/asset-h2.svg'),
   },
 ]
 

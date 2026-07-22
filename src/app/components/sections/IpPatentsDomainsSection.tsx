@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -8,28 +9,28 @@ const domains = [
     title: 'Digital Twin Technology',
     description:
       'Patented live models for solar and BESS assets forecasting, degradation, and dispatch intelligence.',
-    image: '/assets/ip-patents/images/domain-digital-twin.png',
+    image: assetUrl('/assets/ip-patents/images/domain-digital-twin.png'),
     alt: 'Abstract network of cubes representing digital twin technology',
   },
   {
     title: 'EMS & Dispatch Logic',
     description:
       'Proprietary energy optimization methods combining EMS orchestration with intelligent bidding.',
-    image: '/assets/ip-patents/images/domain-grid-control.png',
+    image: assetUrl('/assets/ip-patents/images/domain-grid-control.png'),
     alt: 'Shield network graphic representing EMS and dispatch logic',
   },
   {
     title: 'Market Intelligence',
     description:
       'Patented deviation settlement and DSM compliance methods linking plant operations to energy markets.',
-    image: '/assets/ip-patents/images/domain-ems-dispatch.png',
+    image: assetUrl('/assets/ip-patents/images/domain-ems-dispatch.png'),
     alt: 'Layered solar, wind, and storage illustration representing market intelligence',
   },
   {
     title: 'Grid Control',
     description:
       'Novel methods for virtual power quality metering, distributed BESS planning, and AI-based dispatch.',
-    image: '/assets/ip-patents/images/domain-market-intelligence.png',
+    image: assetUrl('/assets/ip-patents/images/domain-market-intelligence.png'),
     alt: 'Circular bar visualization representing grid control intellectual property',
   },
 ] as const

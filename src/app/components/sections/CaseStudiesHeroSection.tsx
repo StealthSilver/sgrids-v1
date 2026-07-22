@@ -1,3 +1,4 @@
+import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -38,7 +39,7 @@ const CaseStudiesHeroSection: React.FC<CaseStudiesHeroSectionProps> = () => {
 
           <div className="mx-auto w-full max-w-[28rem] lg:max-w-none">
             <Image
-              src="/assets/case-studies/images/hero.png"
+              src={assetUrl('/assets/case-studies/images/hero.png')}
               alt="Solar and wind farm connected by intelligent energy control"
               width={933}
               height={605}
