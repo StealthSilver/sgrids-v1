@@ -40,7 +40,7 @@ const capabilities = [
 
 const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => {
   return (
-    <section className="px-4 pb-32 pt-3 sm:px-6 sm:pb-36 sm:pt-4 lg:px-8 lg:pb-44 lg:pt-5">
+    <section className="px-4 pb-28 pt-3 sm:px-6 sm:pb-32 sm:pt-4 lg:px-8 lg:pb-36 lg:pt-5">
       <div className="relative mx-auto w-full max-w-7xl">
         <div className="grid items-center gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:gap-8">
           <div className="flex flex-col items-start">
@@ -82,7 +82,7 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
           </div>
         </div>
 
-        <aside className="relative z-30 mt-8 w-full max-w-[46rem] overflow-hidden rounded-[1.5rem] border border-solid border-white/65 bg-[#FFFFFF8C] px-[1rem] pb-[0.25rem] pt-[0.375rem] shadow-[-1px_5px_9px_0px_#F5822926] backdrop-blur-[0.8125rem] sm:mt-10 lg:absolute lg:bottom-[-26%] lg:left-0 lg:mt-0">
+        <aside className="relative z-30 mt-8 w-full max-w-[46rem] overflow-hidden rounded-[1.5rem] border border-solid border-white/65 bg-[#FFFFFF8C] px-[1rem] pb-[0.25rem] pt-[0.375rem] shadow-[-1px_5px_9px_0px_#F5822926] backdrop-blur-[0.8125rem] sm:mt-10 lg:absolute lg:bottom-[-16%] lg:left-0 lg:mt-0">
           <div className="grid grid-cols-2 gap-y-6 py-[0.75rem] sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-5">
             {capabilities.map((capability) => (
               <div key={capability.name} className="flex flex-col items-center gap-[0.25rem] text-center">
