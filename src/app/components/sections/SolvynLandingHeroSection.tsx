@@ -56,7 +56,7 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
           <div className="flex flex-col items-start">
             <div className="mb-4 inline-flex h-7 items-center justify-center rounded-full bg-[#FF7F0026] px-3.5 py-1">
               <span className="[font-family:var(--font-ibm-plex-sans)] text-[0.625rem] font-bold uppercase leading-[1] tracking-[0.015rem] text-[#FF7F00] sm:text-[0.6875rem]">
-                ENERGY PERFORMANCE
+                GRID INTELLIGENCE 5.0
               </span>
             </div>
 
@@ -65,8 +65,9 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
             </h1>
 
             <p className="mt-5 max-w-[32rem] [font-family:var(--font-ibm-plex-sans)] text-sm leading-relaxed text-[#7F7F7F] sm:text-base">
-              An end-to-end operating system that connects, coordinates, and optimizes every layer of
-              your energy portfolio — from field assets to market decisions.
+              Modern energy systems are too complex for disconnected tools. Solvyn is the platform
+              that connects, sees, thinks, and acts across every asset, every interface, and every
+              operational decision.
             </p>
 
             <div className="mt-7">
@@ -74,7 +75,7 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
                 href={navRequestDemo.href}
                 className="inline-flex items-center justify-center rounded-full bg-[#FF7F00] px-6 py-1.5 text-sm font-bold leading-5 tracking-[0rem] text-white transition-colors duration-200 hover:bg-[#E67300] [font-family:var(--font-ibm-plex-sans)]"
               >
-                Request a Demo
+                Book a Demo
               </Link>
             </div>
           </div>

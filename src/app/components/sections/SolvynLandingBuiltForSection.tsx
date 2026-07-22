@@ -5,27 +5,27 @@ export interface SolvynLandingBuiltForSectionProps {}
 
 const audiences = [
   {
-    title: "IPP's And Asset Owners",
+    title: 'IPPs And Asset Owners',
     description:
-      'Maximize plant availability, commercial returns, and portfolio visibility across sites.',
+      'Maximise revenue, protect battery life, enforce compliance, and gain full portfolio visibility without a separate toolchain for each plant.',
     image: '/Images/solvyn-landing-ipps.png',
   },
   {
     title: 'Grid And Utility Operators',
     description:
-      'Maintain grid code compliance, stability, and secure real-time control at the POI.',
+      'Automate grid-code compliance, manage frequency and ramp-rate obligations, and coordinate dispatch across hybrid generation assets.',
     image: '/Images/solvyn-landing-grid.png',
   },
   {
     title: 'EPC And O&M Teams',
     description:
-      'Commission faster, diagnose root causes quicker, and keep hybrid plants performing.',
+      'Commission faster, diagnose faults earlier, respond with guided workflows, and maintain auditability across every control action.',
     image: '/Images/solvyn-landing-epc.png',
   },
   {
     title: 'Traders And Market Teams',
     description:
-      'Align schedules, forecasts, and dispatch with DAM/RTM opportunities and risk limits.',
+      'Align dispatch with market schedules, participate in DAM and RTM with 96-block precision, and optimise revenue alongside degradation and grid obligations.',
     image: '/Images/solvyn-landing-traders.png',
   },
 ] as const

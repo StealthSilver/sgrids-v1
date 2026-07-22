@@ -3,11 +3,11 @@ import React from 'react'
 export interface SolvynLandingProvenSectionProps {}
 
 const stats = [
-  { value: '11 GW+', label: 'Capacity under active management' },
-  { value: '96%', label: 'Plant availability across deployments' },
-  { value: '72h', label: 'Edge buffering with zero data loss' },
-  { value: '100ms', label: 'Control loop response time' },
-  { value: '9+', label: 'Industrial protocols supported' },
+  { value: '11', label: 'Operating modes in simultaneous arbitration' },
+  { value: '96', label: 'Block scheduling for DAM / RTM markets' },
+  { value: '72h', label: 'Edge telemetry buffering with zero data loss' },
+  { value: '100ms', label: 'Core dispatch control loop response time' },
+  { value: '6+', label: 'Protocols supported across OT and cloud layers' },
 ] as const
 
 const SolvynLandingProvenSection: React.FC<SolvynLandingProvenSectionProps> = () => {

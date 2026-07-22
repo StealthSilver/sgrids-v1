@@ -12,16 +12,13 @@ const SolvynLandingPlatformSection: React.FC<SolvynLandingPlatformSectionProps> 
             THE PLATFORM
           </p>
           <h2 className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[1.5rem] font-bold leading-[1.2] tracking-[-0.03rem] text-[#1C1B1B] sm:text-[1.9rem] lg:text-[2.35rem] lg:leading-[1.16] lg:tracking-[-0.05rem]">
-            Not a suite of tools. An operating system.
+            Not a suit of tool. An operating system.
           </h2>
           <p className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-            Solvyn is built as one cohesive environment, not a patchwork of SCADA, EMS, analytics,
-            and market tools stitched together after the fact. Every layer shares the same data fabric,
-            control loop, and security model.
-          </p>
-          <p className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-            From plant telemetry to commercial decisions, operators work inside a single system that
-            sees the full picture and acts with precision.
+            Most energy software was built in pieces a monitoring tool here, a scheduler there, an
+            analytics layer bolted on later. Each piece solves one problem. None speak to each other.
+            Solvyn was built differently. Every layer is purpose-built. Every layer is integrated.
+            This is not integration by API. It is coherence by design.
           </p>
 
           <div className="mt-6 flex items-start gap-3 rounded-[14px] border border-[#EFE6DF] bg-[#FFFFFF] px-4 py-4 shadow-[0px_7.72px_9.64px_0px_#FF6A0026] sm:px-5">
@@ -37,8 +34,8 @@ const SolvynLandingPlatformSection: React.FC<SolvynLandingPlatformSectionProps> 
               </svg>
             </span>
             <p className="[font-family:var(--font-ibm-plex-sans)] text-[14px] font-medium leading-[1.4] text-[#1C1B1B] sm:text-[15px]">
-              The first system to combine field operations, market intelligence, and grid management
-              into one cohesive environment.
+              From field protocols to market dispatch. From alarm to guided action. From raw telemetry
+              to operational intelligence. One platform. One operating model.
             </p>
           </div>
         </div>

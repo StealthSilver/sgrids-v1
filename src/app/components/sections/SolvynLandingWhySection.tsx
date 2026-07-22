@@ -3,21 +3,25 @@ import React from 'react'
 export interface SolvynLandingWhySectionProps {}
 
 const legacyItems = [
-  'Siloed SCADA, EMS, and analytics stacks',
-  'Manual tag mapping and slow commissioning',
-  'Limited hybrid and BESS operating modes',
-  'Intelligence outside the control loop',
-  'Reactive alarms without root-cause guidance',
-  'Security bolted on after deployment',
+  'Monitoring and control as separate, disconnected systems',
+  'Flat alarm lists with no prioritisation or root cause',
+  'Manual grid-code compliance checking',
+  'Static battery SOC management only',
+  'Post-mortem fault analysis after events occur',
+  'Black-box optimisation with no explanation',
+  'Proprietary protocols, no enterprise integration',
+  'Single asset type, single use case',
 ] as const
 
 const solvynItems = [
-  'One operating system across the full stack',
-  'AI-assisted integration and auto tag mapping',
-  'Built for solar, wind, hydro, BESS, and hybrids',
-  'Predict → decide → execute in one closed loop',
-  'Cognitive alarms with guided recovery workflows',
-  'Zero-trust OT/IT security as a native layer',
+  'Unified operating system — X, SCADA, EMS, AURA, Twin',
+  'Cognitive alarms grouped by root cause, noise suppressed',
+  'Automated compliance enforcement built into dispatch',
+  'Degradation-aware dispatch with DOD, temperature, C-rate',
+  'Predictive fault detection and failure cascade simulation',
+  'Explainable dispatch with human-readable reasoning',
+  'Open multi-protocol architecture with enterprise integration',
+  'Hybrid solar-wind-BESS with inter-PPA coordination',
 ] as const
 
 const SolvynLandingWhySection: React.FC<SolvynLandingWhySectionProps> = () => {

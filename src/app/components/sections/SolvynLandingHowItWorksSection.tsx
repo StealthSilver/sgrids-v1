@@ -7,35 +7,40 @@ const steps = [
     step: 'STEP 01',
     verb: 'Connects',
     product: 'Solvyn X',
-    description: 'Ingests real-time data from every asset, OEM system, and grid interface.',
+    description:
+      'Pulls real-time data from every asset, interface, and system into one normalised operational stream.',
     className: 'bg-[#FAD835] border-[#FAD835]',
   },
   {
     step: 'STEP 02',
-    verb: 'Sees',
+    verb: 'See',
     product: 'Solvyn SCADA',
-    description: 'Builds situational awareness with live monitoring, SLDs, and cognitive alarms.',
+    description:
+      'Transforms live data into operator intelligence alarms, guided recovery, schedules, and live plant context.',
     className: 'bg-[#F19430] border-[#F19430]',
   },
   {
     step: 'STEP 03',
     verb: 'Predicts',
     product: 'Digital Twin',
-    description: 'Simulates plant behavior against weather, degradation, and operating constraints.',
+    description:
+      'Maintains a live plant model to forecast generation, degradation, and grid response before events occur.',
     className: 'bg-[#ED6542] border-[#ED6542]',
   },
   {
     step: 'STEP 04',
     verb: 'Decides',
     product: 'AURA',
-    description: 'Optimizes schedules, bids, and risk actions with multi-objective intelligence.',
+    description:
+      'Reads the model, detects risk, evaluates options, and surfaces prescriptive guidance with explainable reasoning.',
     className: 'bg-[#7D81A6] border-[#7D81A6]',
   },
   {
     step: 'STEP 05',
     verb: 'Executes',
     product: 'Solvyn EMS',
-    description: 'Closes the loop with safe, high-speed control across operating modes.',
+    description:
+      'Converts decisions into compliant, market-aligned, degradation-aware dispatch across hybrid assets in real time.',
     className: 'bg-[#BEBEBE] border-[#BEBEBE]',
   },
 ] as const
@@ -51,8 +56,8 @@ const SolvynLandingHowItWorksSection: React.FC<SolvynLandingHowItWorksSectionPro
           Prediction. Decision. Action. Continuously.
         </h2>
         <p className="mt-4 max-w-[720px] [font-family:var(--font-ibm-plex-sans)] text-[15px] leading-[1.4] text-[#7F7F7F] sm:text-base">
-          Solvyn runs as a closed loop, every layer feeding the next, every outcome improving the
-          model.
+          What makes Solvyn different is not any single layer. It is how all five work as one closed
+          loop each layer feeding the next, every outcome improving the model.
         </p>
 
         <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">

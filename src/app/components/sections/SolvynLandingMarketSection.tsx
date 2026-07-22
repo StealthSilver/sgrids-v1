@@ -1,35 +1,30 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export interface SolvynLandingMarketSectionProps {}
 
 const cards = [
   {
     title: 'Fragmented Systems',
-    description:
-      'SCADA, EMS, PPC, and analytics live in silos, operators stitch the picture together manually.',
+    description: 'Every Asset Speaks A Different Language.',
     image: '/Images/solvyn-landing-fragmented.png',
     dark: false,
   },
   {
     title: 'Hybrid Complexity',
-    description:
-      'Solar, wind, BESS, and grid interfaces multiply control modes faster than legacy stacks can adapt.',
+    description: 'Markets, Compliance, And BESS Simultaneously.',
     image: '/Images/solvyn-landing-hybrid.png',
     dark: false,
   },
   {
     title: 'The Intelligence Gap',
-    description:
-      'Data arrives. Decisions lag. Predictive and commercial intelligence sit outside the control loop.',
+    description: "Knowing What Happened Isn't Enough.",
     image: '/Images/solvyn-landing-intelligence-gap.png',
     dark: false,
   },
   {
     title: 'Solvyn Closes Every Gap.',
-    description:
-      'One operating system that connects assets, senses the plant, predicts outcomes, decides with AI, and executes safely.',
+    description: 'One Platform. Every Layer.',
     image: '/Images/solvyn-landing-closes-gap.png',
     dark: true,
   },
@@ -40,7 +35,7 @@ const SolvynLandingMarketSection: React.FC<SolvynLandingMarketSectionProps> = ()
     <section id="market-realities" className="px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto w-full max-w-7xl">
         <p className="[font-family:var(--font-ibm-plex-sans)] text-[0.875rem] font-medium uppercase leading-[1] tracking-[0.02rem] text-[#FF7F00] sm:text-[0.9375rem]">
-          MARKET REALITIES
+          WHY IT EXISTS
         </p>
         <h2 className="mt-4 max-w-[720px] [font-family:var(--font-ibm-plex-sans)] text-[1.5rem] font-bold leading-[1.2] tracking-[-0.03rem] text-[#1C1B1B] sm:text-[1.9rem] lg:text-[2.35rem] lg:leading-[1.16] lg:tracking-[-0.05rem]">
           Energy Operations Have Outgrown Legacy Control Systems.
@@ -79,15 +74,6 @@ const SolvynLandingMarketSection: React.FC<SolvynLandingMarketSectionProps> = ()
               >
                 {card.description}
               </p>
-              {card.dark ? (
-                <Link
-                  href="#the-diversified-system"
-                  className="mt-4 inline-flex items-center gap-1.5 [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-semibold uppercase tracking-[0.02rem] text-[#FF7F00] transition-colors hover:text-[#E67300]"
-                >
-                  Explore the stack
-                  <span aria-hidden="true">→</span>
-                </Link>
-              ) : null}
             </article>
           ))}
         </div>
