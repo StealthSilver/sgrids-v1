@@ -79,7 +79,7 @@ const WhitePaperCTASection: React.FC<WhitePaperCTASectionProps> = () => {
               <p className="mt-4 [font-family:var(--font-ibm-plex-sans)] text-[0.6875rem] leading-[1.45] text-[#7F7F7F] sm:text-[0.75rem]">
                 We Value Your Privacy. By Subscribing You Agree To Our{' '}
                 <Link
-                  href="#privacy-policy"
+                  href="/privacy-policy"
                   className="underline decoration-[#7F7F7F]/50 underline-offset-2 transition-colors hover:text-[#1C1B1B]"
                 >
                   Privacy Policy

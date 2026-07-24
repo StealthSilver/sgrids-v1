@@ -1,4 +1,3 @@
-import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -39,7 +38,7 @@ const CareersHeroSection: React.FC<CareersHeroSectionProps> = () => {
 
           <div className="relative mx-auto aspect-[4/3] w-full max-w-[28rem] overflow-hidden rounded-[28px] sm:rounded-[32px] lg:max-w-none lg:rounded-[36px]">
             <Image
-              src={assetUrl('/assets/careers/images/hero-team.png')}
+              src="/local_assets/careers.png"
               alt="Smart Grid Analytics team collaborating in the office"
               fill
               priority

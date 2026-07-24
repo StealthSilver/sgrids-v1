@@ -61,7 +61,7 @@ const events = [
       'SGA Leadership At BES 2026, Engaging In Conversations On Electricity\'s Future And India\'s Clean Energy Transition Agenda.',
   },
   {
-    image: assetUrl('/assets/news/images/event-bes-2026.png'),
+    image: '/local_assets/news1.png',
     tag: 'SPEAKING SESSION',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'MAR 21 2026',
@@ -70,7 +70,7 @@ const events = [
       'An Insightful Session On How Advanced EMS Systems Are Driving Intelligent Grid Integration, Optimising Storage Performance, And Improving Operational Efficiency.',
   },
   {
-    image: assetUrl('/assets/news/images/event-bes-2026.png'),
+    image: '/local_assets/news2.png',
     tag: 'PRESS CONFERENCE',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'APR 8 2026',
@@ -79,7 +79,7 @@ const events = [
       'Panelist At The RenewX Press Conference Highlighting How Solvyn And Solvyn AURA Enable Smarter, Data-Driven Grid Operations.',
   },
   {
-    image: assetUrl('/assets/news/images/event-bes-2026.png'),
+    image: '/local_assets/news3.png',
     tag: 'RECOGNITION',
     tagClass: 'bg-[#FF7F0026] text-[#FF7F00]',
     date: 'JUN 2 2026',

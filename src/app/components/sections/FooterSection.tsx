@@ -37,7 +37,7 @@ const legalLinkClasses =
   'inline-flex [font-family:var(--font-ibm-plex-sans)] text-[0.8125rem] font-normal leading-[1.35] text-[#808080] transition-colors duration-200 hover:text-[#FF7F00]'
 
 const legalLinks: FooterLink[] = [
-  { label: 'Privacy Policy', href: '#privacy-policy' },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
   { label: 'Terms and Conditions', href: '#terms-and-conditions' },
 ]
 
