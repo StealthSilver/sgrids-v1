@@ -31,7 +31,7 @@ const products = [
       'Continuously updated Solar & BESS models forecasting, degradation, and DSM scheduling.',
     image: assetUrl('/assets/digital-twin/images/model-solar.png'),
     href: '/solvyn/digital-twin',
-    tags: ['Solar', 'BESS', '14+ Patents'],
+    tags: ['Solar', 'BESS', '21+ Patents'],
   },
   {
     title: 'AURA',

@@ -22,7 +22,7 @@ const timelineSteps: TimelineStep[] = [
     title: 'Real-time plant visibility',
     description: 'SCADA and telemetry unify every asset into one operational picture.',
     image: assetUrl('/assets/home/images/about-see-visibility.svg'),
-    icon: assetUrl('/assets/home/icons/about-see-eye.svg'),
+    icon: '/local_assets/home_icon_1.png',
   },
   {
     id: 'execute',
@@ -30,7 +30,7 @@ const timelineSteps: TimelineStep[] = [
     title: 'Grid-ready EMS dispatch',
     description: 'Converts grid requirements into plant asset setpoints.',
     image: assetUrl('/assets/home/images/about-execute-dispatch.svg'),
-    icon: assetUrl('/assets/home/icons/about-execute-gear.svg'),
+    icon: '/local_assets/home_icon_2.png',
   },
   {
     id: 'decide',
@@ -38,7 +38,7 @@ const timelineSteps: TimelineStep[] = [
     title: 'AURA intelligence',
     description: 'Turns forecasts into schedules for hybrid and storage plants.',
     image: assetUrl('/assets/home/images/about-decide-aura.svg'),
-    icon: assetUrl('/assets/home/icons/about-decide-ai.svg'),
+    icon: '/local_assets/home_icon_3.png',
   },
 ]
 
@@ -110,9 +110,9 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
                   >
                     <span
                       aria-hidden="true"
-                      className="h-[25px] w-[25px] transition-colors"
+                      className="h-[26px] w-[26px] transition-colors duration-300"
                       style={{
-                        backgroundColor: isActive ? '#FF7F00' : 'rgba(0, 0, 0, 0.55)',
+                        backgroundColor: isActive ? '#FF7F00' : '#BEBEBE',
                         WebkitMaskImage: `url(${step.icon})`,
                         maskImage: `url(${step.icon})`,
                         WebkitMaskRepeat: 'no-repeat',

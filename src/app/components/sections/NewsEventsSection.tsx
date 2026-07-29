@@ -112,19 +112,19 @@ const NewsEventsSection: React.FC<NewsEventsSectionProps> = () => {
           </Link>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5 lg:mt-12 lg:grid-cols-3 lg:gap-6">
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:mt-10 sm:grid-cols-2 sm:gap-6 lg:mt-12 lg:grid-cols-3 lg:gap-7">
           {events.map((event) => (
             <article
               key={event.title}
               className="flex flex-col overflow-hidden rounded-[14px] border border-[#E8E8E8] bg-[#FFFFFF] p-4 transition-all duration-200 hover:-translate-y-1 hover:border-[#FF7F0052] hover:shadow-[0px_12px_18px_0px_#FF6A0038] sm:p-5"
             >
-              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[10px]">
+              <div className="relative aspect-[5/4] w-full overflow-hidden rounded-[10px] bg-[#F5F5F5] sm:aspect-[4/3] sm:min-h-[240px] lg:min-h-[280px]">
                 <Image
                   src={event.image}
                   alt={event.title}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 

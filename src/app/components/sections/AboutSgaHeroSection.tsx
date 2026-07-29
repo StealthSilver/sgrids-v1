@@ -38,7 +38,7 @@ const stats = [
     icon: assetUrl('/assets/about-sga/images/hero-stat-5.png'),
   },
   {
-    value: '14+',
+    value: '21+',
     unit: null,
     label: 'Patents filed',
     icon: assetUrl('/assets/about-sga/images/hero-stat-6.png'),

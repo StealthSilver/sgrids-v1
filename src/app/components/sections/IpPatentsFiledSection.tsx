@@ -43,7 +43,7 @@ const IpPatentsFiledSection: React.FC<IpPatentsFiledSectionProps> = () => {
             <div className="flex items-center gap-5 sm:gap-8 lg:shrink-0 lg:pr-10 xl:pr-14">
               <DotGrid />
               <p className="[font-family:var(--font-ibm-plex-sans)] text-[3.25rem] font-bold leading-none tracking-[-0.06rem] text-[#FF7F00] sm:text-[4rem] lg:text-[4.75rem]">
-                14
+                21
               </p>
             </div>
 

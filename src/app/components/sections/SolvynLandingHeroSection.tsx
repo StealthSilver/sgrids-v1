@@ -73,7 +73,7 @@ const SolvynLandingHeroSection: React.FC<SolvynLandingHeroSectionProps> = () => 
 
           <div className="relative mx-auto mt-4 w-full max-w-5xl overflow-visible lg:mt-8 lg:ml-auto lg:mr-0 lg:w-full lg:max-w-[74rem]">
             <Image
-              src={assetUrl('/assets/solvyn/images/hero.png')}
+              src="/local_assets/solvyn_hero.png"
               alt="Solvyn operating system connecting wind, solar, storage, and control systems"
               width={1200}
               height={900}

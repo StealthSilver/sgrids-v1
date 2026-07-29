@@ -14,7 +14,7 @@ const stats = [
     image: assetUrl('/assets/about-sga/images/team-kumar-1.png'),
   },
   {
-    value: '14+',
+    value: '21+',
     label: 'Patents Filed',
     image: assetUrl('/assets/about-sga/images/team-kumar-2.png'),
   },

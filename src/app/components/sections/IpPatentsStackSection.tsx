@@ -1,4 +1,3 @@
-import { assetUrl } from '@/lib/cdn'
 import React from 'react'
 import Image from 'next/image'
 
@@ -23,7 +22,7 @@ const IpPatentsStackSection: React.FC<IpPatentsStackSectionProps> = () => {
 
         <div className="mt-8 sm:mt-10 lg:mt-12">
           <Image
-            src={assetUrl('/assets/ip-patents/images/stack-diagram.png')}
+            src="/local_assets/solvyn_stack.png"
             alt="Where IP protection sits in the Solvyn stack — EMS Optimisation, DSM & Deviation Settlement, BESS and Solar Digital Twin, Virtual Power Quality Meter, and Data Foundation"
             width={1600}
             height={1200}

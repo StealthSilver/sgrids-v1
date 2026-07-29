@@ -27,7 +27,7 @@ const teamCards: TeamMemberCard[] = [
   {
     name: 'Thirumaleswar Reddy',
     title: 'Co-Founder & CTO',
-    image: assetUrl('/assets/home/images/team-thirumaleswar-reddy.png'),
+    image: '/local_assets/thiru.png',
     bio: '25+ years in software development and IT infrastructure. Expert in digital solutions architecting Solvyn for utility-grade reliability and scalability.',
   },
   {

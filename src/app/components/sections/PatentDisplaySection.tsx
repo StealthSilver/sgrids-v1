@@ -28,7 +28,7 @@ const PatentDisplaySection: React.FC<PatentDisplaySectionProps> = () => {
       >
         <div className="relative z-[2] flex flex-col gap-[0.5rem] text-left">
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[2.75rem] font-semibold leading-[0.92] tracking-[-0.06rem] text-white sm:text-[3.05rem] lg:text-[3.35rem]">
-            14 +
+            21 +
           </p>
           <p className="[font-family:var(--font-ibm-plex-sans)] text-[1.62rem] font-semibold leading-[1] tracking-[-0.02rem] text-white sm:text-[1.78rem] lg:text-[1.92rem]">
             Patents

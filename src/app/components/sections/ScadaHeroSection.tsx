@@ -51,7 +51,7 @@ const ScadaHeroSection: React.FC<ScadaHeroSectionProps> = () => {
 
           <div className="relative mx-auto w-full max-w-[36rem] lg:max-w-none">
             <Image
-              src={assetUrl('/assets/scada/images/hero-dashboard.png')}
+              src="/local_assets/Scada_db.png"
               alt="Solvyn X SCADA plant overview dashboard on a laptop"
               width={1200}
               height={900}
